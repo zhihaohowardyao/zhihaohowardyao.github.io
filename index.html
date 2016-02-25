@@ -1,565 +1,1035 @@
-<!DOCTYPE html>
-<html ng-app="Aboutme">
-<meta charset="utf-8">
-<title></title>
-<style>
-</style>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<!--
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
--->
-<script src="vendor/jquery214.min.js"></script>
-<script src="vendor/angular1316.min.js"></script>
-<script src="vendor/bootstrap335.min.js"></script>
-<script src="js/resume_main.js"></script>
-<link rel="stylesheet" href="css/timeline.css">
+<!doctype html>
+<html lang="en" data-safeMod="false" data-autoHideScrollbar="true" data-safeModPageInAnimation="fadeIn" data-inAnimation="fadeInUp" data-outAnimation="fadeOutDownBig" data-cover-h1-tune=".85" data-cover-h2-tune="2.3" data-cover-h3-tune=".6" data-cover-h3-span-tune=".8" data-twitterId="388393979672150017">
 
-<script>
+<head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
 
+    
+    <title>Howard Yao</title> 
 
-
-</script>
-
-
-<div class="container">
- <div class="page-header text-center ">
-		<center>
-                    <img src="https://drive.google.com/uc?id=0BxVGx4GU0k9vT1VRWEpSLTU1SWM" 
-					     name="aboutme" width="120" height="120" border="0" class="img-circle"></a>
-                    <h3 class="media-heading">Zhihao(Howard)Yao <br/> <small>Data Analyst & Visualization Specilist</small></h3><br/>
-                    <!--p><span><strong>Skills</strong></span></p-->
-                        <span class="label label-success">Python</span>
-                        <span class="label label-success">SAS</span>
-						<span class="label label-success">STATA</span>
-						<span class="label label-success">R</span><br/>
-                        <span class="label label-info">Tableau</span>
-						<span class="label label-info">SQL Server</span>
-						<span class="label label-info">Access</span>
-						<span class="label label-info">VBA</span><br/>
-						<span class="label label-warning">HTML5/CSS3</span>
-						<span class="label label-warning">Angular.js</span>
-						<span class="label label-warning">JQuery</span>
-						<span class="label label-warning">Bootstrap</span>
-						<span class="label label-warning">D3.js</span>
-                    </center>
-                    <hr/>
-                    <center>
-					<p><strong>Summary</strong><br/><p>
-                    <p >
-                     <span><a href="#sm-panel"><b>Master of Business Administration</b></a> with emphasis on Data analysis</span><br/>
-					 <span><a href="#cpu-panel"><b>Bachelor of Science</b></a> with major in Pharmacy</span><br/>
-					<span>7 years <a href="#mk-panel"><b>data analysis</b></a> and <a href="#ummc-panel"><b>data visualization</b></a> experience with large volume of data</span><br/>
-					<span>8 years <a href="#sf-panel"><b>project management</b></a> and 10 years <a href="#p-panel"><b>sales and marketing</b></a> experience in top healthcare companies</span>
-                    </p>
-					
-                    </center>
-    </div>
-	<center>
-        <span><strong>Experience</strong></span><br/>
-		</center><br/>
-    <ul class="timeline">
-		
-		
-		<!--NETE-->
-		<li>
-          <div class="timeline-badge info" id="nt-badge"
-		       data-toggle="tooltip" data-placement="left"
-		       title="NETE 2015-present"
-		  >
-		  <img  src="https://drive.google.com/uc?id=0BxVGx4GU0k9vOEN0c2FiRjFzcEE"
-				height="54" width="54"/></div>
-          <div class="timeline-panel" id="nt-panel">
-            <div class="timeline-heading" id="nt-title">
-			  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vdXhVS2hKQmxrVVE" />
-			  <br/>
-              <h4 class="timeline-title" >NETE</h4>
-			  <p><i class="glyphicon glyphicon-time"></i> 2015-present &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Rockville MD</p>
-            </div>
-           <div class="timeline-body" id="nt-body">
-			<hr>
-              <p>NETE provides strategic management consulting, business systems development and integration, Web design and technology solutions, and managed outsourcing services to commercial companies and federal government agencies.</p>
-            </div>
-			<hr>
-			 <section class="tab" ng-controller="TabController as tab">
-				<ul class="nav nav-pills">
-				  <li ng-class="{ active: tab.isSet(1) }">
-					<a href ng-click="tab.setTab(1)"><b>Description</b></a></li>
-				  <li ng-class="{ active: tab.isSet(2) }">
-					<a href ng-click="tab.setTab(2)"><b>Skills</b></a></li>
-				</ul>
-				<div ng-show="tab.isSet(1)">
-				    <br/>
-				    <p><b>Management Analyst</b></p>
-					<ul>
-					  <li>Performs statistical analysis of large data sets to better understand trends, relationships between variables, and to formulate predictive insights.</li>
-					  <li>Designs and builds publication-ready data visualizations using diverse sets of structured and unstructured data.</li>
-					  <li>Ensures research reports are created using credible qualitative and quantitative methodologies based on key insights and findings from studies.</li>
-					  <li>Integrates client-provided elements, research findings, and publicly available information into analytical projects.</li>
-				    <ul>
-				</div>
-				<div ng-show="tab.isSet(2)">
-				<br/>
-				  <ul>
-				  <li>Data Visualization:  <span class="label label-warning">D3.js</span> <span class="label label-info">Tableau</span> <span class="label label-info">Tableau Server</span></li>
-				  <li>Web Design:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								  <span class="label label-warning">html</span> 
-				                  <span class="label label-warning">CSS</span> <span class="label label-warning">Bootstrap</span> 
-								  <span class="label label-warning">JQuery</span> <span class="label label-warning">Angular.js</span></li>
-				  <li>Data Management:<span class="label label-success">SQL</span>  <span class="label label-success">Python</span> 
-									   <span class="label label-success">SAS</span> </li>
-				  </ul>
-				</div>
-			  </section>
-          </div>
-        </li>
-		<br/>
-		<!--UMMC-->
-		<li>
-          <div class="timeline-badge info" id="ummc-badge"
-		       data-toggle="tooltip" data-placement="left"
-		       title="University of Mississippi Medical Center 2013-2015"
-		  >
-		  <img  src="https://drive.google.com/uc?id=0BxVGx4GU0k9vdHVVN3JXUmdhZnc"
-				height="54" width="54"/></div>
-          <div class="timeline-panel" id="ummc-panel">
-            <div class="timeline-heading" id="ummc-title">
-			  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vQ1lqWm5CcWtoWnM" />
-			  <br/>
-              <h4 class="timeline-title" >University of Mississippi Medical Center</h4><h5>Center of Biostatistics & Bioinformatics <h5>
-			  <p><i class="glyphicon glyphicon-time"></i> 2013-2015 &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Jackson MS</p>
-            </div>
-           <div class="timeline-body" id="ummc-body">
-			<hr>
-              <p>The Center of Biostatistics and Bioinformatics provides cutting-edge biostatistical and information science expertise to collaborators .</p>
-			  <p>The center promotes the highest standards in research and education by providing consummate biostatistical expertise to collaborators and scholars towards translating data into evidence and answers. .</p>
-            </div>
-			<hr>
-			 <section class="tab" ng-controller="TabController as tab">
-				<ul class="nav nav-pills">
-				  <li ng-class="{ active: tab.isSet(1) }">
-					<a href ng-click="tab.setTab(1)"><b>Description</b></a></li>
-				  <li ng-class="{ active: tab.isSet(2) }">
-					<a href ng-click="tab.setTab(2)"><b>Skills</b></a></li>
-				</ul>
-				<div ng-show="tab.isSet(1)">
-				    <br/>
-				    <p><b>Database Developer/Data Scientist</b></p>
-					<ul>
-					  <li>Identify reporting requirements and end-user needs and translate these requirements into technical specifications.</li>
-					  <li>Work with data architects, statisticians and investigators to validate rules regrading data integrity and data quality as it relates to the impact on research requirements.</li>
-					  <li>Design, develop, analyze and maintain interactive and dynamic dashboard and reporting solutions according to functional specifications. Drive the collection of new data and the refinement of existing data sources.</li>
-					  <li>Research underlying data and define an approach using SQL, SAS, and Python capabilities for enabling access and performance in Tableau and jacaScript.</li>
-					  <li>Clinical study data management and maintenance. Documents database management functions including data architectures, data standards, procedures and other metadata needs.</li>
-				    <ul>
-				</div>
-				<div ng-show="tab.isSet(2)">
-				<br/>
-				  <ul>
-					  <li>Data Analysis:  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										   <span class="label label-success">SAS</span>  <span class="label label-success">STATA</span> 
-										   <span class="label label-success">R</span> <span class="label label-success">Python</span>
-									   </li>
-				  <li>Database Management: <span class="label label-info">SQL Server</span>
-										   <span class="label label-info">Access</span>
-										   <span class="label label-info">REDCap</span></li>
-				  <li>Data Visualization:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										   <span class="label label-warning">D3.js</span> <span class="label label-info">Tableau</span> <span class="label label-info">Tableau Server</span></li>
-				  
-				  </ul>
-				</div>
-			  </section>
-          </div>
-        </li>
-		<br/>
-		<!--Enlong-->
-		<li>
-          <div class="timeline-badge info" id="en-badge"
-		       data-toggle="tooltip" data-placement="left"
-		       title="Enlong 2011-2013"
-		  >
-		  <img  src="https://drive.google.com/uc?id=0BxVGx4GU0k9vV3ZHNVJKYUo0Unc"
-				height="54" width="54"/></div>
-          <div class="timeline-panel" id="en-panel">
-            <div class="timeline-heading" id="en-title">
-			  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vOUF5dzdXWnNVNG8" />
-			  <br/>
-              <h4 class="timeline-title" >Enlong</h4>
-			  <p><i class="glyphicon glyphicon-time"></i> 2011-2013 &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Rockville MD</p>
-            </div>
-           <div class="timeline-body" id="en-body">
-			<hr>
-              <p>Enlong is a technical consulting company which provides data management, reporting, marketing research services to startup and mid-size companies to help them better understand the data and market.</p>
-            </div>
-			<hr>
-			 <section class="tab" ng-controller="TabController as tab">
-				<ul class="nav nav-pills">
-				  <li ng-class="{ active: tab.isSet(1) }">
-					<a href ng-click="tab.setTab(1)"><b>Description</b></a></li>
-				  <li ng-class="{ active: tab.isSet(2) }">
-					<a href ng-click="tab.setTab(2)"><b>Skills</b></a></li>
-				</ul>
-				<div ng-show="tab.isSet(1)">
-				    <br/>
-				    <p><b>Database Analyst</b></p>
-					<ul>
-					  <li>Install database server, setup user's authorization, and create tables and indexes.</li>
-					  <li>Load data in database using SSIS, bulk insert, import and export functions.</li>
-					  <li>Analyze data using SQL queries, including table join, sub query, single row and group functions.</li>
-					  <li>Generate all sorts of report using SQL, SSRS and Crystal report.</li>
-				    <ul>
-				</div>
-				<div ng-show="tab.isSet(2)">
-				<br/>
-				  <ul>
-				  <li>Database: &nbsp;&nbsp; &nbsp;&nbsp;
-								<span class="label label-info">SQL Server</span>
-								<span class="label label-info">Access</span>
-								<span class="label label-info">SSIS</span></li>
-				  <li>Reporting: &nbsp;&nbsp; &nbsp;&nbsp;
-								 <span class="label label-info">SSRS</span>
-								 <span class="label label-info">Crystal Report</span></li>
-				  <li>Data Analysis: <span class="label label-success">Tableau</span>
-									 <span class="label label-success">SAS</span>
-									 <span class="label label-success">R</span></li>
-				  </ul>
-				</div>
-			  </section>
-          </div>
-        </li>
-		<br/>
-		<!--Merck-->
-		<li>
-          <div class="timeline-badge info" id="mk-badge"
-		       data-toggle="tooltip" data-placement="left"
-		       title="Merck Serono 2009-2011"
-		  >
-		  <img  src="https://drive.google.com/uc?id=0BxVGx4GU0k9vOTFBSDNqUS1nRzg"
-				height="54" width="54"/></div>
-          <div class="timeline-panel" id="mk-panel">
-            <div class="timeline-heading" id="mk-title">
-			  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vYUFZeHo2cEtiYlE" />
-			  <br/>
-              <h4 class="timeline-title" >Merck Serono China</h4>
-			  <p><i class="glyphicon glyphicon-time"></i> 2009-2011 &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Beijing China</p>
-            </div>
-           <div class="timeline-body" id="mk-body">
-			<hr>
-              <p>Merck has been in China for over 80 years.
-			     In December 2012, through acquisition,
-				 Merck China established Merck Serono (Beijing)
-				 Pharmaceutical Distribution Co., Ltd. and obtained GSP
-				 licenses to distribute pharmaceutical products in China. 
-			     Merck Serono is dedicated to serving the Chinese market, 
-			     currently marketing 14 products in 8 therapeutic areas in China.</p>
-			  <p></p>
-			  <p></p>
-            </div>
-			<hr>
-			 <section class="tab" ng-controller="TabController as tab">
-				<ul class="nav nav-pills">
-				  <li ng-class="{ active: tab.isSet(1) }">
-					<a href ng-click="tab.setTab(1)"><b>Description</b></a></li>
-				  <li ng-class="{ active: tab.isSet(2) }">
-					<a href ng-click="tab.setTab(2)"><b>Skills</b></a></li>
-				</ul>
-				<div ng-show="tab.isSet(1)">
-				    <br/>
-				    <p><b>Commercial Channel Manager</b></p>
-					<ul>
-					  <li>Develop and manage distribution marketing programs through the use of qualitative and quantitative data that drives market share gains and bottom line results.</li>
-					  <li>Developed channel coverage strategies and tactical plans.
-					      Planed and managed channel-to-market development and analyzed sales data from distributors to develop marketing report.</li>
-					  <li>Maximized channel effectiveness according to market data analysis to achieve channel business goal and prepared 3-month orders & sales forecast and timely pushed orders & sales.</li>
-				    <ul>
-				</div>
-				<div ng-show="tab.isSet(2)">
-				<br/>
-				  <ul>
-				  <li>Collaboration with internal & external teams on multiple tasks</li>
-				  <li>Channel and distributors management</li>
-				  <li>Data analysis and reporting</li>
-				  <li>Project management</li>
-				  </ul>
-				</div>
-			  </section>
-          </div>
-        </li>
-		<br/>
-		<!--Simon-->
-		<li>
-          <div class="timeline-badge info" id="sm-badge"
-		       data-toggle="tooltip" data-placement="left"
-		       title="University of Rochester 2007-2009"
-		  >
-		  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vWWNkWGNGQ2ZNdTQ" 
-				height="54" width="54"/></div>
-          <div class="timeline-panel" id="sm-panel">
-            <div class="timeline-heading" id="sm-title">
-			  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vZW1GX2NJSUljaU0" />
-			  <br/>
-              <h4 class="timeline-title" >University of Rochester</h4>
-			  <p><i class="glyphicon glyphicon-time"></i> 2007-2009 &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Rochester NY </p>
-            </div>
-           <div class="timeline-body" id="sm-body">
-			<hr>
-              <p>Simon Business School has a curriculum grounded in analytics and economics. 
-			     Simon approach provides you with enduring frameworks for solving problems and making decisions in today’s data-rich environment. 
-				 Expert faculty is here to coach you and develop you so that you are ready for the future of business. </p>
-            </div>
-			<hr>
-			 <section class="tab" ng-controller="TabController as tab">
-				<ul class="nav nav-pills">
-				  <li ng-class="{ active: tab.isSet(1) }">
-					<a href ng-click="tab.setTab(1)"><b>Degree</b></a></li>
-				  <li ng-class="{ active: tab.isSet(2) }">
-					<a href ng-click="tab.setTab(2)"><b>Concentrations</b></a></li>
-				  <li ng-class="{ active: tab.isSet(3) }">
-					<a href ng-click="tab.setTab(3)"><b>Skills</b></a></li>
-				</ul>
-				<div ng-show="tab.isSet(1)">
-				    <br/>
-				    <p><b>Master of Business Admin</b></p>
-					<ul>
-					  <li>Scholarship receipt</li>
-					  <li>Dean's list</li>
-				    <ul>
-				</div>
-				<div ng-show="tab.isSet(2)">
-				<br/>
-				  <ul>
-				  <li>Health Science Management</li>
-				  <li>Marketing</li>
-				  <li>Finance</li>
-				  </ul>
-				</div>
-				<div ng-show="tab.isSet(3)">
-				<br/>
-				  <ul>
-				  <li>Marketing Research</li>
-				  <li>Database Marketing</li>
-				  <li>Financial Analysis</li>
-				  </ul>
-				</div>
-			  </section>
-          </div>
-        </li>
-		<br/>
-		<!--CNPIC-->
-		<li>
-          <div class="timeline-badge" id="sf-badge"
-		       data-toggle="tooltip" data-placement="left"
-		       title="CNPIC 2004-2007"
-		  >
-		  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vcGxwRE9OQm9ZMkE" 
-			   height="54" width="54"/></div>
-          <div class="timeline-panel" id="sf-panel">
-            <div class="timeline-heading" id="sf-title">
-			  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vSUxRS0tTdjNwSDA" />
-			  <br/>
-              <h4 class="timeline-title" >China National Pharmaceutical Industry Corporation</h4>
-			  <p><i class="glyphicon glyphicon-time"></i> 2004-2007 &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Beijing China </p>
-            </div>
-           <div class="timeline-body" id="sf-body">
-			<hr>
-              <p>China National Pharmaceutical Industry Corporation (CNPIC) is the wholly-owned subsidiary of Sinopharm, the largest medical and healthcare group in China.</p>
-			  <p>As an economic entity integrated with R&D, production, business operation and investment of health products, CNPIC possesses registered capital USD155 million, total assets more than USD 1.5 billion.</p>
-			  <p>As the Chemical Medicines Unit of Sinopharm, CNPIC now takes the manufacture of pharmaceutical products as its core business, owning 3 Industrial Bases: Antibiotics Industrial Base, Narcotics Industrial Base, and Comprehensive Pharmaceutical Products Industrial Base.</p>
-            </div>
-			<hr>
-			 <section class="tab" ng-controller="TabController as tab">
-				<ul class="nav nav-pills">
-				  <li ng-class="{ active: tab.isSet(1) }">
-					<a href ng-click="tab.setTab(1)"><b>Description</b></a></li>
-				  <li ng-class="{ active: tab.isSet(2) }">
-					<a href ng-click="tab.setTab(2)"><b>Skills</b></a></li>
-				</ul>
-				<div ng-show="tab.isSet(1)">
-				    <br/>
-				    <p><b>Sales Manager</b></p>
-					<ul>
-					  <li>Evaluated competitor position and recommended branding initiative, established brand hierarchies, and determined marketing strategies according to market data analysis.</li>
-					  <li>Initiated and directed the launch of new product sales and academic promotion by directing the team that analysed the markets and executed marketing plans.</li>
-				    <ul>
-				</div>
-				<div ng-show="tab.isSet(2)">
-				<br/>
-				  <ul>
-				  <li>Brand Strategy: product, price, placement, and promotion</li>
-				  <li>Marketing plans: segmentation and positioning</li>
-				  <li>Data collection and analysis</li>
-				  <li>Microsoft Power point, Excel, and Outlook</li>
-				  </ul>
-				</div>
-			  </section>
-          </div>
-        </li>
-		<br/>
-		<!--pfizer-->
-		<li>
-          <div class="timeline-badge" id="p-badge"
-		       data-toggle="tooltip" data-placement="left"
-		       title="Pfizer China 2000-2004">
-		  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vcWdXZEJ2LUY3Zms" 
-			   height="54" width="54"/></div>
-          <div class="timeline-panel" id="p-panel">
-            <div class="timeline-heading" id="p-title">
-              <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9veFpGNnNhZ2JiTG8" />
-			  <br/>
-			  <h4 class="timeline-title">Pfizer China</h4>
-			  <p><i class="glyphicon glyphicon-time"></i> 2000-2004 &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Beijing China </p>
-            </div>
-            <div class="timeline-body" id="p-body">
-			<hr>
-              <p>Ever since entering the China market in the 1980s, Pfizer has been committed to contributing to both the economic development of China and the health of Chinese citizens.</p>
-			  <p>Pfizer China is the No.1 Foreign Biopharmaceutical Company and has Launched over 50 innovative drugs in China.</p>
-            </div>
-			<hr>
-			 <section class="tab" ng-controller="TabController as tab">
-				<ul class="nav nav-pills">
-				  <li ng-class="{ active: tab.isSet(1) }">
-					<a href ng-click="tab.setTab(1)"><b>Description</b></a></li>
-				  <li ng-class="{ active: tab.isSet(2) }">
-					<a href ng-click="tab.setTab(2)"><b>Skills</b></a></li>
-				</ul>
-				<div ng-show="tab.isSet(1)">
-				    <br/>
-				    <p><b>Senior Sales Consultant</b></p>
-					<ul>
-					  <li>Organized sales and academic promotions and various marketing campaigns as well as built up and maintained customer relationships</li>
-					  <li>Performed SWOT analyses to conduct strategic analysis of market for new product and presented market plan and product positioning recommendations</li>
-				    <ul>
-				</div>
-				<div ng-show="tab.isSet(2)">
-				<br/>
-				  <ul>
-				  <li>Marketing research</li>
-				  <li>Customer service</li>
-				  <li>Project management</li>
-				  <li>Interpersonal Communication</li>
-				  </ul>
-				</div>
-			  </section>
-          </div>
-        </li>
-		<br/>
-		<!--CPU-->
-		<li>
-          <div class="timeline-badge" id="cpu-badge" 
-		       data-toggle="tooltip" data-placement="left"
-		       title="China Pharmaceutical University 1996-2000">
-		  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vQWJRd1NwU0FXNGM" 
-			   height="54" width="54"/></div>
-          <div class="timeline-panel" id="cpu-panel">
-            <div class="timeline-heading" id="cpu-title" >
-			  <img href class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vRXpzc2tST2tmRFk"  />
-			  <br/>
-              <h4 href="#" class="timeline-title ">China Pharmaceutical University</h4>
-              <p><i class="glyphicon glyphicon-time"></i> 1996-2000 &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Nanjing China </p>
-            </div>
-			
-            <div class="timeline-body" id="cpu-body">
-			<hr>
-              <p>China Pharmaceutical University(CPU), originally the National Pharmaceutical School founded in 1936, is China’s first independent school of pharmacy and it has been one of the best universities of pharmacy in China with a wide variety of specialized areas.</p>
-			  <p>According to the 2008 statistics of the Ministry of Education of China, CPU's Pharmacy discipline ranks No. 1 and Traditional Chinese Pharmacy discipline ranks No. 3 among all Chinese universities.</p>
-			</div>
-			<hr>
-			 <section class="tab" ng-controller="TabController as tab">
-				<ul class="nav nav-pills">
-				  <li ng-class="{ active: tab.isSet(1) }">
-					<a href ng-click="tab.setTab(1)"><b>Degree</b></a></li>
-				  <li ng-class="{ active: tab.isSet(2) }">
-					<a href ng-click="tab.setTab(2)"><b>Major</b></a></li>
-				</ul>
-				<br/>
-				<div ng-show="tab.isSet(1)">
-				  <p style="text-indent:2%">Bachelor of Science</p>
-				</div>
-				<div ng-show="tab.isSet(2)">
-				  <p style="text-indent:3%">Pharmacy</p>
-				</div>
-			  </section>
-          </div>
-        </li>
-    </ul>
-</div>
-
-<!--Side Menu Bar-->
-<nav class="animate">
-    <div id="ToTop" ><span class="[ glyphicon glyphicon-chevron-up ] controller-open"><span></div>
-	<br/>
-    <p>This page is created by <a href="http://getbootstrap.com/" target="_blank"><strong>Bootstrap,</strong></a>
-	   <a href="https://jquery.com/" target="_blank"><strong> JQuery,</strong></a>
-	   <a href="https://angularjs.org/" target="_blank"><strong> AngularJS,</strong></a> and
-	   <a href="http://bootsnipp.com/" target="_blank"><strong> Bootsnipp</strong></a>.
-	</p>
-	<ul>
-		<li id="iconAll"><a href="#">Click icons to hide/show.</a></li>
-		<li id="titleAll"><a href="#">Click titles to view details.</a></li>
-	</ul>
-	<div class="divider"></div>
-	<h4>Visualization Projects</h4>
-        <p><b>Tableau</b></p>
-    <ul>
-        <li>
-            <a href="https://public.tableau.com/profile/data.science4276#!/vizhome/JHSRelationshipExploration_Fullversion_0/Dashboard" target="_blank">Variable Exploration</a>
-        </li>
-        <li>
-            <a href="https://public.tableau.com/profile/data.science4276#!/vizhome/DatabaseSearch/Dashboard" target="_blank">Variable Search</a>
-        </li>
-        <li>
-            <a href="https://public.tableau.com/views/ARICArticleCategoryYear/Dashboard?:embed=y&:display_count=yes&:showTabs=y" target="_blank">Citation Study</a>
-        </li>
-        <li>
-            <a href="https://public.tableau.com/shared/D9YMZ3G6B?:display_count=yes" target="_blank">Meta Analysis</a>
-        </li>
-        <li>
-            <a href="https://public.tableau.com/views/ProjectSummary/Resume?:embed=y&:display_count=yes&:showTabs=y" target="_blank">Tableau Résumé</a>
-        </li>
-    </ul>
-	<p><b>Javascript</b></p>
-    <ul>
-    	    <li>
-            <a href="http://bl.ocks.org/zhihaohowardyao/raw/24352a0eba20468318fd/" target="_blank">Dynamic Scatter Plot</a>
-        </li>
-            <li>
-            <a href="http://bl.ocks.org/zhihaohowardyao/raw/ba9c739482774a516943/" target="_blank">Sample Dashboard</a>
-        </li>
-            <li>
-            <a href="http://bl.ocks.org/zhihaoyao/raw/a2adaa16d4872bc7880f/" target="_blank">Interactive Vertical Sankey</a>
-        </li>
-            <li>
-            <a href="http://bl.ocks.org/zhihaoyao/raw/318229124e7ec8b40061/" target="_blank">Sankey Diagram</a>
-        </li>
-        <li>
-            <a href="http://bl.ocks.org/zhihaoyao/raw/50079f998a0323a3c08c/" target="_blank">D3.js + Tableau</a>
-        </li>
-	<li>
-            <a href="http://bl.ocks.org/zhihaoyao/raw/77dbeecaebf217ced234/" target="_blank">Network plot</a>
-        </li>
-		<li>
-            <a href="http://bl.ocks.org/zhihaoyao/raw/2fad560cb848e69638fe/" target="_blank">Case Study</a>
-        </li>
+    <!-- FAV and TOUCH ICONS -->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/logo-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/logo-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/logo-72.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/logo-57.png">
+    
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/modernizr.js"></script> 
+    <!--[if lte IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/selectivizr-min.js"></script>
+    <![endif]-->    
+    
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One|Nixie+One|Raleway:200,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Tulpen+One|Sacramento' rel='stylesheet' type='text/css'>
         
-    </ul>
-    <div class="divider"></div>
-    <h4>Contact Info</h4>
-    <ul>
-        <li>
-            <a href="mailto:zhihao.howard.yao@gmail.com">Email Me</a>
-		</li>
-		<li>
-            <a href="https://www.linkedin.com/in/zhihaohowardyao" target="_blank">Linkedin</a>
-        </li>
-    </ul>
-</nav>
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" media="print" href="css/print.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/book.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    <link class="cover-skin" rel="stylesheet" type="text/css" href="css/skins/cover/standart.css">
+    <link class="base-skin" rel="stylesheet" type="text/css" href="css/skins/base/clean.css">
+    <link class="paper-bg-skin" rel="stylesheet" type="text/css" href="css/skins/paper-bg/cream-dust.css">
+    <link class="body-bg-skin" rel="stylesheet" type="text/css" href="css/skins/body-bg/wood.css">
+    
+</head>
 
-<div class="nav-controller" >
-    <span class="[ glyphicon glyphicon-chevron-down ] controller-open"></span>
-    <span class="[ glyphicon glyphicon-remove ] controller-close"></span>
-</div>
-<div id="readme"><b>Click Me&rarr;<b></div>
+<body>
+			
+            
+            
+        <!-- ************************ MAIN -->
+        <section class="main">
+			
+            
+            <!-- .rm-container -->
+            <div id="rm-container" class="rm-container rm-closed">
+                
+                
+                <!-- HEADER -->
+                <header id="header">
 
-</body>
+                        <!-- NAV MENU -->
+                        <nav>
+                            <ul>
+                                <li><a href='#/home'></a></li>
+                                <li><a href='#/resume'></a></li>
+                                <li><a href='#/portfolio'></a></li>
+                                <li><a href='#/contact'></a></li>
+                            </ul>
+                        </nav>
+                        <!-- NAV MENU -->
+                        
+                </header>
+                <!-- HEADER -->
+                
+                
+                
+                
+                <!-- .rm-wrapper -->
+                <div class="rm-wrapper">
+					
+                    
+                    
+                    <!-- .rm-cover -->
+                    <div class="rm-cover">
+						
+                        
+                        <!-- COVER PAGE -->
+                        <div id="home" class="rm-front page">
+                                
+                            <!-- .antiscroll-wrap -->
+                            <div class="antiscroll-wrap">
+                                <!-- .antiscroll-inner -->
+                                <div class="antiscroll-inner">
+                                    
+                                    
+                                    
+                                    <!-- COVER IMAGE -->
+                                    <div class="cover">
+                                        
+                                        <!-- cover-image-holder -->
+                                        <div class="cover-image-holder">
+                                        	<img src="images/site/cover1.jpg" alt="cover-image">
+                                        </div>
+                                        <!-- cover-image-holder -->
+                                        
+                                        <!-- title -->
+                                        <h1>HOWARD YAO</h1>
+                                        <!-- title -->
+                                        
+                                        <!-- slogan -->
+                                        <h2>Data Analyst & Visualization Specilist</h2>
+                                        <!-- slogan -->
+                                        
+                                        <!-- extra titles -->
+                                        <h3><span>MBA </span> Health Science Managment</h3>
+                                        <h3><span>BS </span> Pharmacy</h3>
+                                        <h3><span>Over 7 Years</span> Data Analysis Visualization </h3>
+                                        <h3><span>Over 10 Years</span> Project Management Marketing</h3>
+                                        <!-- extra titles --
+                                        
+                                        <!-- open link -->
+                                        <a href="#/resume" class="rm-button-open ribbon">
+                                            <span class="ribbon-stitches-top"></span>
+                                            <strong class="ribbon-content">OPEN</strong>
+                                            <span class="ribbon-stitches-bottom"></span>
+                                        </a>
+                                        <!-- open link -->
+                                        
+                                        <!-- widget : twitter -->
+<!--
+                                        <aside class="widget widget-twitter">
+                                        	<a href="https://twitter.com/envato" class="twitter-link" target="_blank" ></a>
+                                            <div id="twitter-list"></div>
+                                        </aside>
+-->
+                                        <!-- widget : twitter -->
+                                        
+                                        
+                                    </div>
+                                    <!-- COVER IMAGE -->
+                                    
+                                    
+                                    
+                                    
+                              </div>
+                              <!-- .antiscroll-inner -->
+                            </div>
+                            <!-- .antiscroll-wrap -->
+
+                        </div>
+                        <!-- COVER PAGE -->
+                        
+                        
+                        
+                        
+						<!-- RESUME PAGE -->
+                        <div id="resume" class="rm-back page">
+                                
+                            <!-- .antiscroll-wrap -->
+                            <div class="antiscroll-wrap">
+                                <!-- .antiscroll-inner -->
+                                <div class="antiscroll-inner">
+                                
+                                        <!-- CONTENT -->
+                                        <div class="content">
+                                        
+                                        	
+                                            <h2><span>RESUME</span></h2>
+                                            
+                                            <h4 class="about-text">I am a <span class="label">Management Analyst</span> developing font end dashboards as well as conducting data analysis and visualization.</h4>
+                                            
+                                           <h3><span>EMPLOYMENT</span></h3>
+                                                    
+                                            <!-- EMPLOYMENT -->
+                                            <div class="history-group">
+                                            
+                                                
+                                                <!-- .history-unit -->
+                                                <div class="history-unit">
+                                                	
+                                                    <h4 class="work-time">since 2015</h4>
+                                                    
+                                                    <div class="work-desc">
+                                                        <h4>Management Analyst</h4>
+                                                        <h5>NETE</h5>
+                                                        <p>Performs statistical analysis of large data sets to better understand trends, relationships between variables, and to formulate predictive insights.</p>
+                                                        <p>Designs and builds publication-ready data visualizations using diverse sets of structured and unstructured data.</p>
+                                                        <p>Ensures research reports are created using credible qualitative and quantitative methodologies based on key insights and findings from studies.</p>
+                                                        <p>Integrates client-provided elements, research findings, and publicly available information into analytical projects.</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!-- .history-unit -->
+                                                
+                                                <!-- .history-unit -->
+                                                <div class="history-unit">
+                                                	
+                                                    <h4 class="work-time">2013 - 2015</h4>
+                                                    
+                                                    <div class="work-desc">
+                                                    	
+                                                        <h4>Database Developer/Data Scientist</h4>
+                                                        <h5>University of Mississippi Medical Center</h5>
+                                                        <p>Identify reporting requirements and end-user needs and translate these requirements into technical specifications.</p>
+                                                        <p>Work with data architects, statisticians and investigators to validate rules regrading data integrity and data quality as it relates to the impact on research requirements.</p>
+                                                        <p>Design, develop, analyze and maintain interactive and dynamic dashboard and reporting solutions according to functional specifications. Drive the collection of new data and the refinement of existing data sources.</p>
+                                                        <p>Research underlying data and define an approach using SQL, SAS, and Python capabilities for enabling access and performance in Tableau and jacaScript.</p>
+                                                        <p>Clinical study data management and maintenance. Documents database management functions including data architectures, data standards, procedures and other metadata needs.</p>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!-- .history-unit -->
+                                                
+                                                <!-- .history-unit -->
+                                                <div class="history-unit">
+                                                	
+                                                    <h4 class="work-time">2011 - 2013</h4>
+                                                    
+                                                    <div class="work-desc">
+                                                    	
+                                                        <h4>Database Analyst</h4>
+                                                        <h5>Enlong</h5>
+                                                        <p>Install database server, setup user's authorization, and create tables and indexes.</p>
+                                                        <p>Load data in database using SSIS, bulk insert, import and export functions.</p>
+                                                        <p>Analyze data using SQL queries, including table join, sub query, single row and group functions.</p>
+                                                        <p>Generate all sorts of report using SQL, SSRS and Crystal report.</p>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!-- .history-unit -->
+                                                
+                                             <!-- .history-unit -->
+                                                <div class="history-unit">
+                                                	
+                                                    <h4 class="work-time">2009 - 2011</h4>
+                                                    
+                                                    <div class="work-desc">
+                                                    	
+                                                        <h4>Commercial Channel Manager</h4>
+                                                        <h5>Merck Serono China</h5>
+                                                        <p>Develop and manage distribution marketing programs through the use of qualitative and quantitative data that drives market share gains and bottom line results.</p>
+                                                        <p>Developed channel coverage strategies and tactical plans. Planed and managed channel-to-market development and analyzed sales data from distributors to develop marketing report.</p>
+                                                        <p>Maximized channel effectiveness according to market data analysis to achieve channel business goal and prepared 3-month orders & sales forecast and timely pushed orders & sales.</p>
+                                                                                                            
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!-- .history-unit -->
+                                                
+                                                 <!-- .history-unit -->
+                                                <div class="history-unit">
+                                                	
+                                                    <h4 class="work-time">2004 - 2007</h4>
+                                                    
+                                                    <div class="work-desc">
+                                                    	
+                                                        <h4>Sales Manager</h4>
+                                                        <h5>China National Pharmaceutical Industry Corporation</h5>
+                                                        <p>Evaluated competitor position and recommended branding initiative, established brand hierarchies, and determined marketing strategies according to market data analysis.</p>
+                                                        <p>Initiated and directed the launch of new product sales and academic promotion by directing the team that analysed the markets and executed marketing plans.</p>                                                                                            
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!-- .history-unit -->
+                                                
+                                                                                                 <!-- .history-unit -->
+                                                <div class="history-unit">
+                                                	
+                                                    <h4 class="work-time">2000 - 2004</h4>
+                                                    
+                                                    <div class="work-desc">
+                                                    	
+                                                        <h4>Senior Sales Consultant</h4>
+                                                        <h5>Pfizer China</h5>
+                                                        <p>Organized sales and academic promotions and various marketing campaigns as well as built up and maintained customer relationships.</p>
+                                                        <p>Performed SWOT analyses to conduct strategic analysis of market for new product and presented market plan and product positioning recommendations.</p>                                                                                            
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!-- .history-unit -->
+                                            
+                                            </div>
+                                            <!-- EMPLOYMENT -->
+                                            
+                                            
+                                            
+                                            <h3><span>EDUCATION</span></h3>
+                                            
+                                            <!-- EDUCATION -->
+                                            <div class="history-group">
+                                               
+                                                <!-- .history-unit -->
+                                                <div class="history-unit">
+                                                	
+                                                    <h4 class="work-time">2007 - 2009</h4>
+                                                    
+                                                    <div class="work-desc">
+                                                    	
+                                                        <h4>Master of Business Admin</h4>
+                                                        <h5>University of Rochester</h5>
+                                                        <p>Concentrations: Health Science Management, Marketing, and Finance. </p>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!-- .history-unit -->
+                                                
+                                                <!-- .history-unit -->
+                                                <div class="history-unit">
+                                                	
+                                                    <h4 class="work-time">1996 - 2000</h4>
+                                                    
+                                                    <div class="work-desc">
+                                                    	
+                                                        <h4>Bachelor of Science</h4>
+                                                        <h5>China Pharmaceutical University</h5>
+                                                        <p>Major in Pharmacy</p>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!-- .history-unit -->
+                                                
+                                            </div>
+                                            <!-- EDUCATION -->
+                                            
+                                            
+                                            
+                                            <!-- DOWNLOAD BUTTON -->
+                                            <div class="launch">
+                                                <a href="#" class="btn">DOWNLOAD CV</a>
+                                            </div>
+                                         	<!-- DOWNLOAD BUTTON -->
+                                        
+                                        
+                                        	
+                                            <h3><span>DEVELOPMENT SKILLS</span></h3>
+                                        
+                                            <!-- DEV SKILLS -->
+                                            <div class="skill-group">
+                                            
+                                            	<!-- .skill-unit -->
+                                                <div class="skill-unit">
+                                                    <h4>HTML5/CSS3</h4>
+                                                    <div class="bar" data-percent="80">
+                                                        <div class="progress"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- .skill-unit -->
+                                                
+                                                <!-- .skill-unit -->
+                                                <div class="skill-unit">
+                                                    <h4>jQuery</h4>
+                                                    <div class="bar" data-percent="70">
+                                                        <div class="progress"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- .skill-unit -->
+                                                
+                                                <!-- .skill-unit -->
+                                                <div class="skill-unit">
+                                                    <h4>Angular/Angular Materials</h4>
+                                                    <div class="bar" data-percent="70">
+                                                        <div class="progress"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- .skill-unit -->
+                                                
+                                                 <!-- .skill-unit -->
+                                                <div class="skill-unit">
+                                                    <h4>Bootstrap</h4>
+                                                    <div class="bar" data-percent="70">
+                                                        <div class="progress"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- .skill-unit -->
+                                                
+                                                 <!-- .skill-unit -->
+                                                <div class="skill-unit">
+                                                    <h4>Python</h4>
+                                                    <div class="bar" data-percent="60">
+                                                        <div class="progress"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- .skill-unit -->
+                                                
+                                                <!-- .skill-unit -->
+                                                <div class="skill-unit">
+                                                    <h4>PHP</h4>
+                                                    <div class="bar" data-percent="50">
+                                                        <div class="progress"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- .skill-unit -->
+                                            
+                                            </div>
+                                            <!-- DEV SKILLS -->
+                                            
+                                            
+                                            <h3><span>VISUALIZATION SKILLS</span></h3>
+                                            
+                                            <!-- DESIGN SKILLS -->
+                                            <div class="skill-group">
+                                            	
+                                                <!-- .skill-unit -->
+                                                <div class="skill-unit">
+                                                    <h4>Tableau</h4>
+                                                    <div class="bar" data-percent="90">
+                                                        <div class="progress"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- .skill-unit -->
+                                                
+                                                <!-- .skill-unit -->
+                                                <div class="skill-unit">
+                                                    <h4>D3.js</h4>
+                                                    <div class="bar" data-percent="80">
+                                                        <div class="progress"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- .skill-unit -->
+                                            
+                                            </div>
+                                            <!-- DESIGN SKILLS -->
+                                            
+                                            <h3><span>DATA MANAGEMENT SKILLS</span></h3>
+                                            
+                                            <!-- DESIGN SKILLS -->
+                                            <div class="skill-group">
+                                            	
+                                                <!-- .skill-unit -->
+                                                <div class="skill-unit">
+                                                    <h4>SQL</h4>
+                                                    <div class="bar" data-percent="80">
+                                                        <div class="progress"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- .skill-unit -->
+                                                
+                                                <!-- .skill-unit -->
+                                                <div class="skill-unit">
+                                                    <h4>SAS</h4>
+                                                    <div class="bar" data-percent="70">
+                                                        <div class="progress"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- .skill-unit -->
+                                                   <!-- .skill-unit -->
+                                                <div class="skill-unit">
+                                                    <h4>STATA</h4>
+                                                    <div class="bar" data-percent="60">
+                                                        <div class="progress"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- .skill-unit -->
+                                                   <!-- .skill-unit -->
+                                                <div class="skill-unit">
+                                                    <h4>R</h4>
+                                                    <div class="bar" data-percent="60">
+                                                        <div class="progress"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- .skill-unit -->
+                                            
+                                            </div>
+                                            <!-- DESIGN SKILLS -->
+                                                                               
+                                		
+                                        </div>
+                                        <!-- CONTENT -->
+                                
+                                    </div>
+                              		<!-- .antiscroll-inner -->
+                                </div>
+                                <!-- .antiscroll-wrap -->
+                                
+                                
+                            <div class="rm-overlay"></div>
+
+                        </div>
+                        <!-- RESUME PAGE -->
+                        
+
+                    </div><!-- /rm-cover -->
+                    
+                    
+
+                    
+					<!-- PORTFOLIO PAGE -->
+                    <div id="portfolio" class="rm-middle portfolio page">
+                    
+                    	<!-- .rm-inner -->
+                        <div class="rm-inner">
+                                
+                                
+                                <!-- .antiscroll-wrap -->
+                                <div class="antiscroll-wrap">
+                                    <!-- .antiscroll-inner -->
+                                    <div class="antiscroll-inner">
+                                        
+                                        
+                                        
+                                        
+                                        <!-- CONTENT -->
+                                        <div class="content">
+                                        
+                                        	
+                                            <h2><span>PROJECTS</span></h2>
+                                            
+                                            
+                                            <!--FILTERS-->
+                                            <ul id="filters">
+                                              <li class="current"><a href="#" data-filter="*">ALL</a></li>
+                                              <li><a href="#" data-filter=".design">TABLEAU</a></li>
+                                              <li><a href="#" data-filter=".coding">JQuery</a></li>
+                                              <li><a href="#" data-filter=".angular">Angular</a></li>
+                                              <li><a href="#" data-filter=".d3">D3.js</a></li>
+                                            </ul>
+                                            <!--FILTERS-->
+                                        
+                                        
+                                        
+                                            <!-- PORTFOLIO -->
+                                            <div class="portfolio-items">
+                                              
+                                              
+                                              
+                                              <!-- portfolio-item -->  
+                                              <div class="coding hentry">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/P_resume.PNG" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        <a href="../Partials/pages/portfolio-item-resume.html" class="ajax"></a>
+                                                    </div>
+                                                </div>
+                                                <h4>Dynamic Resume</h4>
+<!--                                                <p class="category">An interactive & responsive app</p>-->
+                                              </div>
+                                              <!-- portfolio-item --> 
+                                              
+                                              
+                                              <!-- portfolio-item -->  
+                                              <div class="coding hentry d3 angular">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/P_dashboard.PNG" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        <a href="../Partials/pages/portfolio-item-dashboard.html" class="ajax"></a>
+                                                    </div>
+                                                </div>
+                                                <h4>Sample Dashboard</h4>
+<!--                                                <p class="category">illustration by Dave Mottram</p>-->
+                                              </div>
+                                              <!-- portfolio-item --> 
+                                                
+                                              <!-- portfolio-item -->  
+                                              <div class="hentry d3">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/P_scatter.PNG" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        <a href="../Partials/pages/portfolio-item-scatter.html" class="ajax"></a>
+                                                    </div>
+                                                </div>
+                                                <h4>Scatter Plot</h4>
+<!--                                                <p class="category">illustration by Dave Mottram</p>-->
+                                              </div>
+                                              <!-- portfolio-item --> 
+                                                
+                                              <!-- portfolio-item -->  
+                                              <div class="hentry d3">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/P_vsankey.PNG" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        <a href="../Partials/pages/portfolio-item-vsankey.html" class="ajax"></a>
+                                                    </div>
+                                                </div>
+                                                <h4>Vertical Sankey</h4>
+<!--                                                <p class="category">illustration by Dave Mottram</p>-->
+                                              </div>
+                                              <!-- portfolio-item --> 
+                                                
+                                              <!-- portfolio-item -->  
+                                              <div class="hentry d3">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/P_sankey.PNG" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        <a href="../Partials/pages/portfolio-item-sankey.html" class="ajax"></a>
+                                                    </div>
+                                                </div>
+                                                <h4>Sankey Diagram</h4>
+<!--                                                <p class="category">illustration by Dave Mottram</p>-->
+                                              </div>
+                                              <!-- portfolio-item --> 
+                                                
+                                              <!-- portfolio-item -->  
+                                              <div class="hentry d3">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/P_network.PNG" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        <a href="../Partials/pages/portfolio-item-net.html" class="ajax"></a>
+                                                    </div>
+                                                </div>
+                                                <h4>Network Plot</h4>
+<!--                                                <p class="category">illustration by Dave Mottram</p>-->
+                                              </div>
+                                              <!-- portfolio-item --> 
+                                                
+                                              <!-- portfolio-item -->  
+                                              <div class="hentry d3">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/P_tree.PNG" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        <a href="../Partials/pages/portfolio-item-tree.html" class="ajax"></a>
+                                                    </div>
+                                                </div>
+                                                <h4>Radial Tree</h4>
+<!--                                                <p class="category">illustration by Dave Mottram</p>-->
+                                              </div>
+                                              <!-- portfolio-item --> 
+                                                
+                                            <!-- portfolio-item -->  
+                                              <div class="hentry design">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/T_relationship.PNG" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        <a href="../Partials/pages/portfolio-item-relation.html" class="ajax"></a>
+                                                    </div>
+                                                </div>
+                                                <h4>Relationship Explorer</h4>
+<!--                                                <p class="category">illustration by Dave Mottram</p>-->
+                                              </div>
+                                              <!-- portfolio-item --> 
+                                              
+                                              
+                                              <!-- portfolio-item - lightbox video -->  
+                                              <div class="coding video hentry">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/07.jpg" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        
+                                                        <!-- lightbox - video --> 
+                                                        <a href="http://player.vimeo.com/video/37254322?badge=0&amp;color=ffffff" title="Paper by FiftyThree" data-lightbox-gallery="fancybox-item-03" class="lightbox iframe"></a>
+                                                        <!-- lightbox - video -->
+                                                        
+                                                    </div>
+                                                </div>
+                                                <h4>Paper by FiftyThree</h4>
+                                                <p class="category">Lightbox Video</p>
+                                              </div>
+                                              <!-- portfolio-item - lightbox video -->
+                                              
+                                              
+                                              <!-- portfolio-item - lightbox image -->  
+                                              <div class="design image hentry">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/06.jpg" alt="portfolio-post">
+                                                    <div class="mask">
+                                                    
+                                                        <!-- lightbox - image --> 
+                                                        <a href="images/portfolio/lightbox-01.jpg" title="Animal with love" data-lightbox-gallery="fancybox-item-01" class="lightbox"></a>
+                                                        <!-- lightbox - image -->
+                                                        
+                                                    </div>
+                                                </div>
+                                                <h4>Lightbox Image</h4>
+                                                <p class="category">a booking mobile app</p>
+                                              </div>
+                                              <!-- portfolio-item - lightbox image -->
+                                              
+                                              
+                                              <!-- portfolio-item - lightbox soundcloud -->  
+                                              <div class="coding audio hentry">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/05.jpg" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        
+                                                        <!-- lightbox - soundcloud --> 
+                                                        <a href="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F207988&" title="Soundcloud embed" data-lightbox-gallery="fancybox-item-04" class="lightbox iframe"></a>
+                                                        <!-- lightbox - soundcloud -->
+                                                        
+                                                    </div>
+                                                </div>
+                                                <h4>Volume 2</h4>
+                                                <p class="category">Lightbox Soundcloud</p>
+                                              </div>
+                                              <!-- portfolio-item - lightbox soundcloud -->
+                                              
+                                              
+                                              <!-- portfolio-item - lightbox gallery -->
+                                              <div class="logo image hentry">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/02.jpg" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        
+                                                        <!-- lightbox - gallery -->
+                                                        <a href="images/portfolio/lightbox-02.jpg" data-lightbox-gallery="fancybox-item-02" class="lightbox" title="Octopus is dangerous!"></a>
+                                                        <a href="images/portfolio/lightbox-04.jpg" data-lightbox-gallery="fancybox-item-02" class="hidden lightbox"></a>
+                                                        <a href="images/portfolio/lightbox-03.jpg" data-lightbox-gallery="fancybox-item-02" class="hidden lightbox" title="Dog have dreams"></a>
+                                                        <!-- lightbox - gallery -->
+                                                        
+                                                    </div>
+                                                </div>
+                                                <h4>Lightbox Gallery</h4>
+                                                <p class="category">Web Design, UI Design</p>
+                                              </div>
+                                              <!-- portfolio-item - lightbox gallery -->
+                                              
+                                              
+                                              <!-- portfolio-item - custom url -->  
+                                              <div class="logo url hentry">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/10.jpg" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        <a href="http://themeforest.net/user/pixelwars" target="_blank"></a>
+                                                    </div>
+                                                </div>
+                                                <h4>Character Sketches</h4>
+                                                <p class="category">illustration / sketch</p>
+                                              </div>
+                                              <!-- portfolio-item - custom url -->
+                                              
+                                              
+                                              <!-- portfolio-item -->  
+                                              <div class="coding hentry">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/16.jpg" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        <a href="portfolio-item-03.html" class="ajax"></a>
+                                                    </div>
+                                                </div>
+                                                <h4>Cross Browser</h4>
+                                                <p class="category">an illustration work</p>
+                                              </div>
+                                              <!-- portfolio-item --> 
+                                              
+                                              
+                                              <!-- portfolio-item -->  
+                                              <div class="design hentry">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/14.jpg" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        <a href="portfolio-item-01.html" class="ajax"></a>
+                                                    </div>
+                                                </div>
+                                                <h4>404 Page</h4>
+                                                <p class="category">an illustration work</p>
+                                              </div>
+                                              <!-- portfolio-item --> 
+                                              
+                                              
+                                              <!-- portfolio-item -->  
+                                              <div class="design hentry">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/15.jpg" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        <a href="portfolio-item-02.html" class="ajax"></a>
+                                                    </div>
+                                                </div>
+                                                <h4>Rat</h4>
+                                                <p class="category">an illustration work</p>
+                                              </div>
+                                              <!-- portfolio-item --> 
+                                              
+                                              
+                                               <!-- portfolio-item -->  
+                                              <div class="logo hentry x2">
+                                                <div class="media-box">
+                                                    <img src="images/portfolio/11.jpg" alt="portfolio-post">
+                                                    <div class="mask">
+                                                        <a href="portfolio-item-03.html" class="ajax"></a>
+                                                    </div>
+                                                </div>
+                                                <h4>Working Dudes</h4>
+                                                <p class="category">an illustration work</p>
+                                              </div>
+                                              <!-- portfolio-item --> 
+                                              
+                                              
+                                              
+                                            </div>
+                                            <!-- PORTFOLIO -->
+                                            
+                                            
+                                            
+                                            
+                                            
+                                		
+                                        </div>
+                                        <!-- CONTENT -->
+                                    
+                                    
+                                    
+                                    </div>
+                              		<!-- .antiscroll-inner -->
+                                </div>
+                                <!-- .antiscroll-wrap -->
+                                
+                                
+                            <div class="rm-overlay"></div>
+                            
+                        </div><!-- /rm-inner -->
+                    </div><!-- /rm-middle -->
+					<!-- PORTFOLIO PAGE -->
+                    
+
+
+					<!-- RIGHT SIDE -->
+                    <div class="rm-right">
+						
+                        
+                        
+                        <!-- .rm-front -->
+                        <div class="rm-front">
+                        	
+                            <!-- BACK COVER IMAGE -->
+                            <div class="cover">
+                                
+                                <!-- cover-image-holder -->
+                                <div class="cover-image-holder">
+                                    <img src="images/site/cover-2.jpg" alt="cover-image">
+                                </div>
+                                <!-- cover-image-holder -->
+                                
+                            </div>
+                            <!-- BACK COVER IMAGE -->
+                            
+                        </div>
+                        <!-- .rm-front -->
+                        
+                        
+                        
+						
+                        <!-- CONTACT PAGE -->
+                        <div id="contact" class="rm-back page">
+                            
+                            
+                                
+                                
+                                
+                                <!-- .antiscroll-wrap -->
+                                <div class="antiscroll-wrap">
+                                    <!-- .antiscroll-inner -->
+                                    <div class="antiscroll-inner">
+                                
+                                
+                                        <!-- CONTENT -->
+                                        <div class="content">
+                                        	
+                                            
+                                            <h2><span>CONTACT</span></h2>
+                                        		
+                                                
+                                            <!--<h3>Where am I in this world?</h3>
+                                            <div class="map">
+                                            
+                                                    <iframe src="https://maps.google.com/maps?source=s_q&amp;f=q&amp;hl=en&amp;geocode=&amp;q=little+italy&amp;aq=&amp;sll=36.558188,-86.709595&amp;sspn=3.878053,8.453979&amp;ie=UTF8&amp;hq=&amp;hnear=Little+Italy,+New+York&amp;t=p&amp;ll=40.84706,-73.125&amp;spn=6.647611,26.367188&amp;z=5&amp;output=embed"></iframe>
+                                                    
+                                            </div>-->
+                                              
+                                                
+                                              <p class="center">Please feel free to contact me about anything.</p>
+                                              
+                                              <h3><span>LET'S SOCIALIZE</span></h3>
+                                              
+                                              <!-- SOCIAL -->
+                                              <ul class="social">
+                                                <li><a class="facebook" href="#"></a></li>
+                                                <li><a class="twitter" href="#"></a></li>
+                                                <li><a class="linkedin" href="#"></a></li>
+                                                <li><a class="google" href="#"></a></li>
+                                                <li><a class="pinterest" href="#"></a></li>
+                                                <li><a class="github" href="#"></a></li>
+                                                <li><a class="behance" href="#"></a></li>
+                                                <li><a class="dribble" href="#"></a></li>
+                                                <!--<li><a class="instagram" href="#"></a></li>
+                                                <li><a class="lastfm" href="#"></a></li>
+                                                <li><a class="rss" href="#"></a></li>
+                                                <li><a class="vimeo" href="#"></a></li>
+                                                <li><a class="forrst" href="#"></a></li>
+                                                <li><a class="skype" href="#"></a></li>
+                                                <li><a class="picassa" href="#"></a></li>
+                                                <li><a class="youtube" href="#"></a></li>
+                                                <li><a class="flickr" href="#"></a></li>
+                                                <li><a class="tumblr" href="#"></a></li>
+                                                <li><a class="blogger" href="#"></a></li>
+                                                <li><a class="delicious" href="#"></a></li>
+                                                <li><a class="digg" href="#"></a></li>
+                                                <li><a class="friendfeed" href="#"></a></li>
+                                                <li><a class="wordpress" href="#"></a></li>-->
+                                              </ul>
+                                              <!-- SOCIAL -->
+                                              
+                                              
+                                              <h3><span>DROP ME A LINE!</span></h3>
+                                              
+                                              <!-- .contact-form -->
+                                              <div class="contact-form">
+                                                	
+                                                
+                                                <!-- LETTER -->
+                                                <div class="letter cf">
+                                                	
+                                                    <div class="stamp">
+                                                  	  <img src="images/site/stamp-image1.png" alt="stamp">
+                                                    </div>
+                                                  
+                                                    <div class="letter-info">
+                                                    	<h4>Howard Yao</h4>
+                                                        <p><a href="#"><i>johhny@gmail.com</i></a></p>
+<!--                                                        <p> - Planet Earth</p>-->
+                                                    </div>
+                                                    
+                                                  </div>    
+                                                  <!-- LETTER -->
+                                                   
+                                                
+                                                  <form id="contact-form" action="send-mail.php" method="post">
+                                                    
+                                                    <!-- enter your e-mail address here -->
+                                                    <input type="hidden" id="to" name="to" value="yourname@gmail.com">
+                                                    
+                                                    <p>
+                                                      <label for="name">Name</label>
+                                                      <input type="text" name="name" id="name" class="required">
+                                                    </p>
+                                                    
+                                                    <p>
+                                                      <label for="email">Email</label>
+                                                      <input type="text" name="email" id="email" class="required email">
+                                                    </p>
+                                                    
+                                                    <p>
+                                                      <label for="subject">Subject</label>
+                                                      <input type="text" name="subject" id="subject" class="required">
+                                                    </p>
+                                                    
+                                                    <p>
+                                                      <label for="message">Message</label>
+                                                      <textarea name="message" id="message" class="required"></textarea>
+                                                    </p>
+                                                   
+                                                    <p>
+                                                      <img class="ajax-loader" src="images/bckg/loader_light.gif" alt="Sending ...">
+                                                      <input type="submit" class="btn submit" value="SEND">
+                                                    </p>
+                                                    
+                                                  </form>
+                                                  
+                                              </div>
+                                              <!-- .contact-form -->
+                                		
+                                        </div>
+                                        <!-- CONTENT -->
+                                        
+                                
+                                
+                                
+                                </div>
+                                <!-- .antiscroll-inner -->
+                            </div>
+                            <!-- .antiscroll-wrap -->
+                            
+                            
+                            <!-- close link -->
+                            <a class="rm-close"><span></span></a>
+                            <!-- close link -->
+                                
+                                
+                        </div><!-- /rm-back -->
+                        <!-- CONTACT PAGE -->
+                        
+                        
+
+                    </div><!-- /rm-right -->
+                    <!-- RIGHT SIDE -->
+                    
+                    
+                    
+                    
+                </div><!-- /rm-wrapper -->
+
+            </div><!-- /rm-container -->
+
+        </section>
+        <!-- ************************ MAIN -->
+        
+        
+        
+        
+        <!-- ************************ PORTFOLIO OVERLAY -->
+        <div class="p-overlay">
+            
+        </div>
+        <!-- ************************ PORTFOLIO OVERLAY -->
+        
+        <!-- ************************ PORTFOLIO OVERLAY -->
+        <div class="p-overlay">
+            
+        </div>
+        <!-- ************************ PORTFOLIO OVERLAY -->
+        
+        
+        
+        <!-- ************************ AJAX LOADER -->
+        <div class="loader"></div>
+        <!-- ************************ AJAX LOADER -->    
+            
+            
+        <!-- ************************ ALERT -->
+        <div class="alert"></div>
+        <!-- ************************ ALERT -->  
+		
+        
+        <!-- SCRIPTS -->
+        <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+        <script src="js/jquery.address-1.5.min.js"></script>
+        <script src="js/antiscroll.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+		<script src="js/jquery.imagesloaded.min.js"></script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.fancybox-1.3.4.pack.js"></script>
+        <script src="js/send-mail.js"></script>
+        <script src="js/twitterFetcher_v10_min.js"></script>
+        <script src="js/main.js"></script>
+	
+    </body>
 </html>

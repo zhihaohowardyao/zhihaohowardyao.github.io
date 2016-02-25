@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html ng-app="Aboutme">
+<meta charset="utf-8">
+<title></title>
+<style>
+    .timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+  
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: calc( 23% );
+  margin-right: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 50px;
+  position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+  width: calc( 50%  );
+  float: left;
+  left:28%;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  left: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-right: 15px solid #ccc;
+  border-left: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  left: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-right: 14px solid #fff;
+  border-left: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: calc( 21%  );
+  margin-right: -25px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: left;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-right-width: 0;
+  border-left-width: 15px;
+  right: -15px;
+  left: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-right-width: 0;
+  border-left-width: 14px;
+  right: -14px;
+  left: auto;
+}
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+
+.timeline-body {
+    display: none;
+}
+.timeline-heading{
+	cursor: pointer;
+}
+.timeline-badge{
+  cursor: pointer;
+}
+
+.tooltip .tooltip-inner {
+  background: #5bc0de;
+  color: white;
+  border: 2px solid transparent;
+  padding: 8px;
+  line-height: 1.65em;
+  font-weight: bold;
+  max-width: 250px
+  
+}
+.tooltip.top .tooltip-arrow{
+    bottom:0;
+    left:0;
+    margin-left:0;
+    border-left:0 solid transparent;
+    border-right:5px solid transparent;
+    border-top:0 solid #000;
+}
+.tooltip.left .tooltip-arrow{
+    bottom:0;
+    left:0;
+    margin-left:0;
+    border-left:0 solid transparent;
+    border-right:5px solid transparent;
+    border-top:0 solid #000;
+}
+.tooltip.bottom .tooltip-arrow{
+    bottom:0;
+    left:0;
+    margin-left:0;
+    border-left:0 solid transparent;
+    border-right:5px solid transparent;
+    border-top:0 solid #000;
+}
+.tooltip.right .tooltip-arrow{
+    bottom:0;
+    left:0;
+    margin-left:0;
+    border-left:0 solid transparent;
+    border-right:5px solid transparent;
+    border-top:0 solid #000;
+}
+.tooltip-arrow{
+    position:absolute;
+    width:0;
+    height:0;
+}
+#ToTop{
+	position: fixed;
+    top: 15px;
+    right: 50px;
+    padding: 5px 6px 1px;
+    border: 3px solid rgb(51, 51, 51);
+    color: rgb(51, 51, 51);
+    border-radius: 25px;
+    font-size: 12pt;
+    cursor: pointer;
+    z-index: 300;
+	display: none;
+}
+
+.animate {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.nav-controller {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 5px 6px 1px;
+    border: 3px solid rgb(51, 51, 51);
+    color: rgb(51, 51, 51);
+    border-radius: 25px;
+    font-size: 12pt;
+    cursor: pointer;
+    z-index: 300;
+}
+
+nav ~ .nav-controller > .controller-open {
+    display: inline-block;
+	z-index:-1;
+}
+
+nav ~ .nav-controller > .controller-close {
+    display: none;
+	
+}
+nav.focus ~ .nav-controller > .controller-open {
+    display: none;
+	z-index:-1;
+}
+
+nav.focus ~ .nav-controller > .controller-close {
+    display: inline-block;
+	z-index:-1;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    padding-top: 65px;
+    padding-bottom: 15px;
+    height: 100%;
+    max-width: 200px;
+    text-align: right;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -3px 0px 3px 0px rgba(160, 160, 160, 0.30);
+    z-index: 100;    
+    overflow: auto;
+}
+
+nav.focus {
+    right: 0px;
+}
+
+nav > .divider {
+    content: '';
+    border-bottom: 1px solid rgb(230, 230, 230);
+    max-height: 1px;
+    overflow: hidden;
+    margin: 15px 0px;
+}
+
+nav > h4,
+nav > p,
+nav > ul {
+    padding: 0px 10px;
+}
+
+nav > h4 {
+    font-family: 'Anton', sans-serif;
+}
+
+nav > ul {
+    list-style: none;
+}
+nav > ul > li {
+    margin: 5px 0px;   
+}
+nav > ul > li > a {
+    color: rgb(190, 190, 190);   
+}
+nav > ul > li > a:hover {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+#readme{
+  position:fixed;
+  top:20px;
+  right:70px;
+  
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!--
+<script src="resume_main.js"></script>
+<link href="timeline.css" rel="stylesheet">
+-->
+
+<script>
+    (function() {
+  var app = angular.module('Aboutme', []);
+  
+	app.controller('TabController', function(){
+		this.tab = 1;
+
+		this.setTab = function(newValue){
+		  this.tab = newValue;
+		};
+
+		this.isSet = function(tabName){
+		  return this.tab === tabName;
+		};
+	  });
+ })();
+ 
+ $(document).ready(function(){
+      //$('body').append('<div id="toTop" class="btn btn-success" data-toggle="tooltip" title="Back to top" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></div>');
+    	$(window).scroll(function () {
+			if ($(this).scrollTop() != 0) {
+				$('#ToTop').fadeIn();
+			} else {
+				$('#ToTop').fadeOut();
+			}
+		}); 
+    $('#ToTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+
+ $(document).ready(function(){
+   if($('#cpu-badge').is(":visible")){
+    $('[data-toggle="tooltip"]').tooltip();   
+  }
+	$('#cpu-title').click(function(){
+	  $('#cpu-body').toggle();
+	});
+	$('#cpu-badge').click(function(){
+	  $('#cpu-panel').toggle();
+	});
+
+	$('#p-title').click(function(){
+	  $('#p-body').toggle();
+	});
+	$('#p-badge').click(function(){
+	  $('#p-panel').toggle();
+	});
+
+	$('#sf-title').click(function(){
+	  $('#sf-body').toggle();
+	});
+	$('#sf-badge').click(function(){
+	  $('#sf-panel').toggle();
+	});
+
+	$('#sm-title').click(function(){
+	  $('#sm-body').toggle();
+	});
+	$('#sm-badge').click(function(){
+	  $('#sm-panel').toggle();
+	});
+	
+	$('#mk-title').click(function(){
+	  $('#mk-body').toggle();
+	});
+	$('#mk-badge').click(function(){
+	  $('#mk-panel').toggle();
+	});
+	
+	$('#en-title').click(function(){
+	  $('#en-body').toggle();
+	});
+	$('#en-badge').click(function(){
+	  $('#en-panel').toggle();
+	});
+	
+	$('#ummc-title').click(function(){
+	  $('#ummc-body').toggle();
+	});
+	$('#ummc-badge').click(function(){
+	  $('#ummc-panel').toggle();
+	});
+	
+	$('#nt-title').click(function(){
+	  $('#nt-body').toggle();
+	});
+	$('#nt-badge').click(function(){
+	  $('#nt-panel').toggle();
+	});
+	
+	$(function() {
+    $('.nav-controller').on('click', function(event) {
+        $('nav').toggleClass('focus');
+    });
+    $('.nav .nav-controller').on('mouseover', function(event) {
+        $('nav').addClass('focus');
+    }).on('click', function(event) {
+        $('nav').removeClass('focus');
+    })
+   })
+   
+   $('#readme').animate({fontSize: '+=5px'}, 1500).animate({fontSize: '-=4px'}, 1500);
+   
+   $(".nav-controller").click(function(){
+	   $('#readme').hide();
+   });
+   
+   $("#titleAll").click(function(){
+	   $(".timeline-body").toggle();
+   });
+   
+   $("#iconAll").click(function(){
+	   $(".timeline-panel").toggle();
+   });
+});
+</script>
+
+<body>
+<div class="container">
+ <div class="page-header text-center ">
+		<center>
+                    <img src="https://drive.google.com/uc?id=0BxVGx4GU0k9vT1VRWEpSLTU1SWM" 
+					     name="aboutme" width="120" height="120" border="0" class="img-circle"></a>
+                    <h3 class="media-heading">Zhihao(Howard)Yao <br/> <small>Data Analyst & Visualization Specilist</small></h3><br/>
+                    <!--p><span><strong>Skills</strong></span></p-->
+                        <span class="label label-success">Python</span>
+                        <span class="label label-success">SAS</span>
+						<span class="label label-success">STATA</span>
+						<span class="label label-success">R</span><br/>
+                        <span class="label label-info">Tableau</span>
+						<span class="label label-info">SQL Server</span>
+						<span class="label label-info">Access</span>
+						<span class="label label-info">VBA</span><br/>
+						<span class="label label-warning">HTML5/CSS3</span>
+						<span class="label label-warning">Angular.js</span>
+						<span class="label label-warning">JQuery</span>
+						<span class="label label-warning">Bootstrap</span>
+						<span class="label label-warning">D3.js</span>
+                    </center>
+                    <hr/>
+                    <center>
+					<p><strong>Summary</strong><br/><p>
+                    <p >
+                     <span><a href="#sm-panel"><b>Master of Business Administration</b></a> with emphasis on Data analysis</span><br/>
+					 <span><a href="#cpu-panel"><b>Bachelor of Science</b></a> with major in Pharmacy</span><br/>
+					<span>7 years <a href="#mk-panel"><b>data analysis</b></a> and <a href="#ummc-panel"><b>data visualization</b></a> experience with large volume of data</span><br/>
+					<span>8 years <a href="#sf-panel"><b>project management</b></a> and 10 years <a href="#p-panel"><b>sales and marketing</b></a> experience in top healthcare companies</span>
+                    </p>
+					
+                    </center>
+    </div>
+	<center>
+        <span><strong>Experience</strong></span><br/>
+		</center><br/>
+    <ul class="timeline">
+		
+		
+		<!--NETE-->
+		<li>
+          <div class="timeline-badge info" id="nt-badge"
+		       data-toggle="tooltip" data-placement="left"
+		       title="NETE 2015-present"
+		  >
+		  <img  src="https://drive.google.com/uc?id=0BxVGx4GU0k9vOEN0c2FiRjFzcEE"
+				height="54" width="54"/></div>
+          <div class="timeline-panel" id="nt-panel">
+            <div class="timeline-heading" id="nt-title">
+			  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vdXhVS2hKQmxrVVE" />
+			  <br/>
+              <h4 class="timeline-title" >NETE</h4>
+			  <p><i class="glyphicon glyphicon-time"></i> 2015-present &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Rockville MD</p>
+            </div>
+           <div class="timeline-body" id="nt-body">
+			<hr>
+              <p>NETE provides strategic management consulting, business systems development and integration, Web design and technology solutions, and managed outsourcing services to commercial companies and federal government agencies.</p>
+            </div>
+			<hr>
+			 <section class="tab" ng-controller="TabController as tab">
+				<ul class="nav nav-pills">
+				  <li ng-class="{ active: tab.isSet(1) }">
+					<a href ng-click="tab.setTab(1)"><b>Description</b></a></li>
+				  <li ng-class="{ active: tab.isSet(2) }">
+					<a href ng-click="tab.setTab(2)"><b>Skills</b></a></li>
+				</ul>
+				<div ng-show="tab.isSet(1)">
+				    <br/>
+				    <p><b>Management Analyst</b></p>
+					<ul>
+					  <li>Performs statistical analysis of large data sets to better understand trends, relationships between variables, and to formulate predictive insights.</li>
+					  <li>Designs and builds publication-ready data visualizations using diverse sets of structured and unstructured data.</li>
+					  <li>Ensures research reports are created using credible qualitative and quantitative methodologies based on key insights and findings from studies.</li>
+					  <li>Integrates client-provided elements, research findings, and publicly available information into analytical projects.</li>
+				    <ul>
+				</div>
+				<div ng-show="tab.isSet(2)">
+				<br/>
+				  <ul>
+				  <li>Data Visualization:  <span class="label label-warning">D3.js</span> <span class="label label-info">Tableau</span> <span class="label label-info">Tableau Server</span></li>
+				  <li>Web Design:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								  <span class="label label-warning">html</span> 
+				                  <span class="label label-warning">CSS</span> <span class="label label-warning">Bootstrap</span> 
+								  <span class="label label-warning">JQuery</span> <span class="label label-warning">Angular.js</span></li>
+				  <li>Data Management:<span class="label label-success">SQL</span>  <span class="label label-success">Python</span> 
+									   <span class="label label-success">SAS</span> </li>
+				  </ul>
+				</div>
+			  </section>
+          </div>
+        </li>
+		<br/>
+		<!--UMMC-->
+		<li>
+          <div class="timeline-badge info" id="ummc-badge"
+		       data-toggle="tooltip" data-placement="left"
+		       title="University of Mississippi Medical Center 2013-2015"
+		  >
+		  <img  src="https://drive.google.com/uc?id=0BxVGx4GU0k9vdHVVN3JXUmdhZnc"
+				height="54" width="54"/></div>
+          <div class="timeline-panel" id="ummc-panel">
+            <div class="timeline-heading" id="ummc-title">
+			  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vQ1lqWm5CcWtoWnM" />
+			  <br/>
+              <h4 class="timeline-title" >University of Mississippi Medical Center</h4><h5>Center of Biostatistics & Bioinformatics <h5>
+			  <p><i class="glyphicon glyphicon-time"></i> 2013-2015 &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Jackson MS</p>
+            </div>
+           <div class="timeline-body" id="ummc-body">
+			<hr>
+              <p>The Center of Biostatistics and Bioinformatics provides cutting-edge biostatistical and information science expertise to collaborators .</p>
+			  <p>The center promotes the highest standards in research and education by providing consummate biostatistical expertise to collaborators and scholars towards translating data into evidence and answers. .</p>
+            </div>
+			<hr>
+			 <section class="tab" ng-controller="TabController as tab">
+				<ul class="nav nav-pills">
+				  <li ng-class="{ active: tab.isSet(1) }">
+					<a href ng-click="tab.setTab(1)"><b>Description</b></a></li>
+				  <li ng-class="{ active: tab.isSet(2) }">
+					<a href ng-click="tab.setTab(2)"><b>Skills</b></a></li>
+				</ul>
+				<div ng-show="tab.isSet(1)">
+				    <br/>
+				    <p><b>Database Developer/Data Scientist</b></p>
+					<ul>
+					  <li>Identify reporting requirements and end-user needs and translate these requirements into technical specifications.</li>
+					  <li>Work with data architects, statisticians and investigators to validate rules regrading data integrity and data quality as it relates to the impact on research requirements.</li>
+					  <li>Design, develop, analyze and maintain interactive and dynamic dashboard and reporting solutions according to functional specifications. Drive the collection of new data and the refinement of existing data sources.</li>
+					  <li>Research underlying data and define an approach using SQL, SAS, and Python capabilities for enabling access and performance in Tableau and jacaScript.</li>
+					  <li>Clinical study data management and maintenance. Documents database management functions including data architectures, data standards, procedures and other metadata needs.</li>
+				    <ul>
+				</div>
+				<div ng-show="tab.isSet(2)">
+				<br/>
+				  <ul>
+					  <li>Data Analysis:  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										   <span class="label label-success">SAS</span>  <span class="label label-success">STATA</span> 
+										   <span class="label label-success">R</span> <span class="label label-success">Python</span>
+									   </li>
+				  <li>Database Management: <span class="label label-info">SQL Server</span>
+										   <span class="label label-info">Access</span>
+										   <span class="label label-info">REDCap</span></li>
+				  <li>Data Visualization:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										   <span class="label label-warning">D3.js</span> <span class="label label-info">Tableau</span> <span class="label label-info">Tableau Server</span></li>
+				  
+				  </ul>
+				</div>
+			  </section>
+          </div>
+        </li>
+		<br/>
+		<!--Enlong-->
+		<li>
+          <div class="timeline-badge info" id="en-badge"
+		       data-toggle="tooltip" data-placement="left"
+		       title="Enlong 2011-2013"
+		  >
+		  <img  src="https://drive.google.com/uc?id=0BxVGx4GU0k9vV3ZHNVJKYUo0Unc"
+				height="54" width="54"/></div>
+          <div class="timeline-panel" id="en-panel">
+            <div class="timeline-heading" id="en-title">
+			  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vOUF5dzdXWnNVNG8" />
+			  <br/>
+              <h4 class="timeline-title" >Enlong</h4>
+			  <p><i class="glyphicon glyphicon-time"></i> 2011-2013 &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Rockville MD</p>
+            </div>
+           <div class="timeline-body" id="en-body">
+			<hr>
+              <p>Enlong is a technical consulting company which provides data management, reporting, marketing research services to startup and mid-size companies to help them better understand the data and market.</p>
+            </div>
+			<hr>
+			 <section class="tab" ng-controller="TabController as tab">
+				<ul class="nav nav-pills">
+				  <li ng-class="{ active: tab.isSet(1) }">
+					<a href ng-click="tab.setTab(1)"><b>Description</b></a></li>
+				  <li ng-class="{ active: tab.isSet(2) }">
+					<a href ng-click="tab.setTab(2)"><b>Skills</b></a></li>
+				</ul>
+				<div ng-show="tab.isSet(1)">
+				    <br/>
+				    <p><b>Database Analyst</b></p>
+					<ul>
+					  <li>Install database server, setup user's authorization, and create tables and indexes.</li>
+					  <li>Load data in database using SSIS, bulk insert, import and export functions.</li>
+					  <li>Analyze data using SQL queries, including table join, sub query, single row and group functions.</li>
+					  <li>Generate all sorts of report using SQL, SSRS and Crystal report.</li>
+				    <ul>
+				</div>
+				<div ng-show="tab.isSet(2)">
+				<br/>
+				  <ul>
+				  <li>Database: &nbsp;&nbsp; &nbsp;&nbsp;
+								<span class="label label-info">SQL Server</span>
+								<span class="label label-info">Access</span>
+								<span class="label label-info">SSIS</span></li>
+				  <li>Reporting: &nbsp;&nbsp; &nbsp;&nbsp;
+								 <span class="label label-info">SSRS</span>
+								 <span class="label label-info">Crystal Report</span></li>
+				  <li>Data Analysis: <span class="label label-success">Tableau</span>
+									 <span class="label label-success">SAS</span>
+									 <span class="label label-success">R</span></li>
+				  </ul>
+				</div>
+			  </section>
+          </div>
+        </li>
+		<br/>
+		<!--Merck-->
+		<li>
+          <div class="timeline-badge info" id="mk-badge"
+		       data-toggle="tooltip" data-placement="left"
+		       title="Merck Serono 2009-2011"
+		  >
+		  <img  src="https://drive.google.com/uc?id=0BxVGx4GU0k9vOTFBSDNqUS1nRzg"
+				height="54" width="54"/></div>
+          <div class="timeline-panel" id="mk-panel">
+            <div class="timeline-heading" id="mk-title">
+			  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vYUFZeHo2cEtiYlE" />
+			  <br/>
+              <h4 class="timeline-title" >Merck Serono China</h4>
+			  <p><i class="glyphicon glyphicon-time"></i> 2009-2011 &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Beijing China</p>
+            </div>
+           <div class="timeline-body" id="mk-body">
+			<hr>
+              <p>Merck has been in China for over 80 years.
+			     In December 2012, through acquisition,
+				 Merck China established Merck Serono (Beijing)
+				 Pharmaceutical Distribution Co., Ltd. and obtained GSP
+				 licenses to distribute pharmaceutical products in China. 
+			     Merck Serono is dedicated to serving the Chinese market, 
+			     currently marketing 14 products in 8 therapeutic areas in China.</p>
+			  <p></p>
+			  <p></p>
+            </div>
+			<hr>
+			 <section class="tab" ng-controller="TabController as tab">
+				<ul class="nav nav-pills">
+				  <li ng-class="{ active: tab.isSet(1) }">
+					<a href ng-click="tab.setTab(1)"><b>Description</b></a></li>
+				  <li ng-class="{ active: tab.isSet(2) }">
+					<a href ng-click="tab.setTab(2)"><b>Skills</b></a></li>
+				</ul>
+				<div ng-show="tab.isSet(1)">
+				    <br/>
+				    <p><b>Commercial Channel Manager</b></p>
+					<ul>
+					  <li>Develop and manage distribution marketing programs through the use of qualitative and quantitative data that drives market share gains and bottom line results.</li>
+					  <li>Developed channel coverage strategies and tactical plans.
+					      Planed and managed channel-to-market development and analyzed sales data from distributors to develop marketing report.</li>
+					  <li>Maximized channel effectiveness according to market data analysis to achieve channel business goal and prepared 3-month orders & sales forecast and timely pushed orders & sales.</li>
+				    <ul>
+				</div>
+				<div ng-show="tab.isSet(2)">
+				<br/>
+				  <ul>
+				  <li>Collaboration with internal & external teams on multiple tasks</li>
+				  <li>Channel and distributors management</li>
+				  <li>Data analysis and reporting</li>
+				  <li>Project management</li>
+				  </ul>
+				</div>
+			  </section>
+          </div>
+        </li>
+		<br/>
+		<!--Simon-->
+		<li>
+          <div class="timeline-badge info" id="sm-badge"
+		       data-toggle="tooltip" data-placement="left"
+		       title="University of Rochester 2007-2009"
+		  >
+		  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vWWNkWGNGQ2ZNdTQ" 
+				height="54" width="54"/></div>
+          <div class="timeline-panel" id="sm-panel">
+            <div class="timeline-heading" id="sm-title">
+			  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vZW1GX2NJSUljaU0" />
+			  <br/>
+              <h4 class="timeline-title" >University of Rochester</h4>
+			  <p><i class="glyphicon glyphicon-time"></i> 2007-2009 &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Rochester NY </p>
+            </div>
+           <div class="timeline-body" id="sm-body">
+			<hr>
+              <p>Simon Business School has a curriculum grounded in analytics and economics. 
+			     Simon approach provides you with enduring frameworks for solving problems and making decisions in today’s data-rich environment. 
+				 Expert faculty is here to coach you and develop you so that you are ready for the future of business. </p>
+            </div>
+			<hr>
+			 <section class="tab" ng-controller="TabController as tab">
+				<ul class="nav nav-pills">
+				  <li ng-class="{ active: tab.isSet(1) }">
+					<a href ng-click="tab.setTab(1)"><b>Degree</b></a></li>
+				  <li ng-class="{ active: tab.isSet(2) }">
+					<a href ng-click="tab.setTab(2)"><b>Concentrations</b></a></li>
+				  <li ng-class="{ active: tab.isSet(3) }">
+					<a href ng-click="tab.setTab(3)"><b>Skills</b></a></li>
+				</ul>
+				<div ng-show="tab.isSet(1)">
+				    <br/>
+				    <p><b>Master of Business Admin</b></p>
+					<ul>
+					  <li>Scholarship recipient</li>
+					  <li>Dean's list</li>
+				    <ul>
+				</div>
+				<div ng-show="tab.isSet(2)">
+				<br/>
+				  <ul>
+				  <li>Health Science Management</li>
+				  <li>Marketing</li>
+				  <li>Finance</li>
+				  </ul>
+				</div>
+				<div ng-show="tab.isSet(3)">
+				<br/>
+				  <ul>
+				  <li>Marketing Research</li>
+				  <li>Database Marketing</li>
+				  <li>Financial Analysis</li>
+				  </ul>
+				</div>
+			  </section>
+          </div>
+        </li>
+		<br/>
+		<!--CNPIC-->
+		<li>
+          <div class="timeline-badge" id="sf-badge"
+		       data-toggle="tooltip" data-placement="left"
+		       title="CNPIC 2004-2007"
+		  >
+		  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vcGxwRE9OQm9ZMkE" 
+			   height="54" width="54"/></div>
+          <div class="timeline-panel" id="sf-panel">
+            <div class="timeline-heading" id="sf-title">
+			  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vSUxRS0tTdjNwSDA" />
+			  <br/>
+              <h4 class="timeline-title" >China National Pharmaceutical Industry Corporation</h4>
+			  <p><i class="glyphicon glyphicon-time"></i> 2004-2007 &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Beijing China </p>
+            </div>
+           <div class="timeline-body" id="sf-body">
+			<hr>
+              <p>China National Pharmaceutical Industry Corporation (CNPIC) is the wholly-owned subsidiary of Sinopharm, the largest medical and healthcare group in China.</p>
+			  <p>As an economic entity integrated with R&D, production, business operation and investment of health products, CNPIC possesses registered capital USD155 million, total assets more than USD 1.5 billion.</p>
+			  <p>As the Chemical Medicines Unit of Sinopharm, CNPIC now takes the manufacture of pharmaceutical products as its core business, owning 3 Industrial Bases: Antibiotics Industrial Base, Narcotics Industrial Base, and Comprehensive Pharmaceutical Products Industrial Base.</p>
+            </div>
+			<hr>
+			 <section class="tab" ng-controller="TabController as tab">
+				<ul class="nav nav-pills">
+				  <li ng-class="{ active: tab.isSet(1) }">
+					<a href ng-click="tab.setTab(1)"><b>Description</b></a></li>
+				  <li ng-class="{ active: tab.isSet(2) }">
+					<a href ng-click="tab.setTab(2)"><b>Skills</b></a></li>
+				</ul>
+				<div ng-show="tab.isSet(1)">
+				    <br/>
+				    <p><b>Sales Manager</b></p>
+					<ul>
+					  <li>Evaluated competitor position and recommended branding initiative, established brand hierarchies, and determined marketing strategies according to market data analysis.</li>
+					  <li>Initiated and directed the launch of new product sales and academic promotion by directing the team that analysed the markets and executed marketing plans.</li>
+				    <ul>
+				</div>
+				<div ng-show="tab.isSet(2)">
+				<br/>
+				  <ul>
+				  <li>Brand Strategy: product, price, placement, and promotion</li>
+				  <li>Marketing plans: segmentation and positioning</li>
+				  <li>Data collection and analysis</li>
+				  <li>Microsoft Power point, Excel, and Outlook</li>
+				  </ul>
+				</div>
+			  </section>
+          </div>
+        </li>
+		<br/>
+		<!--pfizer-->
+		<li>
+          <div class="timeline-badge" id="p-badge"
+		       data-toggle="tooltip" data-placement="left"
+		       title="Pfizer China 2000-2004">
+		  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vcWdXZEJ2LUY3Zms" 
+			   height="54" width="54"/></div>
+          <div class="timeline-panel" id="p-panel">
+            <div class="timeline-heading" id="p-title">
+              <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9veFpGNnNhZ2JiTG8" />
+			  <br/>
+			  <h4 class="timeline-title">Pfizer China</h4>
+			  <p><i class="glyphicon glyphicon-time"></i> 2000-2004 &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Beijing China </p>
+            </div>
+            <div class="timeline-body" id="p-body">
+			<hr>
+              <p>Ever since entering the China market in the 1980s, Pfizer has been committed to contributing to both the economic development of China and the health of Chinese citizens.</p>
+			  <p>Pfizer China is the No.1 Foreign Biopharmaceutical Company and has Launched over 50 innovative drugs in China.</p>
+            </div>
+			<hr>
+			 <section class="tab" ng-controller="TabController as tab">
+				<ul class="nav nav-pills">
+				  <li ng-class="{ active: tab.isSet(1) }">
+					<a href ng-click="tab.setTab(1)"><b>Description</b></a></li>
+				  <li ng-class="{ active: tab.isSet(2) }">
+					<a href ng-click="tab.setTab(2)"><b>Skills</b></a></li>
+				</ul>
+				<div ng-show="tab.isSet(1)">
+				    <br/>
+				    <p><b>Senior Sales Consultant</b></p>
+					<ul>
+					  <li>Organized sales and academic promotions and various marketing campaigns as well as built up and maintained customer relationships</li>
+					  <li>Performed SWOT analyses to conduct strategic analysis of market for new product and presented market plan and product positioning recommendations</li>
+				    <ul>
+				</div>
+				<div ng-show="tab.isSet(2)">
+				<br/>
+				  <ul>
+				  <li>Marketing research</li>
+				  <li>Customer service</li>
+				  <li>Project management</li>
+				  <li>Interpersonal Communication</li>
+				  </ul>
+				</div>
+			  </section>
+          </div>
+        </li>
+		<br/>
+		<!--CPU-->
+		<li>
+          <div class="timeline-badge" id="cpu-badge" 
+		       data-toggle="tooltip" data-placement="left"
+		       title="China Pharmaceutical University 1996-2000">
+		  <img class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vQWJRd1NwU0FXNGM" 
+			   height="54" width="54"/></div>
+          <div class="timeline-panel" id="cpu-panel">
+            <div class="timeline-heading" id="cpu-title" >
+			  <img href class="img-responsive" src="https://drive.google.com/uc?id=0BxVGx4GU0k9vRXpzc2tST2tmRFk"  />
+			  </br/>
+              <h4 href class="timeline-title ">China Pharmaceutical University</h4>
+              <p><i class="glyphicon glyphicon-time"></i> 1996-2000 &nbsp;&nbsp;<i class="glyphicon glyphicon-map-marker"></i> Nanjing China </p>
+            </div>
+			
+            <div class="timeline-body" id="cpu-body">
+			<hr>
+              <p>China Pharmaceutical University(CPU), originally the National Pharmaceutical School founded in 1936, is China’s first independent school of pharmacy and it has been one of the best universities of pharmacy in China with a wide variety of specialized areas.</p>
+			  <p>According to the 2008 statistics of the Ministry of Education of China, CPU's Pharmacy discipline ranks No. 1 and Traditional Chinese Pharmacy discipline ranks No. 3 among all Chinese universities.</p>
+			</div>
+			<hr>
+			 <section class="tab" ng-controller="TabController as tab">
+				<ul class="nav nav-pills">
+				  <li ng-class="{ active: tab.isSet(1) }">
+					<a href ng-click="tab.setTab(1)"><b>Degree</b></a></li>
+				  <li ng-class="{ active: tab.isSet(2) }">
+					<a href ng-click="tab.setTab(2)"><b>Major</b></a></li>
+				</ul>
+				<br/>
+				<div ng-show="tab.isSet(1)">
+				  <p style="text-indent:2%">Bachelor of Science</p>
+				</div>
+				<div ng-show="tab.isSet(2)">
+				  <p style="text-indent:3%">Pharmacy</p>
+				</div>
+			  </section>
+          </div>
+        </li>
+    </ul>
+</div>
+
+<!--Side Menu Bar-->
+<!--
+<nav class="animate">
+    <div id="ToTop" ><span class="[ glyphicon glyphicon-chevron-up ] controller-open"><span></div>
+	<br/>
+    <p>This page is created by <a href="http://getbootstrap.com/" target="_blank"><strong>Bootstrap,</strong></a>
+	   <a href="https://jquery.com/" target="_blank"><strong> JQuery,</strong></a>
+	   <a href="https://angularjs.org/" target="_blank"><strong> AngularJS,</strong></a> and
+	   <a href="http://bootsnipp.com/" target="_blank"><strong> Bootsnipp</strong></a>.
+	</p>
+	<ul>
+		<li id="iconAll"><a href="#">Click icons to hide/show.</a></li>
+		<li id="titleAll"><a href="#">Click titles to view details.</a></li>
+	</ul>
+	<div class="divider"></div>
+	<h4>Visualization Projects</h4>
+	<p><b>Tableau</b></p>
+    <ul>
+        <li>
+            <a href="https://public.tableau.com/profile/data.science4276#!/vizhome/JHSRelationshipExploration_Fullversion_0/Dashboard" target="_blank">Variable Exploration</a>
+        </li>
+        <li>
+            <a href="https://public.tableau.com/profile/data.science4276#!/vizhome/DatabaseSearch/Dashboard" target="_blank">Variable Search</a>
+        </li>
+        <li>
+            <a href="https://public.tableau.com/views/ARICArticleCategoryYear/Dashboard?:embed=y&:display_count=yes&:showTabs=y" target="_blank">Citation Study</a>
+        </li>
+        <li>
+            <a href="https://public.tableau.com/shared/D9YMZ3G6B?:display_count=yes" target="_blank">Meta Analysis</a>
+        </li>
+        <li>
+            <a href="https://public.tableau.com/views/ProjectSummary/Resume?:embed=y&:display_count=yes&:showTabs=y" target="_blank">Tableau Résumé</a>
+        </li>
+    </ul>
+	<p><b>Javascript</b></p>
+    <ul>
+    	    <li>
+            <a href="http://bl.ocks.org/zhihaohowardyao/raw/24352a0eba20468318fd/" target="_blank">Dynamic Scatter Plot</a>
+        </li>
+            <li>
+            <a href="http://bl.ocks.org/zhihaohowardyao/raw/ba9c739482774a516943/" target="_blank">Sample Dashboard</a>
+        </li>
+            <li>
+            <a href="http://bl.ocks.org/zhihaoyao/raw/a2adaa16d4872bc7880f/" target="_blank">Interactive Vertical Sankey</a>
+        </li>
+            <li>
+            <a href="http://bl.ocks.org/zhihaoyao/raw/318229124e7ec8b40061/" target="_blank">Sankey Diagram</a>
+        </li>
+        <li>
+            <a href="http://bl.ocks.org/zhihaoyao/raw/50079f998a0323a3c08c/" target="_blank">D3.js + Tableau</a>
+        </li>
+	<li>
+            <a href="http://bl.ocks.org/zhihaoyao/raw/77dbeecaebf217ced234/" target="_blank">Network plot</a>
+        </li>
+		<li>
+            <a href="http://bl.ocks.org/zhihaoyao/raw/2fad560cb848e69638fe/" target="_blank">Case Study</a>
+        </li>
+        
+    </ul>
+    <div class="divider"></div>
+    <h4>Contact Info</h4>
+    <ul>
+        <li>
+            <a href="/cdn-cgi/l/email-protection#394351505158561751564e584b5d17405856795e54585055175a5654">Email Me</a>
+		</li>
+		<li>
+            <a href="https://www.linkedin.com/in/zhihaohowardyao" target="_blank">Linkedin</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="nav-controller" >
+    <span class="[ glyphicon glyphicon-chevron-down ] controller-open"></span>
+    <span class="[ glyphicon glyphicon-remove ] controller-close"></span>
+</div>
+<div id="readme"><b>More Here&rarr;<b></div>
+-->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+</html>

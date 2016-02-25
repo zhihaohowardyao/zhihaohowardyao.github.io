@@ -1,0 +1,1075 @@
+baseScore,month_label,month,count_by_month,severity,count_by_sev,cpe_label,count_by_cpe,vendor,count_by_vendor
+4.3,June,6,5,Medium,517,Application,259,Winscp,1
+6.8,June,6,4,Medium,130,Application,53,Winscp,1
+6.8,June,6,4,Medium,130,Application,53,Vmware,1
+4.3,June,6,5,Medium,517,Application,259,Unknown,61
+5,June,6,2,Medium,269,Application,25,Unknown,60
+5.8,June,6,2,Medium,56,Application,32,Unknown,9
+4.3,June,6,5,Medium,517,Application,259,Php,2
+5,June,6,2,Medium,269,Application,25,Php,1
+6.8,June,6,4,Medium,130,Application,53,Php,1
+4.3,June,6,5,Medium,517,Application,259,Oracle,6
+6.8,June,6,4,Medium,130,Application,53,Oracle,3
+4.3,June,6,5,Medium,517,Application,259,Openssl,21
+4.3,June,6,5,Medium,517,Application,259,O,1
+4.3,June,6,5,Medium,517,Application,259,Nullsoft,2
+4.3,June,6,5,Medium,517,Application,259,Mozilla,71
+5.8,June,6,2,Medium,56,Application,32,Mozilla,25
+6.8,June,6,4,Medium,130,Application,53,Mozilla,1
+4,June,6,2,Medium,30,Application,9,Microsoft,21
+4.3,June,6,5,Medium,517,Application,259,Microsoft,216
+5,June,6,2,Medium,269,Application,25,Microsoft,184
+5.8,June,6,2,Medium,56,Application,32,Microsoft,18
+6.8,June,6,4,Medium,130,Application,53,Microsoft,78
+4.3,June,6,5,Medium,517,Application,259,Mcafee,46
+5,June,6,2,Medium,269,Application,25,Mcafee,3
+4.3,June,6,5,Medium,517,Application,259,Imagemagick,2
+6.8,June,6,4,Medium,130,Application,53,Imagemagick,2
+4,June,6,2,Medium,30,Application,9,Ietf,9
+6.8,June,6,4,Medium,130,Application,53,Filezilla,4
+4.3,June,6,5,Medium,517,Application,259,Cisco,64
+5,June,6,2,Medium,269,Application,25,Cisco,20
+4.3,June,6,5,Medium,517,Application,259,Apple,9
+5,June,6,2,Medium,269,Application,25,Apple,1
+5.8,June,6,2,Medium,56,Application,32,Apple,4
+6.8,June,6,4,Medium,130,Application,53,Apple,39
+4.3,June,6,5,Medium,517,Application,259,Adobe,15
+4.3,June,6,5,Medium,517,Operation System,196,Winscp,1
+6.8,June,6,4,Medium,130,Operation System,77,Winscp,1
+6.8,June,6,4,Medium,130,Operation System,77,Vmware,1
+4.3,June,6,5,Medium,517,Operation System,196,Unknown,61
+5,June,6,2,Medium,269,Operation System,184,Unknown,60
+5.8,June,6,2,Medium,56,Operation System,15,Unknown,9
+4.3,June,6,5,Medium,517,Operation System,196,Php,2
+5,June,6,2,Medium,269,Operation System,184,Php,1
+6.8,June,6,4,Medium,130,Operation System,77,Php,1
+4.3,June,6,5,Medium,517,Operation System,196,Oracle,6
+6.8,June,6,4,Medium,130,Operation System,77,Oracle,3
+4.3,June,6,5,Medium,517,Operation System,196,Openssl,21
+4.3,June,6,5,Medium,517,Operation System,196,O,1
+4.3,June,6,5,Medium,517,Operation System,196,Nullsoft,2
+4.3,June,6,5,Medium,517,Operation System,196,Mozilla,71
+5.8,June,6,2,Medium,56,Operation System,15,Mozilla,25
+6.8,June,6,4,Medium,130,Operation System,77,Mozilla,1
+4,June,6,2,Medium,30,Operation System,21,Microsoft,21
+4.3,June,6,5,Medium,517,Operation System,196,Microsoft,216
+5,June,6,2,Medium,269,Operation System,184,Microsoft,184
+5.8,June,6,2,Medium,56,Operation System,15,Microsoft,18
+6.8,June,6,4,Medium,130,Operation System,77,Microsoft,78
+4.3,June,6,5,Medium,517,Operation System,196,Mcafee,46
+5,June,6,2,Medium,269,Operation System,184,Mcafee,3
+4.3,June,6,5,Medium,517,Operation System,196,Imagemagick,2
+6.8,June,6,4,Medium,130,Operation System,77,Imagemagick,2
+4,June,6,2,Medium,30,Operation System,21,Ietf,9
+6.8,June,6,4,Medium,130,Operation System,77,Filezilla,4
+4.3,June,6,5,Medium,517,Operation System,196,Cisco,64
+5,June,6,2,Medium,269,Operation System,184,Cisco,20
+4.3,June,6,5,Medium,517,Operation System,196,Apple,9
+5,June,6,2,Medium,269,Operation System,184,Apple,1
+5.8,June,6,2,Medium,56,Operation System,15,Apple,4
+6.8,June,6,4,Medium,130,Operation System,77,Apple,39
+4.3,June,6,5,Medium,517,Operation System,196,Adobe,15
+4.3,June,6,5,Medium,517,Unknown,62,Winscp,1
+4.3,June,6,5,Medium,517,Unknown,62,Unknown,61
+5,June,6,2,Medium,269,Unknown,60,Unknown,60
+5.8,June,6,2,Medium,56,Unknown,9,Unknown,9
+4.3,June,6,5,Medium,517,Unknown,62,Php,2
+5,June,6,2,Medium,269,Unknown,60,Php,1
+4.3,June,6,5,Medium,517,Unknown,62,Oracle,6
+4.3,June,6,5,Medium,517,Unknown,62,Openssl,21
+4.3,June,6,5,Medium,517,Unknown,62,O,1
+4.3,June,6,5,Medium,517,Unknown,62,Nullsoft,2
+4.3,June,6,5,Medium,517,Unknown,62,Mozilla,71
+5.8,June,6,2,Medium,56,Unknown,9,Mozilla,25
+4.3,June,6,5,Medium,517,Unknown,62,Microsoft,216
+5,June,6,2,Medium,269,Unknown,60,Microsoft,184
+5.8,June,6,2,Medium,56,Unknown,9,Microsoft,18
+4.3,June,6,5,Medium,517,Unknown,62,Mcafee,46
+5,June,6,2,Medium,269,Unknown,60,Mcafee,3
+4.3,June,6,5,Medium,517,Unknown,62,Imagemagick,2
+4.3,June,6,5,Medium,517,Unknown,62,Cisco,64
+5,June,6,2,Medium,269,Unknown,60,Cisco,20
+4.3,June,6,5,Medium,517,Unknown,62,Apple,9
+5,June,6,2,Medium,269,Unknown,60,Apple,1
+5.8,June,6,2,Medium,56,Unknown,9,Apple,4
+4.3,June,6,5,Medium,517,Unknown,62,Adobe,15
+4.3,July,7,67,Medium,517,Application,259,Winscp,1
+6.8,July,7,26,Medium,130,Application,53,Winscp,1
+6.8,July,7,26,Medium,130,Application,53,Vmware,1
+4.3,July,7,67,Medium,517,Application,259,Unknown,61
+4.4,July,7,1,Medium,3,Application,1,Unknown,2
+5,July,7,29,Medium,269,Application,25,Unknown,60
+5.8,July,7,17,Medium,56,Application,32,Unknown,9
+4.3,July,7,67,Medium,517,Application,259,Php,2
+5,July,7,29,Medium,269,Application,25,Php,1
+6.8,July,7,26,Medium,130,Application,53,Php,1
+4.3,July,7,67,Medium,517,Application,259,Oracle,6
+6.6,July,7,1,Medium,53,Application,51,Oracle,2
+6.8,July,7,26,Medium,130,Application,53,Oracle,3
+4.3,July,7,67,Medium,517,Application,259,Openssl,21
+4.3,July,7,67,Medium,517,Application,259,O,1
+4.3,July,7,67,Medium,517,Application,259,Nullsoft,2
+4.3,July,7,67,Medium,517,Application,259,Mozilla,71
+5.8,July,7,17,Medium,56,Application,32,Mozilla,25
+6.8,July,7,26,Medium,130,Application,53,Mozilla,1
+4,July,7,5,Medium,30,Application,9,Microsoft,21
+4.3,July,7,67,Medium,517,Application,259,Microsoft,216
+4.4,July,7,1,Medium,3,Application,1,Microsoft,1
+5,July,7,29,Medium,269,Application,25,Microsoft,184
+5.8,July,7,17,Medium,56,Application,32,Microsoft,18
+6.6,July,7,1,Medium,53,Application,51,Microsoft,2
+6.8,July,7,26,Medium,130,Application,53,Microsoft,78
+4.3,July,7,67,Medium,517,Application,259,Mcafee,46
+5,July,7,29,Medium,269,Application,25,Mcafee,3
+4.3,July,7,67,Medium,517,Application,259,Imagemagick,2
+6.8,July,7,26,Medium,130,Application,53,Imagemagick,2
+4,July,7,5,Medium,30,Application,9,Ietf,9
+6.8,July,7,26,Medium,130,Application,53,Filezilla,4
+4.3,July,7,67,Medium,517,Application,259,Cisco,64
+5,July,7,29,Medium,269,Application,25,Cisco,20
+6.6,July,7,1,Medium,53,Application,51,Cisco,49
+4.3,July,7,67,Medium,517,Application,259,Apple,9
+5,July,7,29,Medium,269,Application,25,Apple,1
+5.8,July,7,17,Medium,56,Application,32,Apple,4
+5.9,July,7,1,Medium,2,Application,2,Apple,2
+6.8,July,7,26,Medium,130,Application,53,Apple,39
+4.3,July,7,67,Medium,517,Application,259,Adobe,15
+4.3,July,7,67,Medium,517,Operation System,196,Winscp,1
+6.8,July,7,26,Medium,130,Operation System,77,Winscp,1
+6.8,July,7,26,Medium,130,Operation System,77,Vmware,1
+4.3,July,7,67,Medium,517,Operation System,196,Unknown,61
+5,July,7,29,Medium,269,Operation System,184,Unknown,60
+5.8,July,7,17,Medium,56,Operation System,15,Unknown,9
+4.3,July,7,67,Medium,517,Operation System,196,Php,2
+5,July,7,29,Medium,269,Operation System,184,Php,1
+6.8,July,7,26,Medium,130,Operation System,77,Php,1
+4.3,July,7,67,Medium,517,Operation System,196,Oracle,6
+6.6,July,7,1,Medium,53,Operation System,2,Oracle,2
+6.8,July,7,26,Medium,130,Operation System,77,Oracle,3
+4.3,July,7,67,Medium,517,Operation System,196,Openssl,21
+4.3,July,7,67,Medium,517,Operation System,196,O,1
+4.3,July,7,67,Medium,517,Operation System,196,Nullsoft,2
+4.3,July,7,67,Medium,517,Operation System,196,Mozilla,71
+5.8,July,7,17,Medium,56,Operation System,15,Mozilla,25
+6.8,July,7,26,Medium,130,Operation System,77,Mozilla,1
+4,July,7,5,Medium,30,Operation System,21,Microsoft,21
+4.3,July,7,67,Medium,517,Operation System,196,Microsoft,216
+5,July,7,29,Medium,269,Operation System,184,Microsoft,184
+5.8,July,7,17,Medium,56,Operation System,15,Microsoft,18
+6.6,July,7,1,Medium,53,Operation System,2,Microsoft,2
+6.8,July,7,26,Medium,130,Operation System,77,Microsoft,78
+4.3,July,7,67,Medium,517,Operation System,196,Mcafee,46
+5,July,7,29,Medium,269,Operation System,184,Mcafee,3
+4.3,July,7,67,Medium,517,Operation System,196,Imagemagick,2
+6.8,July,7,26,Medium,130,Operation System,77,Imagemagick,2
+4,July,7,5,Medium,30,Operation System,21,Ietf,9
+6.8,July,7,26,Medium,130,Operation System,77,Filezilla,4
+4.3,July,7,67,Medium,517,Operation System,196,Cisco,64
+5,July,7,29,Medium,269,Operation System,184,Cisco,20
+6.6,July,7,1,Medium,53,Operation System,2,Cisco,49
+4.3,July,7,67,Medium,517,Operation System,196,Apple,9
+5,July,7,29,Medium,269,Operation System,184,Apple,1
+5.8,July,7,17,Medium,56,Operation System,15,Apple,4
+6.8,July,7,26,Medium,130,Operation System,77,Apple,39
+4.3,July,7,67,Medium,517,Operation System,196,Adobe,15
+4.3,July,7,67,Medium,517,Unknown,62,Winscp,1
+4.3,July,7,67,Medium,517,Unknown,62,Unknown,61
+4.4,July,7,1,Medium,3,Unknown,2,Unknown,2
+5,July,7,29,Medium,269,Unknown,60,Unknown,60
+5.8,July,7,17,Medium,56,Unknown,9,Unknown,9
+4.3,July,7,67,Medium,517,Unknown,62,Php,2
+5,July,7,29,Medium,269,Unknown,60,Php,1
+4.3,July,7,67,Medium,517,Unknown,62,Oracle,6
+4.3,July,7,67,Medium,517,Unknown,62,Openssl,21
+4.3,July,7,67,Medium,517,Unknown,62,O,1
+4.3,July,7,67,Medium,517,Unknown,62,Nullsoft,2
+4.3,July,7,67,Medium,517,Unknown,62,Mozilla,71
+5.8,July,7,17,Medium,56,Unknown,9,Mozilla,25
+4.3,July,7,67,Medium,517,Unknown,62,Microsoft,216
+4.4,July,7,1,Medium,3,Unknown,2,Microsoft,1
+5,July,7,29,Medium,269,Unknown,60,Microsoft,184
+5.8,July,7,17,Medium,56,Unknown,9,Microsoft,18
+4.3,July,7,67,Medium,517,Unknown,62,Mcafee,46
+5,July,7,29,Medium,269,Unknown,60,Mcafee,3
+4.3,July,7,67,Medium,517,Unknown,62,Imagemagick,2
+4.3,July,7,67,Medium,517,Unknown,62,Cisco,64
+5,July,7,29,Medium,269,Unknown,60,Cisco,20
+4.3,July,7,67,Medium,517,Unknown,62,Apple,9
+5,July,7,29,Medium,269,Unknown,60,Apple,1
+5.8,July,7,17,Medium,56,Unknown,9,Apple,4
+4.3,July,7,67,Medium,517,Unknown,62,Adobe,15
+4.3,August,8,72,Medium,517,Application,259,Winscp,1
+6.8,August,8,27,Medium,130,Application,53,Winscp,1
+6.8,August,8,27,Medium,130,Application,53,Vmware,1
+4.3,August,8,72,Medium,517,Application,259,Unknown,61
+5,August,8,36,Medium,269,Application,25,Unknown,60
+5.8,August,8,8,Medium,56,Application,32,Unknown,9
+4.3,August,8,72,Medium,517,Application,259,Php,2
+5,August,8,36,Medium,269,Application,25,Php,1
+6.8,August,8,27,Medium,130,Application,53,Php,1
+4.3,August,8,72,Medium,517,Application,259,Oracle,6
+6.6,August,8,10,Medium,53,Application,51,Oracle,2
+6.8,August,8,27,Medium,130,Application,53,Oracle,3
+6.9,August,8,9,Medium,25,Application,2,Oracle,1
+4.3,August,8,72,Medium,517,Application,259,Openssl,21
+4.3,August,8,72,Medium,517,Application,259,O,1
+4.3,August,8,72,Medium,517,Application,259,Nullsoft,2
+4.3,August,8,72,Medium,517,Application,259,Mozilla,71
+5.8,August,8,8,Medium,56,Application,32,Mozilla,25
+6.8,August,8,27,Medium,130,Application,53,Mozilla,1
+4,August,8,5,Medium,30,Application,9,Microsoft,21
+4.3,August,8,72,Medium,517,Application,259,Microsoft,216
+5,August,8,36,Medium,269,Application,25,Microsoft,184
+5.1,August,8,12,Medium,25,Application,4,Microsoft,24
+5.8,August,8,8,Medium,56,Application,32,Microsoft,18
+6.6,August,8,10,Medium,53,Application,51,Microsoft,2
+6.8,August,8,27,Medium,130,Application,53,Microsoft,78
+6.9,August,8,9,Medium,25,Application,2,Microsoft,23
+4.3,August,8,72,Medium,517,Application,259,Mcafee,46
+5,August,8,36,Medium,269,Application,25,Mcafee,3
+4.3,August,8,72,Medium,517,Application,259,Imagemagick,2
+6.8,August,8,27,Medium,130,Application,53,Imagemagick,2
+4,August,8,5,Medium,30,Application,9,Ietf,9
+6.9,August,8,9,Medium,25,Application,2,Foxitsoftware,1
+6.8,August,8,27,Medium,130,Application,53,Filezilla,4
+4.3,August,8,72,Medium,517,Application,259,Cisco,64
+5,August,8,36,Medium,269,Application,25,Cisco,20
+6.6,August,8,10,Medium,53,Application,51,Cisco,49
+4.3,August,8,72,Medium,517,Application,259,Apple,9
+5,August,8,36,Medium,269,Application,25,Apple,1
+5.1,August,8,12,Medium,25,Application,4,Apple,1
+5.8,August,8,8,Medium,56,Application,32,Apple,4
+6.8,August,8,27,Medium,130,Application,53,Apple,39
+4.3,August,8,72,Medium,517,Application,259,Adobe,15
+4.3,August,8,72,Medium,517,Operation System,196,Winscp,1
+6.8,August,8,27,Medium,130,Operation System,77,Winscp,1
+6.8,August,8,27,Medium,130,Operation System,77,Vmware,1
+4.3,August,8,72,Medium,517,Operation System,196,Unknown,61
+5,August,8,36,Medium,269,Operation System,184,Unknown,60
+5.8,August,8,8,Medium,56,Operation System,15,Unknown,9
+6.4,August,8,4,Medium,9,Operation System,8,Unknown,1
+4.3,August,8,72,Medium,517,Operation System,196,Php,2
+5,August,8,36,Medium,269,Operation System,184,Php,1
+6.8,August,8,27,Medium,130,Operation System,77,Php,1
+4.3,August,8,72,Medium,517,Operation System,196,Oracle,6
+6.6,August,8,10,Medium,53,Operation System,2,Oracle,2
+6.8,August,8,27,Medium,130,Operation System,77,Oracle,3
+6.9,August,8,9,Medium,25,Operation System,23,Oracle,1
+4.3,August,8,72,Medium,517,Operation System,196,Openssl,21
+4.3,August,8,72,Medium,517,Operation System,196,O,1
+4.3,August,8,72,Medium,517,Operation System,196,Nullsoft,2
+4.3,August,8,72,Medium,517,Operation System,196,Mozilla,71
+5.8,August,8,8,Medium,56,Operation System,15,Mozilla,25
+6.8,August,8,27,Medium,130,Operation System,77,Mozilla,1
+4,August,8,5,Medium,30,Operation System,21,Microsoft,21
+4.3,August,8,72,Medium,517,Operation System,196,Microsoft,216
+4.7,August,8,1,Medium,2,Operation System,2,Microsoft,2
+5,August,8,36,Medium,269,Operation System,184,Microsoft,184
+5.1,August,8,12,Medium,25,Operation System,21,Microsoft,24
+5.8,August,8,8,Medium,56,Operation System,15,Microsoft,18
+6.2,August,8,2,Medium,5,Operation System,5,Microsoft,5
+6.4,August,8,4,Medium,9,Operation System,8,Microsoft,8
+6.6,August,8,10,Medium,53,Operation System,2,Microsoft,2
+6.8,August,8,27,Medium,130,Operation System,77,Microsoft,78
+6.9,August,8,9,Medium,25,Operation System,23,Microsoft,23
+4.3,August,8,72,Medium,517,Operation System,196,Mcafee,46
+5,August,8,36,Medium,269,Operation System,184,Mcafee,3
+4.3,August,8,72,Medium,517,Operation System,196,Imagemagick,2
+6.8,August,8,27,Medium,130,Operation System,77,Imagemagick,2
+4,August,8,5,Medium,30,Operation System,21,Ietf,9
+6.9,August,8,9,Medium,25,Operation System,23,Foxitsoftware,1
+6.8,August,8,27,Medium,130,Operation System,77,Filezilla,4
+4.3,August,8,72,Medium,517,Operation System,196,Cisco,64
+5,August,8,36,Medium,269,Operation System,184,Cisco,20
+6.6,August,8,10,Medium,53,Operation System,2,Cisco,49
+4.3,August,8,72,Medium,517,Operation System,196,Apple,9
+5,August,8,36,Medium,269,Operation System,184,Apple,1
+5.1,August,8,12,Medium,25,Operation System,21,Apple,1
+5.8,August,8,8,Medium,56,Operation System,15,Apple,4
+6.8,August,8,27,Medium,130,Operation System,77,Apple,39
+4.3,August,8,72,Medium,517,Operation System,196,Adobe,15
+4.3,August,8,72,Medium,517,Unknown,62,Winscp,1
+4.3,August,8,72,Medium,517,Unknown,62,Unknown,61
+5,August,8,36,Medium,269,Unknown,60,Unknown,60
+5.8,August,8,8,Medium,56,Unknown,9,Unknown,9
+6.4,August,8,4,Medium,9,Unknown,1,Unknown,1
+4.3,August,8,72,Medium,517,Unknown,62,Php,2
+5,August,8,36,Medium,269,Unknown,60,Php,1
+4.3,August,8,72,Medium,517,Unknown,62,Oracle,6
+4.3,August,8,72,Medium,517,Unknown,62,Openssl,21
+4.3,August,8,72,Medium,517,Unknown,62,O,1
+4.3,August,8,72,Medium,517,Unknown,62,Nullsoft,2
+4.3,August,8,72,Medium,517,Unknown,62,Mozilla,71
+5.8,August,8,8,Medium,56,Unknown,9,Mozilla,25
+4.3,August,8,72,Medium,517,Unknown,62,Microsoft,216
+5,August,8,36,Medium,269,Unknown,60,Microsoft,184
+5.8,August,8,8,Medium,56,Unknown,9,Microsoft,18
+6.4,August,8,4,Medium,9,Unknown,1,Microsoft,8
+4.3,August,8,72,Medium,517,Unknown,62,Mcafee,46
+5,August,8,36,Medium,269,Unknown,60,Mcafee,3
+4.3,August,8,72,Medium,517,Unknown,62,Imagemagick,2
+4.3,August,8,72,Medium,517,Unknown,62,Cisco,64
+5,August,8,36,Medium,269,Unknown,60,Cisco,20
+4.3,August,8,72,Medium,517,Unknown,62,Apple,9
+5,August,8,36,Medium,269,Unknown,60,Apple,1
+5.8,August,8,8,Medium,56,Unknown,9,Apple,4
+4.3,August,8,72,Medium,517,Unknown,62,Adobe,15
+4.3,September,9,373,Medium,517,Application,259,Winscp,1
+6.8,September,9,73,Medium,130,Application,53,Winscp,1
+6.8,September,9,73,Medium,130,Application,53,Vmware,1
+4.3,September,9,373,Medium,517,Application,259,Unknown,61
+4.4,September,9,2,Medium,3,Application,1,Unknown,2
+5,September,9,202,Medium,269,Application,25,Unknown,60
+5.8,September,9,29,Medium,56,Application,32,Unknown,9
+4.3,September,9,373,Medium,517,Application,259,Php,2
+5,September,9,202,Medium,269,Application,25,Php,1
+6.8,September,9,73,Medium,130,Application,53,Php,1
+4.3,September,9,373,Medium,517,Application,259,Oracle,6
+6.6,September,9,42,Medium,53,Application,51,Oracle,2
+6.8,September,9,73,Medium,130,Application,53,Oracle,3
+6.9,September,9,16,Medium,25,Application,2,Oracle,1
+4.3,September,9,373,Medium,517,Application,259,Openssl,21
+4.3,September,9,373,Medium,517,Application,259,O,1
+4.3,September,9,373,Medium,517,Application,259,Nullsoft,2
+4.3,September,9,373,Medium,517,Application,259,Mozilla,71
+5.8,September,9,29,Medium,56,Application,32,Mozilla,25
+6.8,September,9,73,Medium,130,Application,53,Mozilla,1
+4,September,9,18,Medium,30,Application,9,Microsoft,21
+4.3,September,9,373,Medium,517,Application,259,Microsoft,216
+4.4,September,9,2,Medium,3,Application,1,Microsoft,1
+5,September,9,202,Medium,269,Application,25,Microsoft,184
+5.1,September,9,13,Medium,25,Application,4,Microsoft,24
+5.8,September,9,29,Medium,56,Application,32,Microsoft,18
+6.6,September,9,42,Medium,53,Application,51,Microsoft,2
+6.8,September,9,73,Medium,130,Application,53,Microsoft,78
+6.9,September,9,16,Medium,25,Application,2,Microsoft,23
+4.3,September,9,373,Medium,517,Application,259,Mcafee,46
+5,September,9,202,Medium,269,Application,25,Mcafee,3
+4.3,September,9,373,Medium,517,Application,259,Imagemagick,2
+6.8,September,9,73,Medium,130,Application,53,Imagemagick,2
+4,September,9,18,Medium,30,Application,9,Ietf,9
+6.9,September,9,16,Medium,25,Application,2,Foxitsoftware,1
+6.8,September,9,73,Medium,130,Application,53,Filezilla,4
+4.3,September,9,373,Medium,517,Application,259,Cisco,64
+5,September,9,202,Medium,269,Application,25,Cisco,20
+6.6,September,9,42,Medium,53,Application,51,Cisco,49
+4.3,September,9,373,Medium,517,Application,259,Apple,9
+5,September,9,202,Medium,269,Application,25,Apple,1
+5.1,September,9,13,Medium,25,Application,4,Apple,1
+5.8,September,9,29,Medium,56,Application,32,Apple,4
+5.9,September,9,1,Medium,2,Application,2,Apple,2
+6.8,September,9,73,Medium,130,Application,53,Apple,39
+4.3,September,9,373,Medium,517,Application,259,Adobe,15
+4.3,September,9,373,Medium,517,Operation System,196,Winscp,1
+6.8,September,9,73,Medium,130,Operation System,77,Winscp,1
+6.8,September,9,73,Medium,130,Operation System,77,Vmware,1
+4.3,September,9,373,Medium,517,Operation System,196,Unknown,61
+5,September,9,202,Medium,269,Operation System,184,Unknown,60
+5.8,September,9,29,Medium,56,Operation System,15,Unknown,9
+6.4,September,9,5,Medium,9,Operation System,8,Unknown,1
+4.3,September,9,373,Medium,517,Operation System,196,Php,2
+5,September,9,202,Medium,269,Operation System,184,Php,1
+6.8,September,9,73,Medium,130,Operation System,77,Php,1
+4.3,September,9,373,Medium,517,Operation System,196,Oracle,6
+6.6,September,9,42,Medium,53,Operation System,2,Oracle,2
+6.8,September,9,73,Medium,130,Operation System,77,Oracle,3
+6.9,September,9,16,Medium,25,Operation System,23,Oracle,1
+4.3,September,9,373,Medium,517,Operation System,196,Openssl,21
+4.3,September,9,373,Medium,517,Operation System,196,O,1
+4.3,September,9,373,Medium,517,Operation System,196,Nullsoft,2
+4.3,September,9,373,Medium,517,Operation System,196,Mozilla,71
+5.8,September,9,29,Medium,56,Operation System,15,Mozilla,25
+6.8,September,9,73,Medium,130,Operation System,77,Mozilla,1
+4,September,9,18,Medium,30,Operation System,21,Microsoft,21
+4.3,September,9,373,Medium,517,Operation System,196,Microsoft,216
+4.7,September,9,1,Medium,2,Operation System,2,Microsoft,2
+4.9,September,9,1,Medium,1,Operation System,1,Microsoft,1
+5,September,9,202,Medium,269,Operation System,184,Microsoft,184
+5.1,September,9,13,Medium,25,Operation System,21,Microsoft,24
+5.8,September,9,29,Medium,56,Operation System,15,Microsoft,18
+6.1,September,9,1,Medium,1,Operation System,1,Microsoft,1
+6.2,September,9,3,Medium,5,Operation System,5,Microsoft,5
+6.4,September,9,5,Medium,9,Operation System,8,Microsoft,8
+6.6,September,9,42,Medium,53,Operation System,2,Microsoft,2
+6.8,September,9,73,Medium,130,Operation System,77,Microsoft,78
+6.9,September,9,16,Medium,25,Operation System,23,Microsoft,23
+4.3,September,9,373,Medium,517,Operation System,196,Mcafee,46
+5,September,9,202,Medium,269,Operation System,184,Mcafee,3
+4.3,September,9,373,Medium,517,Operation System,196,Imagemagick,2
+6.8,September,9,73,Medium,130,Operation System,77,Imagemagick,2
+4,September,9,18,Medium,30,Operation System,21,Ietf,9
+6.9,September,9,16,Medium,25,Operation System,23,Foxitsoftware,1
+6.8,September,9,73,Medium,130,Operation System,77,Filezilla,4
+4.3,September,9,373,Medium,517,Operation System,196,Cisco,64
+5,September,9,202,Medium,269,Operation System,184,Cisco,20
+6.6,September,9,42,Medium,53,Operation System,2,Cisco,49
+4.3,September,9,373,Medium,517,Operation System,196,Apple,9
+5,September,9,202,Medium,269,Operation System,184,Apple,1
+5.1,September,9,13,Medium,25,Operation System,21,Apple,1
+5.8,September,9,29,Medium,56,Operation System,15,Apple,4
+6.8,September,9,73,Medium,130,Operation System,77,Apple,39
+4.3,September,9,373,Medium,517,Operation System,196,Adobe,15
+4.3,September,9,373,Medium,517,Unknown,62,Winscp,1
+4.3,September,9,373,Medium,517,Unknown,62,Unknown,61
+4.4,September,9,2,Medium,3,Unknown,2,Unknown,2
+5,September,9,202,Medium,269,Unknown,60,Unknown,60
+5.8,September,9,29,Medium,56,Unknown,9,Unknown,9
+6.4,September,9,5,Medium,9,Unknown,1,Unknown,1
+4.3,September,9,373,Medium,517,Unknown,62,Php,2
+5,September,9,202,Medium,269,Unknown,60,Php,1
+4.3,September,9,373,Medium,517,Unknown,62,Oracle,6
+4.3,September,9,373,Medium,517,Unknown,62,Openssl,21
+4.3,September,9,373,Medium,517,Unknown,62,O,1
+4.3,September,9,373,Medium,517,Unknown,62,Nullsoft,2
+4.3,September,9,373,Medium,517,Unknown,62,Mozilla,71
+5.8,September,9,29,Medium,56,Unknown,9,Mozilla,25
+4.3,September,9,373,Medium,517,Unknown,62,Microsoft,216
+4.4,September,9,2,Medium,3,Unknown,2,Microsoft,1
+5,September,9,202,Medium,269,Unknown,60,Microsoft,184
+5.8,September,9,29,Medium,56,Unknown,9,Microsoft,18
+6.4,September,9,5,Medium,9,Unknown,1,Microsoft,8
+4.3,September,9,373,Medium,517,Unknown,62,Mcafee,46
+5,September,9,202,Medium,269,Unknown,60,Mcafee,3
+4.3,September,9,373,Medium,517,Unknown,62,Imagemagick,2
+4.3,September,9,373,Medium,517,Unknown,62,Cisco,64
+5,September,9,202,Medium,269,Unknown,60,Cisco,20
+4.3,September,9,373,Medium,517,Unknown,62,Apple,9
+5,September,9,202,Medium,269,Unknown,60,Apple,1
+5.8,September,9,29,Medium,56,Unknown,9,Apple,4
+4.3,September,9,373,Medium,517,Unknown,62,Adobe,15
+9.3,June,6,52,High,3129,Application,2021,Winscp,1
+7.2,June,6,1,High,325,Application,50,Unknown,148
+7.5,June,6,2,High,57,Application,39,Unknown,14
+9.3,June,6,52,High,3129,Application,2021,Unknown,16
+9.3,June,6,52,High,3129,Application,2021,Techsmith,1
+9.3,June,6,52,High,3129,Application,2021,Sas,3
+9.3,June,6,52,High,3129,Application,2021,Samsung,1
+9.3,June,6,52,High,3129,Application,2021,Realnetworks,6
+7.5,June,6,2,High,57,Application,39,Php,3
+9.3,June,6,52,High,3129,Application,2021,Php,1
+7.5,June,6,2,High,57,Application,39,Oracle,8
+9.3,June,6,52,High,3129,Application,2021,Oracle,145
+9.3,June,6,52,High,3129,Application,2021,Openssl,9
+9.3,June,6,52,High,3129,Application,2021,O,81
+9.3,June,6,52,High,3129,Application,2021,Nullsoft,6
+7.5,June,6,2,High,57,Application,39,Mozilla,24
+8.8,June,6,1,High,17,Application,17,Mozilla,17
+9.3,June,6,52,High,3129,Application,2021,Mozilla,593
+7.2,June,6,1,High,325,Application,50,Microsoft,127
+7.5,June,6,2,High,57,Application,39,Microsoft,4
+7.6,June,6,2,High,29,Application,3,Microsoft,26
+9.3,June,6,52,High,3129,Application,2021,Microsoft,1419
+7.2,June,6,1,High,325,Application,50,Mcafee,3
+9.3,June,6,52,High,3129,Application,2021,Irfanview,3
+9.3,June,6,52,High,3129,Application,2021,Imagemagick,3
+9.3,June,6,52,High,3129,Application,2021,Google,5
+9.3,June,6,52,High,3129,Application,2021,Foxitsoftware,5
+7.6,June,6,2,High,29,Application,3,Coreftp,2
+9.3,June,6,52,High,3129,Application,2021,Coreftp,4
+9.3,June,6,52,High,3129,Application,2021,Citrix,2
+7.2,June,6,1,High,325,Application,50,Cisco,47
+9.3,June,6,52,High,3129,Application,2021,Cisco,10
+7.5,June,6,2,High,57,Application,39,Apple,4
+7.6,June,6,2,High,29,Application,3,Apple,1
+9.3,June,6,52,High,3129,Application,2021,Apple,248
+9.3,June,6,52,High,3129,Application,2021,Adobe,567
+9.3,June,6,52,High,3129,Operation System,1011,Winscp,1
+7.2,June,6,1,High,325,Operation System,127,Unknown,148
+7.5,June,6,2,High,57,Operation System,4,Unknown,14
+9.3,June,6,52,High,3129,Operation System,1011,Unknown,16
+9.3,June,6,52,High,3129,Operation System,1011,Techsmith,1
+9.3,June,6,52,High,3129,Operation System,1011,Sas,3
+9.3,June,6,52,High,3129,Operation System,1011,Samsung,1
+9.3,June,6,52,High,3129,Operation System,1011,Realnetworks,6
+7.5,June,6,2,High,57,Operation System,4,Php,3
+9.3,June,6,52,High,3129,Operation System,1011,Php,1
+7.5,June,6,2,High,57,Operation System,4,Oracle,8
+9.3,June,6,52,High,3129,Operation System,1011,Oracle,145
+9.3,June,6,52,High,3129,Operation System,1011,Openssl,9
+9.3,June,6,52,High,3129,Operation System,1011,O,81
+9.3,June,6,52,High,3129,Operation System,1011,Nullsoft,6
+7.5,June,6,2,High,57,Operation System,4,Mozilla,24
+9.3,June,6,52,High,3129,Operation System,1011,Mozilla,593
+7.2,June,6,1,High,325,Operation System,127,Microsoft,127
+7.5,June,6,2,High,57,Operation System,4,Microsoft,4
+7.6,June,6,2,High,29,Operation System,26,Microsoft,26
+9.3,June,6,52,High,3129,Operation System,1011,Microsoft,1419
+7.2,June,6,1,High,325,Operation System,127,Mcafee,3
+9.3,June,6,52,High,3129,Operation System,1011,Irfanview,3
+9.3,June,6,52,High,3129,Operation System,1011,Imagemagick,3
+9.3,June,6,52,High,3129,Operation System,1011,Google,5
+9.3,June,6,52,High,3129,Operation System,1011,Foxitsoftware,5
+7.6,June,6,2,High,29,Operation System,26,Coreftp,2
+9.3,June,6,52,High,3129,Operation System,1011,Coreftp,4
+9.3,June,6,52,High,3129,Operation System,1011,Citrix,2
+7.2,June,6,1,High,325,Operation System,127,Cisco,47
+9.3,June,6,52,High,3129,Operation System,1011,Cisco,10
+7.5,June,6,2,High,57,Operation System,4,Apple,4
+7.6,June,6,2,High,29,Operation System,26,Apple,1
+9.3,June,6,52,High,3129,Operation System,1011,Apple,248
+9.3,June,6,52,High,3129,Operation System,1011,Adobe,567
+9.3,June,6,52,High,3129,Unknown,97,Winscp,1
+7.2,June,6,1,High,325,Unknown,148,Unknown,148
+7.5,June,6,2,High,57,Unknown,14,Unknown,14
+9.3,June,6,52,High,3129,Unknown,97,Unknown,16
+9.3,June,6,52,High,3129,Unknown,97,Techsmith,1
+9.3,June,6,52,High,3129,Unknown,97,Sas,3
+9.3,June,6,52,High,3129,Unknown,97,Samsung,1
+9.3,June,6,52,High,3129,Unknown,97,Realnetworks,6
+7.5,June,6,2,High,57,Unknown,14,Php,3
+9.3,June,6,52,High,3129,Unknown,97,Php,1
+7.5,June,6,2,High,57,Unknown,14,Oracle,8
+9.3,June,6,52,High,3129,Unknown,97,Oracle,145
+9.3,June,6,52,High,3129,Unknown,97,Openssl,9
+9.3,June,6,52,High,3129,Unknown,97,O,81
+9.3,June,6,52,High,3129,Unknown,97,Nullsoft,6
+7.5,June,6,2,High,57,Unknown,14,Mozilla,24
+9.3,June,6,52,High,3129,Unknown,97,Mozilla,593
+7.2,June,6,1,High,325,Unknown,148,Microsoft,127
+7.5,June,6,2,High,57,Unknown,14,Microsoft,4
+9.3,June,6,52,High,3129,Unknown,97,Microsoft,1419
+7.2,June,6,1,High,325,Unknown,148,Mcafee,3
+9.3,June,6,52,High,3129,Unknown,97,Irfanview,3
+9.3,June,6,52,High,3129,Unknown,97,Imagemagick,3
+9.3,June,6,52,High,3129,Unknown,97,Google,5
+9.3,June,6,52,High,3129,Unknown,97,Foxitsoftware,5
+9.3,June,6,52,High,3129,Unknown,97,Coreftp,4
+9.3,June,6,52,High,3129,Unknown,97,Citrix,2
+7.2,June,6,1,High,325,Unknown,148,Cisco,47
+9.3,June,6,52,High,3129,Unknown,97,Cisco,10
+7.5,June,6,2,High,57,Unknown,14,Apple,4
+9.3,June,6,52,High,3129,Unknown,97,Apple,248
+9.3,June,6,52,High,3129,Unknown,97,Adobe,567
+9.3,July,7,726,High,3129,Application,2021,Winscp,1
+7.2,July,7,26,High,325,Application,50,Unknown,148
+7.5,July,7,21,High,57,Application,39,Unknown,14
+9.3,July,7,726,High,3129,Application,2021,Unknown,16
+9.3,July,7,726,High,3129,Application,2021,Techsmith,1
+9.3,July,7,726,High,3129,Application,2021,Sas,3
+9.3,July,7,726,High,3129,Application,2021,Samsung,1
+9.3,July,7,726,High,3129,Application,2021,Realnetworks,6
+7.5,July,7,21,High,57,Application,39,Php,3
+9.3,July,7,726,High,3129,Application,2021,Php,1
+7.5,July,7,21,High,57,Application,39,Oracle,8
+9.3,July,7,726,High,3129,Application,2021,Oracle,145
+9.3,July,7,726,High,3129,Application,2021,Openssl,9
+9.3,July,7,726,High,3129,Application,2021,O,81
+9.3,July,7,726,High,3129,Application,2021,Nullsoft,6
+7.5,July,7,21,High,57,Application,39,Mozilla,24
+8.8,July,7,14,High,17,Application,17,Mozilla,17
+9.3,July,7,726,High,3129,Application,2021,Mozilla,593
+7.1,July,7,2,High,21,Application,5,Microsoft,20
+7.2,July,7,26,High,325,Application,50,Microsoft,127
+7.5,July,7,21,High,57,Application,39,Microsoft,4
+7.6,July,7,3,High,29,Application,3,Microsoft,26
+9.3,July,7,726,High,3129,Application,2021,Microsoft,1419
+7.1,July,7,2,High,21,Application,5,Mcafee,1
+7.2,July,7,26,High,325,Application,50,Mcafee,3
+9.3,July,7,726,High,3129,Application,2021,Irfanview,3
+9.3,July,7,726,High,3129,Application,2021,Imagemagick,3
+9.3,July,7,726,High,3129,Application,2021,Google,5
+9.3,July,7,726,High,3129,Application,2021,Foxitsoftware,5
+7.6,July,7,3,High,29,Application,3,Coreftp,2
+9.3,July,7,726,High,3129,Application,2021,Coreftp,4
+9.3,July,7,726,High,3129,Application,2021,Citrix,2
+7.2,July,7,26,High,325,Application,50,Cisco,47
+9.3,July,7,726,High,3129,Application,2021,Cisco,10
+7.5,July,7,21,High,57,Application,39,Apple,4
+7.6,July,7,3,High,29,Application,3,Apple,1
+9.3,July,7,726,High,3129,Application,2021,Apple,248
+9.3,July,7,726,High,3129,Application,2021,Adobe,567
+9.3,July,7,726,High,3129,Operation System,1011,Winscp,1
+7.2,July,7,26,High,325,Operation System,127,Unknown,148
+7.5,July,7,21,High,57,Operation System,4,Unknown,14
+9.3,July,7,726,High,3129,Operation System,1011,Unknown,16
+9.3,July,7,726,High,3129,Operation System,1011,Techsmith,1
+9.3,July,7,726,High,3129,Operation System,1011,Sas,3
+9.3,July,7,726,High,3129,Operation System,1011,Samsung,1
+9.3,July,7,726,High,3129,Operation System,1011,Realnetworks,6
+7.5,July,7,21,High,57,Operation System,4,Php,3
+9.3,July,7,726,High,3129,Operation System,1011,Php,1
+7.5,July,7,21,High,57,Operation System,4,Oracle,8
+9.3,July,7,726,High,3129,Operation System,1011,Oracle,145
+9.3,July,7,726,High,3129,Operation System,1011,Openssl,9
+9.3,July,7,726,High,3129,Operation System,1011,O,81
+9.3,July,7,726,High,3129,Operation System,1011,Nullsoft,6
+7.5,July,7,21,High,57,Operation System,4,Mozilla,24
+9.3,July,7,726,High,3129,Operation System,1011,Mozilla,593
+7.1,July,7,2,High,21,Operation System,16,Microsoft,20
+7.2,July,7,26,High,325,Operation System,127,Microsoft,127
+7.5,July,7,21,High,57,Operation System,4,Microsoft,4
+7.6,July,7,3,High,29,Operation System,26,Microsoft,26
+9,July,7,2,High,37,Operation System,37,Microsoft,37
+9.3,July,7,726,High,3129,Operation System,1011,Microsoft,1419
+7.1,July,7,2,High,21,Operation System,16,Mcafee,1
+7.2,July,7,26,High,325,Operation System,127,Mcafee,3
+9.3,July,7,726,High,3129,Operation System,1011,Irfanview,3
+9.3,July,7,726,High,3129,Operation System,1011,Imagemagick,3
+9.3,July,7,726,High,3129,Operation System,1011,Google,5
+9.3,July,7,726,High,3129,Operation System,1011,Foxitsoftware,5
+7.6,July,7,3,High,29,Operation System,26,Coreftp,2
+9.3,July,7,726,High,3129,Operation System,1011,Coreftp,4
+9.3,July,7,726,High,3129,Operation System,1011,Citrix,2
+7.2,July,7,26,High,325,Operation System,127,Cisco,47
+9.3,July,7,726,High,3129,Operation System,1011,Cisco,10
+7.5,July,7,21,High,57,Operation System,4,Apple,4
+7.6,July,7,3,High,29,Operation System,26,Apple,1
+9.3,July,7,726,High,3129,Operation System,1011,Apple,248
+9.3,July,7,726,High,3129,Operation System,1011,Adobe,567
+9.3,July,7,726,High,3129,Unknown,97,Winscp,1
+7.2,July,7,26,High,325,Unknown,148,Unknown,148
+7.5,July,7,21,High,57,Unknown,14,Unknown,14
+9.3,July,7,726,High,3129,Unknown,97,Unknown,16
+9.3,July,7,726,High,3129,Unknown,97,Techsmith,1
+9.3,July,7,726,High,3129,Unknown,97,Sas,3
+9.3,July,7,726,High,3129,Unknown,97,Samsung,1
+9.3,July,7,726,High,3129,Unknown,97,Realnetworks,6
+7.5,July,7,21,High,57,Unknown,14,Php,3
+9.3,July,7,726,High,3129,Unknown,97,Php,1
+7.5,July,7,21,High,57,Unknown,14,Oracle,8
+9.3,July,7,726,High,3129,Unknown,97,Oracle,145
+9.3,July,7,726,High,3129,Unknown,97,Openssl,9
+9.3,July,7,726,High,3129,Unknown,97,O,81
+9.3,July,7,726,High,3129,Unknown,97,Nullsoft,6
+7.5,July,7,21,High,57,Unknown,14,Mozilla,24
+9.3,July,7,726,High,3129,Unknown,97,Mozilla,593
+7.2,July,7,26,High,325,Unknown,148,Microsoft,127
+7.5,July,7,21,High,57,Unknown,14,Microsoft,4
+9.3,July,7,726,High,3129,Unknown,97,Microsoft,1419
+7.2,July,7,26,High,325,Unknown,148,Mcafee,3
+9.3,July,7,726,High,3129,Unknown,97,Irfanview,3
+9.3,July,7,726,High,3129,Unknown,97,Imagemagick,3
+9.3,July,7,726,High,3129,Unknown,97,Google,5
+9.3,July,7,726,High,3129,Unknown,97,Foxitsoftware,5
+9.3,July,7,726,High,3129,Unknown,97,Coreftp,4
+9.3,July,7,726,High,3129,Unknown,97,Citrix,2
+7.2,July,7,26,High,325,Unknown,148,Cisco,47
+9.3,July,7,726,High,3129,Unknown,97,Cisco,10
+7.5,July,7,21,High,57,Unknown,14,Apple,4
+9.3,July,7,726,High,3129,Unknown,97,Apple,248
+9.3,July,7,726,High,3129,Unknown,97,Adobe,567
+9.3,August,8,554,High,3129,Application,2021,Winscp,1
+7.2,August,8,78,High,325,Application,50,Unknown,148
+7.5,August,8,4,High,57,Application,39,Unknown,14
+9.3,August,8,554,High,3129,Application,2021,Unknown,16
+9.3,August,8,554,High,3129,Application,2021,Techsmith,1
+9.3,August,8,554,High,3129,Application,2021,Sas,3
+9.3,August,8,554,High,3129,Application,2021,Samsung,1
+9.3,August,8,554,High,3129,Application,2021,Realnetworks,6
+7.5,August,8,4,High,57,Application,39,Php,3
+8.5,August,8,2,High,7,Application,3,Php,1
+9.3,August,8,554,High,3129,Application,2021,Php,1
+7.5,August,8,4,High,57,Application,39,Oracle,8
+7.7,August,8,1,High,1,Application,1,Oracle,1
+9.3,August,8,554,High,3129,Application,2021,Oracle,145
+9.3,August,8,554,High,3129,Application,2021,Openssl,9
+8.5,August,8,2,High,7,Application,3,Openbsd,2
+9.3,August,8,554,High,3129,Application,2021,O,81
+9.3,August,8,554,High,3129,Application,2021,Nullsoft,6
+7.5,August,8,4,High,57,Application,39,Mozilla,24
+8.8,August,8,1,High,17,Application,17,Mozilla,17
+9.3,August,8,554,High,3129,Application,2021,Mozilla,593
+7.1,August,8,4,High,21,Application,5,Microsoft,20
+7.2,August,8,78,High,325,Application,50,Microsoft,127
+7.5,August,8,4,High,57,Application,39,Microsoft,4
+7.6,August,8,8,High,29,Application,3,Microsoft,26
+8.5,August,8,2,High,7,Application,3,Microsoft,4
+9.3,August,8,554,High,3129,Application,2021,Microsoft,1419
+7.1,August,8,4,High,21,Application,5,Mcafee,1
+7.2,August,8,78,High,325,Application,50,Mcafee,3
+9.3,August,8,554,High,3129,Application,2021,Irfanview,3
+9.3,August,8,554,High,3129,Application,2021,Imagemagick,3
+9.3,August,8,554,High,3129,Application,2021,Google,5
+9.3,August,8,554,High,3129,Application,2021,Foxitsoftware,5
+7.6,August,8,8,High,29,Application,3,Coreftp,2
+9.3,August,8,554,High,3129,Application,2021,Coreftp,4
+9.3,August,8,554,High,3129,Application,2021,Citrix,2
+7.2,August,8,78,High,325,Application,50,Cisco,47
+9.3,August,8,554,High,3129,Application,2021,Cisco,10
+7.5,August,8,4,High,57,Application,39,Apple,4
+7.6,August,8,8,High,29,Application,3,Apple,1
+9.3,August,8,554,High,3129,Application,2021,Apple,248
+9.3,August,8,554,High,3129,Application,2021,Adobe,567
+9.3,August,8,554,High,3129,Operation System,1011,Winscp,1
+7.2,August,8,78,High,325,Operation System,127,Unknown,148
+7.5,August,8,4,High,57,Operation System,4,Unknown,14
+9.3,August,8,554,High,3129,Operation System,1011,Unknown,16
+9.3,August,8,554,High,3129,Operation System,1011,Techsmith,1
+9.3,August,8,554,High,3129,Operation System,1011,Sas,3
+9.3,August,8,554,High,3129,Operation System,1011,Samsung,1
+9.3,August,8,554,High,3129,Operation System,1011,Realnetworks,6
+7.5,August,8,4,High,57,Operation System,4,Php,3
+8.5,August,8,2,High,7,Operation System,4,Php,1
+9.3,August,8,554,High,3129,Operation System,1011,Php,1
+7.5,August,8,4,High,57,Operation System,4,Oracle,8
+9.3,August,8,554,High,3129,Operation System,1011,Oracle,145
+9.3,August,8,554,High,3129,Operation System,1011,Openssl,9
+8.5,August,8,2,High,7,Operation System,4,Openbsd,2
+9.3,August,8,554,High,3129,Operation System,1011,O,81
+9.3,August,8,554,High,3129,Operation System,1011,Nullsoft,6
+7.5,August,8,4,High,57,Operation System,4,Mozilla,24
+9.3,August,8,554,High,3129,Operation System,1011,Mozilla,593
+7.1,August,8,4,High,21,Operation System,16,Microsoft,20
+7.2,August,8,78,High,325,Operation System,127,Microsoft,127
+7.5,August,8,4,High,57,Operation System,4,Microsoft,4
+7.6,August,8,8,High,29,Operation System,26,Microsoft,26
+7.8,August,8,2,High,17,Operation System,17,Microsoft,17
+8.5,August,8,2,High,7,Operation System,4,Microsoft,4
+9,August,8,1,High,37,Operation System,37,Microsoft,37
+9.3,August,8,554,High,3129,Operation System,1011,Microsoft,1419
+7.1,August,8,4,High,21,Operation System,16,Mcafee,1
+7.2,August,8,78,High,325,Operation System,127,Mcafee,3
+9.3,August,8,554,High,3129,Operation System,1011,Irfanview,3
+9.3,August,8,554,High,3129,Operation System,1011,Imagemagick,3
+9.3,August,8,554,High,3129,Operation System,1011,Google,5
+9.3,August,8,554,High,3129,Operation System,1011,Foxitsoftware,5
+7.6,August,8,8,High,29,Operation System,26,Coreftp,2
+9.3,August,8,554,High,3129,Operation System,1011,Coreftp,4
+9.3,August,8,554,High,3129,Operation System,1011,Citrix,2
+7.2,August,8,78,High,325,Operation System,127,Cisco,47
+9.3,August,8,554,High,3129,Operation System,1011,Cisco,10
+7.5,August,8,4,High,57,Operation System,4,Apple,4
+7.6,August,8,8,High,29,Operation System,26,Apple,1
+9.3,August,8,554,High,3129,Operation System,1011,Apple,248
+9.3,August,8,554,High,3129,Operation System,1011,Adobe,567
+9.3,August,8,554,High,3129,Unknown,97,Winscp,1
+7.2,August,8,78,High,325,Unknown,148,Unknown,148
+7.5,August,8,4,High,57,Unknown,14,Unknown,14
+9.3,August,8,554,High,3129,Unknown,97,Unknown,16
+9.3,August,8,554,High,3129,Unknown,97,Techsmith,1
+9.3,August,8,554,High,3129,Unknown,97,Sas,3
+9.3,August,8,554,High,3129,Unknown,97,Samsung,1
+9.3,August,8,554,High,3129,Unknown,97,Realnetworks,6
+7.5,August,8,4,High,57,Unknown,14,Php,3
+9.3,August,8,554,High,3129,Unknown,97,Php,1
+7.5,August,8,4,High,57,Unknown,14,Oracle,8
+9.3,August,8,554,High,3129,Unknown,97,Oracle,145
+9.3,August,8,554,High,3129,Unknown,97,Openssl,9
+9.3,August,8,554,High,3129,Unknown,97,O,81
+9.3,August,8,554,High,3129,Unknown,97,Nullsoft,6
+7.5,August,8,4,High,57,Unknown,14,Mozilla,24
+9.3,August,8,554,High,3129,Unknown,97,Mozilla,593
+7.2,August,8,78,High,325,Unknown,148,Microsoft,127
+7.5,August,8,4,High,57,Unknown,14,Microsoft,4
+9.3,August,8,554,High,3129,Unknown,97,Microsoft,1419
+7.2,August,8,78,High,325,Unknown,148,Mcafee,3
+9.3,August,8,554,High,3129,Unknown,97,Irfanview,3
+9.3,August,8,554,High,3129,Unknown,97,Imagemagick,3
+9.3,August,8,554,High,3129,Unknown,97,Google,5
+9.3,August,8,554,High,3129,Unknown,97,Foxitsoftware,5
+9.3,August,8,554,High,3129,Unknown,97,Coreftp,4
+9.3,August,8,554,High,3129,Unknown,97,Citrix,2
+7.2,August,8,78,High,325,Unknown,148,Cisco,47
+9.3,August,8,554,High,3129,Unknown,97,Cisco,10
+7.5,August,8,4,High,57,Unknown,14,Apple,4
+9.3,August,8,554,High,3129,Unknown,97,Apple,248
+9.3,August,8,554,High,3129,Unknown,97,Adobe,567
+9.3,September,9,1797,High,3129,Application,2021,Winscp,1
+7.2,September,9,220,High,325,Application,50,Unknown,148
+7.5,September,9,30,High,57,Application,39,Unknown,14
+9.3,September,9,1797,High,3129,Application,2021,Unknown,16
+9.3,September,9,1797,High,3129,Application,2021,Techsmith,1
+9.3,September,9,1797,High,3129,Application,2021,Sas,3
+9.3,September,9,1797,High,3129,Application,2021,Samsung,1
+9.3,September,9,1797,High,3129,Application,2021,Realnetworks,6
+7.5,September,9,30,High,57,Application,39,Php,3
+8.3,September,9,2,High,2,Application,2,Php,2
+8.5,September,9,5,High,7,Application,3,Php,1
+9.3,September,9,1797,High,3129,Application,2021,Php,1
+7.5,September,9,30,High,57,Application,39,Oracle,8
+9.3,September,9,1797,High,3129,Application,2021,Oracle,145
+9.4,September,9,1,High,1,Application,1,Oracle,1
+9.3,September,9,1797,High,3129,Application,2021,Openssl,9
+8.5,September,9,5,High,7,Application,3,Openbsd,2
+9.3,September,9,1797,High,3129,Application,2021,O,81
+9.3,September,9,1797,High,3129,Application,2021,Nullsoft,6
+7.5,September,9,30,High,57,Application,39,Mozilla,24
+8.8,September,9,1,High,17,Application,17,Mozilla,17
+9.3,September,9,1797,High,3129,Application,2021,Mozilla,593
+7.1,September,9,15,High,21,Application,5,Microsoft,20
+7.2,September,9,220,High,325,Application,50,Microsoft,127
+7.5,September,9,30,High,57,Application,39,Microsoft,4
+7.6,September,9,16,High,29,Application,3,Microsoft,26
+8.5,September,9,5,High,7,Application,3,Microsoft,4
+9.3,September,9,1797,High,3129,Application,2021,Microsoft,1419
+7.1,September,9,15,High,21,Application,5,Mcafee,1
+7.2,September,9,220,High,325,Application,50,Mcafee,3
+9.3,September,9,1797,High,3129,Application,2021,Irfanview,3
+9.3,September,9,1797,High,3129,Application,2021,Imagemagick,3
+9.3,September,9,1797,High,3129,Application,2021,Google,5
+9.3,September,9,1797,High,3129,Application,2021,Foxitsoftware,5
+7.6,September,9,16,High,29,Application,3,Coreftp,2
+9.3,September,9,1797,High,3129,Application,2021,Coreftp,4
+9.3,September,9,1797,High,3129,Application,2021,Citrix,2
+7.2,September,9,220,High,325,Application,50,Cisco,47
+9.3,September,9,1797,High,3129,Application,2021,Cisco,10
+7.5,September,9,30,High,57,Application,39,Apple,4
+7.6,September,9,16,High,29,Application,3,Apple,1
+9.3,September,9,1797,High,3129,Application,2021,Apple,248
+9.3,September,9,1797,High,3129,Application,2021,Adobe,567
+9.3,September,9,1797,High,3129,Operation System,1011,Winscp,1
+7.2,September,9,220,High,325,Operation System,127,Unknown,148
+7.5,September,9,30,High,57,Operation System,4,Unknown,14
+9.3,September,9,1797,High,3129,Operation System,1011,Unknown,16
+9.3,September,9,1797,High,3129,Operation System,1011,Techsmith,1
+9.3,September,9,1797,High,3129,Operation System,1011,Sas,3
+9.3,September,9,1797,High,3129,Operation System,1011,Samsung,1
+9.3,September,9,1797,High,3129,Operation System,1011,Realnetworks,6
+7.5,September,9,30,High,57,Operation System,4,Php,3
+8.5,September,9,5,High,7,Operation System,4,Php,1
+9.3,September,9,1797,High,3129,Operation System,1011,Php,1
+7.5,September,9,30,High,57,Operation System,4,Oracle,8
+9.3,September,9,1797,High,3129,Operation System,1011,Oracle,145
+9.3,September,9,1797,High,3129,Operation System,1011,Openssl,9
+8.5,September,9,5,High,7,Operation System,4,Openbsd,2
+9.3,September,9,1797,High,3129,Operation System,1011,O,81
+9.3,September,9,1797,High,3129,Operation System,1011,Nullsoft,6
+7.5,September,9,30,High,57,Operation System,4,Mozilla,24
+9.3,September,9,1797,High,3129,Operation System,1011,Mozilla,593
+7.1,September,9,15,High,21,Operation System,16,Microsoft,20
+7.2,September,9,220,High,325,Operation System,127,Microsoft,127
+7.5,September,9,30,High,57,Operation System,4,Microsoft,4
+7.6,September,9,16,High,29,Operation System,26,Microsoft,26
+7.8,September,9,15,High,17,Operation System,17,Microsoft,17
+8.5,September,9,5,High,7,Operation System,4,Microsoft,4
+9,September,9,34,High,37,Operation System,37,Microsoft,37
+9.3,September,9,1797,High,3129,Operation System,1011,Microsoft,1419
+7.1,September,9,15,High,21,Operation System,16,Mcafee,1
+7.2,September,9,220,High,325,Operation System,127,Mcafee,3
+9.3,September,9,1797,High,3129,Operation System,1011,Irfanview,3
+9.3,September,9,1797,High,3129,Operation System,1011,Imagemagick,3
+9.3,September,9,1797,High,3129,Operation System,1011,Google,5
+9.3,September,9,1797,High,3129,Operation System,1011,Foxitsoftware,5
+7.6,September,9,16,High,29,Operation System,26,Coreftp,2
+9.3,September,9,1797,High,3129,Operation System,1011,Coreftp,4
+9.3,September,9,1797,High,3129,Operation System,1011,Citrix,2
+7.2,September,9,220,High,325,Operation System,127,Cisco,47
+9.3,September,9,1797,High,3129,Operation System,1011,Cisco,10
+7.5,September,9,30,High,57,Operation System,4,Apple,4
+7.6,September,9,16,High,29,Operation System,26,Apple,1
+9.3,September,9,1797,High,3129,Operation System,1011,Apple,248
+9.3,September,9,1797,High,3129,Operation System,1011,Adobe,567
+9.3,September,9,1797,High,3129,Unknown,97,Winscp,1
+7.2,September,9,220,High,325,Unknown,148,Unknown,148
+7.5,September,9,30,High,57,Unknown,14,Unknown,14
+9.3,September,9,1797,High,3129,Unknown,97,Unknown,16
+9.3,September,9,1797,High,3129,Unknown,97,Techsmith,1
+9.3,September,9,1797,High,3129,Unknown,97,Sas,3
+9.3,September,9,1797,High,3129,Unknown,97,Samsung,1
+9.3,September,9,1797,High,3129,Unknown,97,Realnetworks,6
+7.5,September,9,30,High,57,Unknown,14,Php,3
+9.3,September,9,1797,High,3129,Unknown,97,Php,1
+7.5,September,9,30,High,57,Unknown,14,Oracle,8
+9.3,September,9,1797,High,3129,Unknown,97,Oracle,145
+9.3,September,9,1797,High,3129,Unknown,97,Openssl,9
+9.3,September,9,1797,High,3129,Unknown,97,O,81
+9.3,September,9,1797,High,3129,Unknown,97,Nullsoft,6
+7.5,September,9,30,High,57,Unknown,14,Mozilla,24
+9.3,September,9,1797,High,3129,Unknown,97,Mozilla,593
+7.2,September,9,220,High,325,Unknown,148,Microsoft,127
+7.5,September,9,30,High,57,Unknown,14,Microsoft,4
+9.3,September,9,1797,High,3129,Unknown,97,Microsoft,1419
+7.2,September,9,220,High,325,Unknown,148,Mcafee,3
+9.3,September,9,1797,High,3129,Unknown,97,Irfanview,3
+9.3,September,9,1797,High,3129,Unknown,97,Imagemagick,3
+9.3,September,9,1797,High,3129,Unknown,97,Google,5
+9.3,September,9,1797,High,3129,Unknown,97,Foxitsoftware,5
+9.3,September,9,1797,High,3129,Unknown,97,Coreftp,4
+9.3,September,9,1797,High,3129,Unknown,97,Citrix,2
+7.2,September,9,220,High,325,Unknown,148,Cisco,47
+9.3,September,9,1797,High,3129,Unknown,97,Cisco,10
+7.5,September,9,30,High,57,Unknown,14,Apple,4
+9.3,September,9,1797,High,3129,Unknown,97,Apple,248
+9.3,September,9,1797,High,3129,Unknown,97,Adobe,567
+10,June,6,18,Critical,1976,Application,1855,Winzip,4
+10,June,6,18,Critical,1976,Application,1855,Vmware,1
+10,June,6,18,Critical,1976,Application,1855,Unknown,15
+10,June,6,18,Critical,1976,Application,1855,Trend_micro,1
+10,June,6,18,Critical,1976,Application,1855,Skype,3
+10,June,6,18,Critical,1976,Application,1855,Samba,3
+10,June,6,18,Critical,1976,Application,1855,Php,2
+10,June,6,18,Critical,1976,Application,1855,Oracle,1581
+10,June,6,18,Critical,1976,Application,1855,O,61
+10,June,6,18,Critical,1976,Application,1855,Mozilla,86
+10,June,6,18,Critical,1976,Application,1855,Microsoft,91
+10,June,6,18,Critical,1976,Application,1855,Mcafee,4
+10,June,6,18,Critical,1976,Application,1855,Gnu,17
+10,June,6,18,Critical,1976,Application,1855,Cisco,1
+10,June,6,18,Critical,1976,Application,1855,Apple,47
+10,June,6,18,Critical,1976,Application,1855,Adobe,59
+10,June,6,18,Critical,1976,Operation System,45,Winzip,4
+10,June,6,18,Critical,1976,Operation System,45,Vmware,1
+10,June,6,18,Critical,1976,Operation System,45,Unknown,15
+10,June,6,18,Critical,1976,Operation System,45,Trend_micro,1
+10,June,6,18,Critical,1976,Operation System,45,Skype,3
+10,June,6,18,Critical,1976,Operation System,45,Samba,3
+10,June,6,18,Critical,1976,Operation System,45,Php,2
+10,June,6,18,Critical,1976,Operation System,45,Oracle,1581
+10,June,6,18,Critical,1976,Operation System,45,O,61
+10,June,6,18,Critical,1976,Operation System,45,Mozilla,86
+10,June,6,18,Critical,1976,Operation System,45,Microsoft,91
+10,June,6,18,Critical,1976,Operation System,45,Mcafee,4
+10,June,6,18,Critical,1976,Operation System,45,Gnu,17
+10,June,6,18,Critical,1976,Operation System,45,Cisco,1
+10,June,6,18,Critical,1976,Operation System,45,Apple,47
+10,June,6,18,Critical,1976,Operation System,45,Adobe,59
+10,June,6,18,Critical,1976,Unknown,76,Winzip,4
+10,June,6,18,Critical,1976,Unknown,76,Vmware,1
+10,June,6,18,Critical,1976,Unknown,76,Unknown,15
+10,June,6,18,Critical,1976,Unknown,76,Trend_micro,1
+10,June,6,18,Critical,1976,Unknown,76,Skype,3
+10,June,6,18,Critical,1976,Unknown,76,Samba,3
+10,June,6,18,Critical,1976,Unknown,76,Php,2
+10,June,6,18,Critical,1976,Unknown,76,Oracle,1581
+10,June,6,18,Critical,1976,Unknown,76,O,61
+10,June,6,18,Critical,1976,Unknown,76,Mozilla,86
+10,June,6,18,Critical,1976,Unknown,76,Microsoft,91
+10,June,6,18,Critical,1976,Unknown,76,Mcafee,4
+10,June,6,18,Critical,1976,Unknown,76,Gnu,17
+10,June,6,18,Critical,1976,Unknown,76,Cisco,1
+10,June,6,18,Critical,1976,Unknown,76,Apple,47
+10,June,6,18,Critical,1976,Unknown,76,Adobe,59
+10,July,7,247,Critical,1976,Application,1855,Winzip,4
+10,July,7,247,Critical,1976,Application,1855,Vmware,1
+10,July,7,247,Critical,1976,Application,1855,Unknown,15
+10,July,7,247,Critical,1976,Application,1855,Trend_micro,1
+10,July,7,247,Critical,1976,Application,1855,Skype,3
+10,July,7,247,Critical,1976,Application,1855,Samba,3
+10,July,7,247,Critical,1976,Application,1855,Php,2
+10,July,7,247,Critical,1976,Application,1855,Oracle,1581
+10,July,7,247,Critical,1976,Application,1855,O,61
+10,July,7,247,Critical,1976,Application,1855,Mozilla,86
+10,July,7,247,Critical,1976,Application,1855,Microsoft,91
+10,July,7,247,Critical,1976,Application,1855,Mcafee,4
+10,July,7,247,Critical,1976,Application,1855,Gnu,17
+10,July,7,247,Critical,1976,Application,1855,Cisco,1
+10,July,7,247,Critical,1976,Application,1855,Apple,47
+10,July,7,247,Critical,1976,Application,1855,Adobe,59
+10,July,7,247,Critical,1976,Operation System,45,Winzip,4
+10,July,7,247,Critical,1976,Operation System,45,Vmware,1
+10,July,7,247,Critical,1976,Operation System,45,Unknown,15
+10,July,7,247,Critical,1976,Operation System,45,Trend_micro,1
+10,July,7,247,Critical,1976,Operation System,45,Skype,3
+10,July,7,247,Critical,1976,Operation System,45,Samba,3
+10,July,7,247,Critical,1976,Operation System,45,Php,2
+10,July,7,247,Critical,1976,Operation System,45,Oracle,1581
+10,July,7,247,Critical,1976,Operation System,45,O,61
+10,July,7,247,Critical,1976,Operation System,45,Mozilla,86
+10,July,7,247,Critical,1976,Operation System,45,Microsoft,91
+10,July,7,247,Critical,1976,Operation System,45,Mcafee,4
+10,July,7,247,Critical,1976,Operation System,45,Gnu,17
+10,July,7,247,Critical,1976,Operation System,45,Cisco,1
+10,July,7,247,Critical,1976,Operation System,45,Apple,47
+10,July,7,247,Critical,1976,Operation System,45,Adobe,59
+10,July,7,247,Critical,1976,Unknown,76,Winzip,4
+10,July,7,247,Critical,1976,Unknown,76,Vmware,1
+10,July,7,247,Critical,1976,Unknown,76,Unknown,15
+10,July,7,247,Critical,1976,Unknown,76,Trend_micro,1
+10,July,7,247,Critical,1976,Unknown,76,Skype,3
+10,July,7,247,Critical,1976,Unknown,76,Samba,3
+10,July,7,247,Critical,1976,Unknown,76,Php,2
+10,July,7,247,Critical,1976,Unknown,76,Oracle,1581
+10,July,7,247,Critical,1976,Unknown,76,O,61
+10,July,7,247,Critical,1976,Unknown,76,Mozilla,86
+10,July,7,247,Critical,1976,Unknown,76,Microsoft,91
+10,July,7,247,Critical,1976,Unknown,76,Mcafee,4
+10,July,7,247,Critical,1976,Unknown,76,Gnu,17
+10,July,7,247,Critical,1976,Unknown,76,Cisco,1
+10,July,7,247,Critical,1976,Unknown,76,Apple,47
+10,July,7,247,Critical,1976,Unknown,76,Adobe,59
+10,August,8,256,Critical,1976,Application,1855,Winzip,4
+10,August,8,256,Critical,1976,Application,1855,Vmware,1
+10,August,8,256,Critical,1976,Application,1855,Unknown,15
+10,August,8,256,Critical,1976,Application,1855,Trend_micro,1
+10,August,8,256,Critical,1976,Application,1855,Skype,3
+10,August,8,256,Critical,1976,Application,1855,Samba,3
+10,August,8,256,Critical,1976,Application,1855,Php,2
+10,August,8,256,Critical,1976,Application,1855,Oracle,1581
+10,August,8,256,Critical,1976,Application,1855,O,61
+10,August,8,256,Critical,1976,Application,1855,Mozilla,86
+10,August,8,256,Critical,1976,Application,1855,Microsoft,91
+10,August,8,256,Critical,1976,Application,1855,Mcafee,4
+10,August,8,256,Critical,1976,Application,1855,Gnu,17
+10,August,8,256,Critical,1976,Application,1855,Cisco,1
+10,August,8,256,Critical,1976,Application,1855,Apple,47
+10,August,8,256,Critical,1976,Application,1855,Adobe,59
+10,August,8,256,Critical,1976,Operation System,45,Winzip,4
+10,August,8,256,Critical,1976,Operation System,45,Vmware,1
+10,August,8,256,Critical,1976,Operation System,45,Unknown,15
+10,August,8,256,Critical,1976,Operation System,45,Trend_micro,1
+10,August,8,256,Critical,1976,Operation System,45,Skype,3
+10,August,8,256,Critical,1976,Operation System,45,Samba,3
+10,August,8,256,Critical,1976,Operation System,45,Php,2
+10,August,8,256,Critical,1976,Operation System,45,Oracle,1581
+10,August,8,256,Critical,1976,Operation System,45,O,61
+10,August,8,256,Critical,1976,Operation System,45,Mozilla,86
+10,August,8,256,Critical,1976,Operation System,45,Microsoft,91
+10,August,8,256,Critical,1976,Operation System,45,Mcafee,4
+10,August,8,256,Critical,1976,Operation System,45,Gnu,17
+10,August,8,256,Critical,1976,Operation System,45,Cisco,1
+10,August,8,256,Critical,1976,Operation System,45,Apple,47
+10,August,8,256,Critical,1976,Operation System,45,Adobe,59
+10,August,8,256,Critical,1976,Unknown,76,Winzip,4
+10,August,8,256,Critical,1976,Unknown,76,Vmware,1
+10,August,8,256,Critical,1976,Unknown,76,Unknown,15
+10,August,8,256,Critical,1976,Unknown,76,Trend_micro,1
+10,August,8,256,Critical,1976,Unknown,76,Skype,3
+10,August,8,256,Critical,1976,Unknown,76,Samba,3
+10,August,8,256,Critical,1976,Unknown,76,Php,2
+10,August,8,256,Critical,1976,Unknown,76,Oracle,1581
+10,August,8,256,Critical,1976,Unknown,76,O,61
+10,August,8,256,Critical,1976,Unknown,76,Mozilla,86
+10,August,8,256,Critical,1976,Unknown,76,Microsoft,91
+10,August,8,256,Critical,1976,Unknown,76,Mcafee,4
+10,August,8,256,Critical,1976,Unknown,76,Gnu,17
+10,August,8,256,Critical,1976,Unknown,76,Cisco,1
+10,August,8,256,Critical,1976,Unknown,76,Apple,47
+10,August,8,256,Critical,1976,Unknown,76,Adobe,59
+10,September,9,1455,Critical,1976,Application,1855,Winzip,4
+10,September,9,1455,Critical,1976,Application,1855,Vmware,1
+10,September,9,1455,Critical,1976,Application,1855,Unknown,15
+10,September,9,1455,Critical,1976,Application,1855,Trend_micro,1
+10,September,9,1455,Critical,1976,Application,1855,Skype,3
+10,September,9,1455,Critical,1976,Application,1855,Samba,3
+10,September,9,1455,Critical,1976,Application,1855,Php,2
+10,September,9,1455,Critical,1976,Application,1855,Oracle,1581
+10,September,9,1455,Critical,1976,Application,1855,O,61
+10,September,9,1455,Critical,1976,Application,1855,Mozilla,86
+10,September,9,1455,Critical,1976,Application,1855,Microsoft,91
+10,September,9,1455,Critical,1976,Application,1855,Mcafee,4
+10,September,9,1455,Critical,1976,Application,1855,Gnu,17
+10,September,9,1455,Critical,1976,Application,1855,Cisco,1
+10,September,9,1455,Critical,1976,Application,1855,Apple,47
+10,September,9,1455,Critical,1976,Application,1855,Adobe,59
+10,September,9,1455,Critical,1976,Operation System,45,Winzip,4
+10,September,9,1455,Critical,1976,Operation System,45,Vmware,1
+10,September,9,1455,Critical,1976,Operation System,45,Unknown,15
+10,September,9,1455,Critical,1976,Operation System,45,Trend_micro,1
+10,September,9,1455,Critical,1976,Operation System,45,Skype,3
+10,September,9,1455,Critical,1976,Operation System,45,Samba,3
+10,September,9,1455,Critical,1976,Operation System,45,Php,2
+10,September,9,1455,Critical,1976,Operation System,45,Oracle,1581
+10,September,9,1455,Critical,1976,Operation System,45,O,61
+10,September,9,1455,Critical,1976,Operation System,45,Mozilla,86
+10,September,9,1455,Critical,1976,Operation System,45,Microsoft,91
+10,September,9,1455,Critical,1976,Operation System,45,Mcafee,4
+10,September,9,1455,Critical,1976,Operation System,45,Gnu,17
+10,September,9,1455,Critical,1976,Operation System,45,Cisco,1
+10,September,9,1455,Critical,1976,Operation System,45,Apple,47
+10,September,9,1455,Critical,1976,Operation System,45,Adobe,59
+10,September,9,1455,Critical,1976,Unknown,76,Winzip,4
+10,September,9,1455,Critical,1976,Unknown,76,Vmware,1
+10,September,9,1455,Critical,1976,Unknown,76,Unknown,15
+10,September,9,1455,Critical,1976,Unknown,76,Trend_micro,1
+10,September,9,1455,Critical,1976,Unknown,76,Skype,3
+10,September,9,1455,Critical,1976,Unknown,76,Samba,3
+10,September,9,1455,Critical,1976,Unknown,76,Php,2
+10,September,9,1455,Critical,1976,Unknown,76,Oracle,1581
+10,September,9,1455,Critical,1976,Unknown,76,O,61
+10,September,9,1455,Critical,1976,Unknown,76,Mozilla,86
+10,September,9,1455,Critical,1976,Unknown,76,Microsoft,91
+10,September,9,1455,Critical,1976,Unknown,76,Mcafee,4
+10,September,9,1455,Critical,1976,Unknown,76,Gnu,17
+10,September,9,1455,Critical,1976,Unknown,76,Cisco,1
+10,September,9,1455,Critical,1976,Unknown,76,Apple,47
+10,September,9,1455,Critical,1976,Unknown,76,Adobe,59

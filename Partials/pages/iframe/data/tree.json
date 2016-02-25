@@ -1,0 +1,2704 @@
+{
+  "name": "UMMC",
+  "children": [
+  
+  {
+    "name": "Allergy", 
+    "children": [
+      {
+        "name": "Office of Research", 
+        "children": [
+          {
+            "name": "Fazlay Faruque"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Cancer", 
+    "children": [
+      {
+        "name": "Biochemistry", 
+        "children": [
+          {
+            "name": "Drazen Raucher"
+          }, 
+          {
+            "name": "Jung Ryu"
+          }, 
+          {
+            "name": "Luis Martinez"
+          }, 
+          {
+            "name": "Michael Hebert"
+          }
+        ]
+      }, 
+      {
+        "name": "Cancer Institute", 
+        "children": [
+          {
+            "name": "Anait Levenson"
+          }, 
+          {
+            "name": "Christian Gomez"
+          }, 
+          {
+            "name": "Fei Xing"
+          }, 
+          {
+            "name": "Keli Xu"
+          }, 
+          {
+            "name": "Kounosuke Watabe"
+          }, 
+          {
+            "name": "Lucio Miele"
+          }, 
+          {
+            "name": "Tondre Buck"
+          }, 
+          {
+            "name": "Yin-Yuan Mo"
+          }
+        ]
+      }, 
+      {
+        "name": "Library", 
+        "children": [
+          {
+            "name": "Chameka Robinson"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Chindo Hicks"
+          }, 
+          {
+            "name": "Deborah Konkle-Parker"
+          }, 
+          {
+            "name": "JAMES THIGPEN"
+          }, 
+          {
+            "name": "Natale Sheehan"
+          }, 
+          {
+            "name": "Stephanie Elkins"
+          }, 
+          {
+            "name": "Thomas Mosley"
+          }
+        ]
+      }, 
+      {
+        "name": "Pathology", 
+        "children": [
+          {
+            "name": "Xinchun Zhou"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Frances Megason"
+          }
+        ]
+      }, 
+      {
+        "name": "Radiology", 
+        "children": [
+          {
+            "name": "Andrew Smith"
+          }, 
+          {
+            "name": "Paul Case"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Cardiovascular", 
+    "children": [
+      {
+        "name": "Biochemistry", 
+        "children": [
+          {
+            "name": "Damian Romero"
+          }
+        ]
+      }, 
+      {
+        "name": "Emergency Medicine", 
+        "children": [
+          {
+            "name": "Alan Jones"
+          }, 
+          {
+            "name": "Michael Puskarich"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Adolfo Correa"
+          }, 
+          {
+            "name": "Celso Gomezsanchez"
+          }, 
+          {
+            "name": "Ernest Quin"
+          }, 
+          {
+            "name": "Herman Taylor"
+          }, 
+          {
+            "name": "Marino Bruce"
+          }, 
+          {
+            "name": "Mario Sims"
+          }, 
+          {
+            "name": "Marion Wofford"
+          }, 
+          {
+            "name": "Solomon Musani"
+          }, 
+          {
+            "name": "Tandaw Samdarshi"
+          }, 
+          {
+            "name": "Thomas Mosley"
+          }, 
+          {
+            "name": "Tibor Fulop"
+          }
+        ]
+      }, 
+      {
+        "name": "Otolaryngology and Communicative Sciences", 
+        "children": [
+          {
+            "name": "Thomas Payne"
+          }
+        ]
+      }, 
+      {
+        "name": "Pharmacology and Toxicology", 
+        "children": [
+          {
+            "name": "George Booz"
+          }, 
+          {
+            "name": "Jan Williams"
+          }, 
+          {
+            "name": "Jennifer Sasser"
+          }, 
+          {
+            "name": "Jia Long Zhuo"
+          }, 
+          {
+            "name": "Jian-Xiong Chen"
+          }, 
+          {
+            "name": "Mallikarjuna Pabbidi"
+          }, 
+          {
+            "name": "Michael Garrett"
+          }, 
+          {
+            "name": "Richard Roman"
+          }, 
+          {
+            "name": "Sean Didion"
+          }, 
+          {
+            "name": "Sydney Murphy"
+          }, 
+          {
+            "name": "Ying Ge"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Ana Palei"
+          }, 
+          {
+            "name": "Barbara Alexander"
+          }, 
+          {
+            "name": "David Stec"
+          }, 
+          {
+            "name": "Eric George"
+          }, 
+          {
+            "name": "Heather Drummond"
+          }, 
+          {
+            "name": "JAMES WILSON"
+          }, 
+          {
+            "name": "Jane Reckelhoff"
+          }, 
+          {
+            "name": "Joey Granger"
+          }, 
+          {
+            "name": "John Hall"
+          }, 
+          {
+            "name": "Junie Warrington Tate"
+          }, 
+          {
+            "name": "Keisa Mathis"
+          }, 
+          {
+            "name": "Kristine Deleon Pennell"
+          }, 
+          {
+            "name": "Lisandra de Castro Bras"
+          }, 
+          {
+            "name": "Lusha Xiang"
+          }, 
+          {
+            "name": "Merry Lindsey"
+          }, 
+          {
+            "name": "Michael Ryan"
+          }, 
+          {
+            "name": "Padmanabhan Iyer"
+          }, 
+          {
+            "name": "Robert Hester"
+          }, 
+          {
+            "name": "Ruisheng Liu"
+          }, 
+          {
+            "name": "Sydney Murphy"
+          }, 
+          {
+            "name": "Yan Lu"
+          }
+        ]
+      }, 
+      {
+        "name": "Psychiatry and Human Behavior", 
+        "children": [
+          {
+            "name": "Craig Stockmeier"
+          }
+        ]
+      }, 
+      {
+        "name": "Radiology", 
+        "children": [
+          {
+            "name": "Andrew Rivard"
+          }, 
+          {
+            "name": "Michael Doherty"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Children's Health", 
+    "children": [
+      {
+        "name": "Center of Biostatistics and Bioinformatics", 
+        "children": [
+          {
+            "name": "Michael Griswold"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Anne Yates"
+          }, 
+          {
+            "name": "Binford Nash"
+          }, 
+          {
+            "name": "Edwin Harmon"
+          }, 
+          {
+            "name": "GLEN GRAVES"
+          }, 
+          {
+            "name": "Hannah Gay"
+          }, 
+          {
+            "name": "Jeffrey Crout"
+          }, 
+          {
+            "name": "Joseph Majure"
+          }, 
+          {
+            "name": "L Buttross"
+          }, 
+          {
+            "name": "Makram Ebeid"
+          }, 
+          {
+            "name": "Mary Taylor"
+          }, 
+          {
+            "name": "Mehul Dixit"
+          }, 
+          {
+            "name": "Naznin Dixit"
+          }, 
+          {
+            "name": "Norma Ojeda"
+          }, 
+          {
+            "name": "Omar Abdulrahman"
+          }, 
+          {
+            "name": "Owen Evans"
+          }, 
+          {
+            "name": "Scott Benton"
+          }, 
+          {
+            "name": "William Boyte"
+          }, 
+          {
+            "name": "William Needham"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Barbara Alexander"
+          }
+        ]
+      }, 
+      {
+        "name": "Psychiatry and Human Behavior", 
+        "children": [
+          {
+            "name": "Kim Gratz"
+          }
+        ]
+      }, 
+      {
+        "name": "Radiology", 
+        "children": [
+          {
+            "name": "Judy James"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Nursing", 
+        "children": [
+          {
+            "name": "Anne Norwood"
+          }
+        ]
+      }, 
+      {
+        "name": "University Hospital Nursing Services", 
+        "children": [
+          {
+            "name": "Jennifer Stephen"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Computational Sciences", 
+    "children": [
+      {
+        "name": "Emergency Medicine", 
+        "children": [
+          {
+            "name": "Richard Summers"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Merry Lindsey"
+          }, 
+          {
+            "name": "Padmanabhan Iyer"
+          }, 
+          {
+            "name": "Robert Hester"
+          }, 
+          {
+            "name": "William Pruett"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Degenerative Brain Disease", 
+    "children": [
+      {
+        "name": "Biochemistry", 
+        "children": [
+          {
+            "name": "Michael Hebert"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Beverly Windham"
+          }
+        ]
+      }, 
+      {
+        "name": "Neurology", 
+        "children": [
+          {
+            "name": "Alexander Auchus"
+          }
+        ]
+      }, 
+      {
+        "name": "Orthopedic Surgery", 
+        "children": [
+          {
+            "name": "Michelle Tucci"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Yi Pang"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Digestive", 
+    "children": [
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Andrew Cote"
+          }, 
+          {
+            "name": "Brian Borg"
+          }, 
+          {
+            "name": "Nitin Gupta"
+          }, 
+          {
+            "name": "Shou Tang"
+          }, 
+          {
+            "name": "Thomas Abell"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Phyllis Nowicki"
+          }
+        ]
+      }, 
+      {
+        "name": "Radiology", 
+        "children": [
+          {
+            "name": "Andrew Smith"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Education", 
+    "children": [
+      {
+        "name": "Academic Affairs", 
+        "children": [
+          {
+            "name": "Robin Rockhold"
+          }
+        ]
+      }, 
+      {
+        "name": "Family Medicine", 
+        "children": [
+          {
+            "name": "Shannon Moore"
+          }, 
+          {
+            "name": "Stephen Silberman"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Deborah Konkle-Parker"
+          }, 
+          {
+            "name": "Tandaw Samdarshi"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Owen Evans"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Michael Ryan"
+          }
+        ]
+      }, 
+      {
+        "name": "Psychiatry and Human Behavior", 
+        "children": [
+          {
+            "name": "Julie Schumacher-Coffey"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Health Related Professions", 
+        "children": [
+          {
+            "name": "Juanyce Taylor"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Nursing", 
+        "children": [
+          {
+            "name": "Anne Norwood"
+          }, 
+          {
+            "name": "Carl Mangum"
+          }, 
+          {
+            "name": "PATRICIA WALTMAN"
+          }, 
+          {
+            "name": "Tina Martin"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Emergency Medicine", 
+    "children": [
+      {
+        "name": "Emergency Medicine", 
+        "children": [
+          {
+            "name": "Alan Jones"
+          }, 
+          {
+            "name": "Michael Puskarich"
+          }
+        ]
+      }, 
+      {
+        "name": "Office of Vice Chancellor", 
+        "children": [
+          {
+            "name": "Jonathan Wilson"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Genetics, Molecular, Cellular", 
+    "children": [
+      {
+        "name": "Biochemistry", 
+        "children": [
+          {
+            "name": "Damian Romero"
+          }, 
+          {
+            "name": "Michael Hebert"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Alan Penman"
+          }, 
+          {
+            "name": "Deborah Konkle-Parker"
+          }, 
+          {
+            "name": "Herman Taylor"
+          }, 
+          {
+            "name": "Solomon Musani"
+          }, 
+          {
+            "name": "Thomas Mosley"
+          }, 
+          {
+            "name": "Tibor Fulop"
+          }
+        ]
+      }, 
+      {
+        "name": "Microbiology", 
+        "children": [
+          {
+            "name": "David Robinson"
+          }
+        ]
+      }, 
+      {
+        "name": "Neurology", 
+        "children": [
+          {
+            "name": "Alexander Auchus"
+          }
+        ]
+      }, 
+      {
+        "name": "Ophthalmology", 
+        "children": [
+          {
+            "name": "Ching-Jygh Chen"
+          }
+        ]
+      }, 
+      {
+        "name": "Otolaryngology and Communicative Sciences", 
+        "children": [
+          {
+            "name": "Robert Brodell"
+          }, 
+          {
+            "name": "Thomas Payne"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Joseph Majure"
+          }, 
+          {
+            "name": "Michael Nowicki"
+          }, 
+          {
+            "name": "Rathi Iyer"
+          }, 
+          {
+            "name": "Suvankar Majumdar"
+          }
+        ]
+      }, 
+      {
+        "name": "Pharmacology and Toxicology", 
+        "children": [
+          {
+            "name": "Mallikarjuna Pabbidi"
+          }, 
+          {
+            "name": "Marilyn Burke"
+          }, 
+          {
+            "name": "Michael Garrett"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "JAMES WILSON"
+          }, 
+          {
+            "name": "Peter Hosick"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Geriatrics", 
+    "children": [
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Beverly Windham"
+          }, 
+          {
+            "name": "Thomas Mosley"
+          }
+        ]
+      }, 
+      {
+        "name": "Psychiatry and Human Behavior", 
+        "children": [
+          {
+            "name": "Craig Stockmeier"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Health Disparities", 
+    "children": [
+      {
+        "name": "Center of Biostatistics and Bioinformatics", 
+        "children": [
+          {
+            "name": "Michael Griswold"
+          }
+        ]
+      }, 
+      {
+        "name": "Family Medicine", 
+        "children": [
+          {
+            "name": "Stephen Silberman"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Alan Penman"
+          }, 
+          {
+            "name": "Beverly Windham"
+          }, 
+          {
+            "name": "Deborah Konkle-Parker"
+          }, 
+          {
+            "name": "Gailen Marshall"
+          }, 
+          {
+            "name": "Herman Taylor"
+          }, 
+          {
+            "name": "Leandro Mena"
+          }, 
+          {
+            "name": "Mario Sims"
+          }, 
+          {
+            "name": "Solomon Musani"
+          }, 
+          {
+            "name": "Tandaw Samdarshi"
+          }, 
+          {
+            "name": "Thomas Mosley"
+          }, 
+          {
+            "name": "Tibor Fulop"
+          }
+        ]
+      }, 
+      {
+        "name": "Microbiology", 
+        "children": [
+          {
+            "name": "John Meade"
+          }
+        ]
+      }, 
+      {
+        "name": "Office of Vice Chancellor", 
+        "children": [
+          {
+            "name": "Kristi Henderson"
+          }
+        ]
+      }, 
+      {
+        "name": "Otolaryngology and Communicative Sciences", 
+        "children": [
+          {
+            "name": "Thomas Payne"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Binford Nash"
+          }, 
+          {
+            "name": "GLEN GRAVES"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Barbara Alexander"
+          }, 
+          {
+            "name": "JAMES WILSON"
+          }, 
+          {
+            "name": "Michael Ryan"
+          }
+        ]
+      }, 
+      {
+        "name": "Radiology", 
+        "children": [
+          {
+            "name": "Andrew Smith"
+          }, 
+          {
+            "name": "Michael Doherty"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Health Related Professions", 
+        "children": [
+          {
+            "name": "Juanyce Taylor"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Nursing", 
+        "children": [
+          {
+            "name": "Anne Norwood"
+          }, 
+          {
+            "name": "Mary Fouquier"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Hematology", 
+    "children": [
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Carolyn Bigelow"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Frances Megason"
+          }, 
+          {
+            "name": "Mary Smith"
+          }, 
+          {
+            "name": "Rathi Iyer"
+          }, 
+          {
+            "name": "Suvankar Majumdar"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Kidney Disease", 
+    "children": [
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Tibor Fulop"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Norma Ojeda"
+          }
+        ]
+      }, 
+      {
+        "name": "Pharmacology and Toxicology", 
+        "children": [
+          {
+            "name": "Jan Williams"
+          }, 
+          {
+            "name": "Jennifer Sasser"
+          }, 
+          {
+            "name": "Jia Long Zhuo"
+          }, 
+          {
+            "name": "Michael Garrett"
+          }, 
+          {
+            "name": "Richard Roman"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Alejandro Chade"
+          }, 
+          {
+            "name": "Christine Maric-Bilkan"
+          }, 
+          {
+            "name": "Heather Drummond"
+          }, 
+          {
+            "name": "JAMES WILSON"
+          }, 
+          {
+            "name": "Jane Reckelhoff"
+          }, 
+          {
+            "name": "Joey Granger"
+          }, 
+          {
+            "name": "John Hall"
+          }, 
+          {
+            "name": "Keisa Mathis"
+          }, 
+          {
+            "name": "Michael Ryan"
+          }, 
+          {
+            "name": "Ruisheng Liu"
+          }, 
+          {
+            "name": "Yiling Fu"
+          }, 
+          {
+            "name": "Zhen Wang"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Materials Science", 
+    "children": [
+      {
+        "name": "School of Dentistry", 
+        "children": [
+          {
+            "name": "Amol Janorkar"
+          }, 
+          {
+            "name": "Jason Griggs"
+          }, 
+          {
+            "name": "Kenneth St. John"
+          }, 
+          {
+            "name": "Michael Roach"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Medical Care", 
+    "children": [
+      {
+        "name": "Emergency Medicine", 
+        "children": [
+          {
+            "name": "Alan Jones"
+          }, 
+          {
+            "name": "Kristi Henderson"
+          }
+        ]
+      }, 
+      {
+        "name": "Obstetrics and Gynecology", 
+        "children": [
+          {
+            "name": "Michelle Owens"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Anne Yates"
+          }, 
+          {
+            "name": "Joseph Majure"
+          }, 
+          {
+            "name": "Philip Rhodes"
+          }, 
+          {
+            "name": "Rathi Iyer"
+          }, 
+          {
+            "name": "Suvankar Majumdar"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Dentistry", 
+        "children": [
+          {
+            "name": "Harold Livingston"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Nursing", 
+        "children": [
+          {
+            "name": "Mary Fouquier"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Mental Health", 
+    "children": [
+      {
+        "name": "Center of Biostatistics and Bioinformatics", 
+        "children": [
+          {
+            "name": "Michael Griswold"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Deborah Konkle-Parker"
+          }, 
+          {
+            "name": "Tandaw Samdarshi"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "L Buttross"
+          }
+        ]
+      }, 
+      {
+        "name": "Psychiatry and Human Behavior", 
+        "children": [
+          {
+            "name": "Andres Viana"
+          }, 
+          {
+            "name": "Courtney Bagge"
+          }, 
+          {
+            "name": "Craig Stockmeier"
+          }, 
+          {
+            "name": "Kim Gratz"
+          }, 
+          {
+            "name": "Scott Coffey"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Microbiology/Infectious Diseases", 
+    "children": [
+      {
+        "name": "Emergency Medicine", 
+        "children": [
+          {
+            "name": "Michael Puskarich"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Deborah Konkle-Parker"
+          }, 
+          {
+            "name": "Edwin Swiatlo"
+          }, 
+          {
+            "name": "Harold Henderson"
+          }, 
+          {
+            "name": "Leandro Mena"
+          }, 
+          {
+            "name": "Rathel Nolan"
+          }
+        ]
+      }, 
+      {
+        "name": "Microbiology", 
+        "children": [
+          {
+            "name": "Brian Akerley"
+          }, 
+          {
+            "name": "David Robinson"
+          }, 
+          {
+            "name": "Erin Taylor"
+          }, 
+          {
+            "name": "John Meade"
+          }, 
+          {
+            "name": "Mary Marquart"
+          }, 
+          {
+            "name": "Richard Ocallaghan"
+          }, 
+          {
+            "name": "Victor Chinchar"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Binford Nash"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Musculoskeletal", 
+    "children": [
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Tandaw Samdarshi"
+          }
+        ]
+      }, 
+      {
+        "name": "Orthopedic Surgery", 
+        "children": [
+          {
+            "name": "Robert McGuire"
+          }, 
+          {
+            "name": "Siddhant Mehta"
+          }
+        ]
+      }, 
+      {
+        "name": "Radiology", 
+        "children": [
+          {
+            "name": "Andrew Smith"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Neuroscience", 
+    "children": [
+      {
+        "name": "Biochemistry", 
+        "children": [
+          {
+            "name": "Michael Hebert"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Beverly Windham"
+          }, 
+          {
+            "name": "Tandaw Samdarshi"
+          }, 
+          {
+            "name": "Thomas Mosley"
+          }
+        ]
+      }, 
+      {
+        "name": "Neurobiology & Anatomical Sciences", 
+        "children": [
+          {
+            "name": "Paul May"
+          }
+        ]
+      }, 
+      {
+        "name": "Neurology", 
+        "children": [
+          {
+            "name": "Alexander Auchus"
+          }, 
+          {
+            "name": "Parminder Vig"
+          }, 
+          {
+            "name": "Rebecca Sugg"
+          }
+        ]
+      }, 
+      {
+        "name": "Orthopedic Surgery", 
+        "children": [
+          {
+            "name": "Robert McGuire"
+          }
+        ]
+      }, 
+      {
+        "name": "Otolaryngology and Communicative Sciences", 
+        "children": [
+          {
+            "name": "Hong Zhu"
+          }, 
+          {
+            "name": "Wu Zhou"
+          }
+        ]
+      }, 
+      {
+        "name": "Pathology", 
+        "children": [
+          {
+            "name": "Junming Wang"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Lir-Wan Fan"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Barbara Alexander"
+          }
+        ]
+      }, 
+      {
+        "name": "Psychiatry and Human Behavior", 
+        "children": [
+          {
+            "name": "Craig Stockmeier"
+          }, 
+          {
+            "name": "Xiu Liu"
+          }
+        ]
+      }, 
+      {
+        "name": "Radiology", 
+        "children": [
+          {
+            "name": "Judy James"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Obesity, Nutritional, Metabolic, Endocrine", 
+    "children": [
+      {
+        "name": "Biochemistry", 
+        "children": [
+          {
+            "name": "Damian Romero"
+          }
+        ]
+      }, 
+      {
+        "name": "Emergency Medicine", 
+        "children": [
+          {
+            "name": "Michael Puskarich"
+          }
+        ]
+      }, 
+      {
+        "name": "Family Medicine", 
+        "children": [
+          {
+            "name": "Shannon Moore"
+          }
+        ]
+      }, 
+      {
+        "name": "Library", 
+        "children": [
+          {
+            "name": "Chameka Robinson"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Alan Penman"
+          }, 
+          {
+            "name": "Angela Subauste"
+          }, 
+          {
+            "name": "Beverly Windham"
+          }, 
+          {
+            "name": "Deborah Konkle-Parker"
+          }, 
+          {
+            "name": "Licy Yanes Cardozo"
+          }, 
+          {
+            "name": "Mario Sims"
+          }, 
+          {
+            "name": "Tandaw Samdarshi"
+          }, 
+          {
+            "name": "Tibor Fulop"
+          }
+        ]
+      }, 
+      {
+        "name": "Multi-Cultural Affairs", 
+        "children": [
+          {
+            "name": "Chad Feldman"
+          }
+        ]
+      }, 
+      {
+        "name": "Office of Vice Chancellor", 
+        "children": [
+          {
+            "name": "Bettina Beech"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "George Moll"
+          }, 
+          {
+            "name": "Naznin Dixit"
+          }
+        ]
+      }, 
+      {
+        "name": "Pharmacology and Toxicology", 
+        "children": [
+          {
+            "name": "Sean Didion"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Barbara Alexander"
+          }, 
+          {
+            "name": "JAMES WILSON"
+          }, 
+          {
+            "name": "Jane Reckelhoff"
+          }, 
+          {
+            "name": "John Hall"
+          }
+        ]
+      }, 
+      {
+        "name": "Radiology", 
+        "children": [
+          {
+            "name": "Michael Doherty"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Dentistry", 
+        "children": [
+          {
+            "name": "Roger Johnson"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Nursing", 
+        "children": [
+          {
+            "name": "Anne Norwood"
+          }
+        ]
+      }, 
+      {
+        "name": "Surgery", 
+        "children": [
+          {
+            "name": "Christopher Anderson"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Oral Health", 
+    "children": [
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Kristine Deleon Pennell"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Dentistry", 
+        "children": [
+          {
+            "name": "Jason Griggs"
+          }, 
+          {
+            "name": "Jeffrey Brown"
+          }, 
+          {
+            "name": "Neeta Mehta"
+          }, 
+          {
+            "name": "Pia Chatterjee Kirk"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Other", 
+    "children": [
+      {
+        "name": "Academic Affairs", 
+        "children": [
+          {
+            "name": "Constance Machado"
+          }, 
+          {
+            "name": "John Mitchell"
+          }, 
+          {
+            "name": "Ralph Didlake"
+          }
+        ]
+      }, 
+      {
+        "name": "Biochemistry", 
+        "children": [
+          {
+            "name": "John Correia"
+          }, 
+          {
+            "name": "Maureen Wirschell"
+          }
+        ]
+      }, 
+      {
+        "name": "Cancer Institute", 
+        "children": [
+          {
+            "name": "Azeddine Atfi"
+          }, 
+          {
+            "name": "Radhika Pochampally"
+          }, 
+          {
+            "name": "Yin-Yuan Mo"
+          }
+        ]
+      }, 
+      {
+        "name": "Emergency Medicine", 
+        "children": [
+          {
+            "name": "Alan Jones"
+          }, 
+          {
+            "name": "Bruce Brackin"
+          }, 
+          {
+            "name": "James Thompson"
+          }
+        ]
+      }, 
+      {
+        "name": "Family Medicine", 
+        "children": [
+          {
+            "name": "Bettina Beech"
+          }, 
+          {
+            "name": "Irma Welch"
+          }
+        ]
+      }, 
+      {
+        "name": "Lexington", 
+        "children": [
+          {
+            "name": "Phillip Grady"
+          }
+        ]
+      }, 
+      {
+        "name": "Library", 
+        "children": [
+          {
+            "name": "Constance Machado"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Abuhuziefa Abubakr"
+          }, 
+          {
+            "name": "Alan Penman"
+          }, 
+          {
+            "name": "Andrew Wilhelm"
+          }, 
+          {
+            "name": "Brian Borg"
+          }, 
+          {
+            "name": "Cameron Guild"
+          }, 
+          {
+            "name": "Celso Gomezsanchez"
+          }, 
+          {
+            "name": "Demarc Hickson"
+          }, 
+          {
+            "name": "Donna Sullivan"
+          }, 
+          {
+            "name": "Ervin Fox"
+          }, 
+          {
+            "name": "Harold Henderson"
+          }, 
+          {
+            "name": "John Winscott"
+          }, 
+          {
+            "name": "Laura Beauchamps"
+          }, 
+          {
+            "name": "Leandro Mena"
+          }, 
+          {
+            "name": "Luis Juncos"
+          }, 
+          {
+            "name": "MICHAEL HALL"
+          }, 
+          {
+            "name": "Michael Garrett"
+          }, 
+          {
+            "name": "Nauman Chaudary"
+          }, 
+          {
+            "name": "Richard Deshazo"
+          }, 
+          {
+            "name": "SUZANNE MILLER"
+          }, 
+          {
+            "name": "Santo Marcus Borganelli"
+          }, 
+          {
+            "name": "Shou Tang"
+          }, 
+          {
+            "name": "Thomas Abell"
+          }, 
+          {
+            "name": "Thomas Mosley"
+          }, 
+          {
+            "name": "Vikas Majithia"
+          }, 
+          {
+            "name": "Vincent Herrin"
+          }
+        ]
+      }, 
+      {
+        "name": "Microbiology", 
+        "children": [
+          {
+            "name": "David Robinson"
+          }, 
+          {
+            "name": "Larry McDaniel"
+          }, 
+          {
+            "name": "Ritesh Tandon"
+          }
+        ]
+      }, 
+      {
+        "name": "Neurobiology & Anatomical Sciences", 
+        "children": [
+          {
+            "name": "Diane Lebesgue"
+          }, 
+          {
+            "name": "Michael Lehman"
+          }
+        ]
+      }, 
+      {
+        "name": "Neurology", 
+        "children": [
+          {
+            "name": "As'ad Ehtisham"
+          }, 
+          {
+            "name": "Gene Bidwell"
+          }, 
+          {
+            "name": "Robert Herndon"
+          }
+        ]
+      }, 
+      {
+        "name": "Obstetrics and Gynecology", 
+        "children": [
+          {
+            "name": "Birdie Lamarca"
+          }, 
+          {
+            "name": "James Shwayder"
+          }, 
+          {
+            "name": "Kedra Wallace"
+          }
+        ]
+      }, 
+      {
+        "name": "Office of Vice Chancellor", 
+        "children": [
+          {
+            "name": "Chad Feldman"
+          }, 
+          {
+            "name": "Claude Brunson"
+          }, 
+          {
+            "name": "David Powe"
+          }, 
+          {
+            "name": "David Putt"
+          }, 
+          {
+            "name": "JAMES KEETON"
+          }, 
+          {
+            "name": "JOHN WILSON"
+          }, 
+          {
+            "name": "Jonathan Wilson"
+          }, 
+          {
+            "name": "Kristi Henderson"
+          }, 
+          {
+            "name": "Lou Woodward"
+          }, 
+          {
+            "name": "Lucio Miele"
+          }, 
+          {
+            "name": "Michael Jones"
+          }, 
+          {
+            "name": "Warren Jones"
+          }
+        ]
+      }, 
+      {
+        "name": "Ophthalmology", 
+        "children": [
+          {
+            "name": "Ching-Jygh Chen"
+          }
+        ]
+      }, 
+      {
+        "name": "Orthopedic Surgery", 
+        "children": [
+          {
+            "name": "David Black"
+          }, 
+          {
+            "name": "George Russell"
+          }, 
+          {
+            "name": "Siddhant Mehta"
+          }, 
+          {
+            "name": "Tracye Lawyer"
+          }
+        ]
+      }, 
+      {
+        "name": "Otolaryngology and Communicative Sciences", 
+        "children": [
+          {
+            "name": "Alexandra Brown"
+          }, 
+          {
+            "name": "Thomas Eby"
+          }, 
+          {
+            "name": "Thomas Payne"
+          }
+        ]
+      }, 
+      {
+        "name": "Pathology", 
+        "children": [
+          {
+            "name": "Alexandra Brown"
+          }, 
+          {
+            "name": "Bradley Brimhall"
+          }, 
+          {
+            "name": "Patrick Kyle"
+          }, 
+          {
+            "name": "Rhonda Alexander"
+          }, 
+          {
+            "name": "Xinchun Zhou"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "April Palmer"
+          }, 
+          {
+            "name": "Benjamin Dillard"
+          }, 
+          {
+            "name": "Charles Gaymes"
+          }, 
+          {
+            "name": "Elizabeth Foster"
+          }, 
+          {
+            "name": "Fredrick Barr"
+          }, 
+          {
+            "name": "Jennifer Stephen"
+          }, 
+          {
+            "name": "Joseph Majure"
+          }, 
+          {
+            "name": "Zhengwei Cai"
+          }
+        ]
+      }, 
+      {
+        "name": "Pharmacology and Toxicology", 
+        "children": [
+          {
+            "name": "Marilyn Burke"
+          }, 
+          {
+            "name": "Michael Garrett"
+          }, 
+          {
+            "name": "Richard Roman"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Alejandro Chade"
+          }, 
+          {
+            "name": "JAMES WILSON"
+          }, 
+          {
+            "name": "Jane Reckelhoff"
+          }, 
+          {
+            "name": "Joanna Coolen"
+          }, 
+          {
+            "name": "Joey Granger"
+          }, 
+          {
+            "name": "Rodrigo Maranon"
+          }, 
+          {
+            "name": "Ruisheng Liu"
+          }, 
+          {
+            "name": "Tandaw Samdarshi"
+          }
+        ]
+      }, 
+      {
+        "name": "Poison Control", 
+        "children": [
+          {
+            "name": "Robert Cox"
+          }
+        ]
+      }, 
+      {
+        "name": "Psychiatry and Human Behavior", 
+        "children": [
+          {
+            "name": "Andrew Freeman"
+          }, 
+          {
+            "name": "Courtney Bagge"
+          }, 
+          {
+            "name": "David Elkin"
+          }, 
+          {
+            "name": "Donald Penzien"
+          }, 
+          {
+            "name": "Grayson Norquist"
+          }, 
+          {
+            "name": "James Rowlett"
+          }, 
+          {
+            "name": "Kevin Freeman"
+          }, 
+          {
+            "name": "Matthew Tull"
+          }, 
+          {
+            "name": "Xiaoming Ou"
+          }
+        ]
+      }, 
+      {
+        "name": "Radiology", 
+        "children": [
+          {
+            "name": "Andrew Smith"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Dentistry", 
+        "children": [
+          {
+            "name": "Karen Crews"
+          }, 
+          {
+            "name": "Michael Roach"
+          }, 
+          {
+            "name": "Neeta Mehta"
+          }, 
+          {
+            "name": "Thomas Payne"
+          }, 
+          {
+            "name": "Tracy Dellinger"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Medicine", 
+        "children": [
+          {
+            "name": "Arti Barnes"
+          }, 
+          {
+            "name": "Charles Pound"
+          }, 
+          {
+            "name": "Michael Todaro"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Nursing", 
+        "children": [
+          {
+            "name": "Anne Norwood"
+          }, 
+          {
+            "name": "Fazlay Faruque"
+          }, 
+          {
+            "name": "Kimberly Ferguson"
+          }, 
+          {
+            "name": "Kimberly Hoover"
+          }, 
+          {
+            "name": "Kimberly Rowzee"
+          }, 
+          {
+            "name": "Lisa Haynie"
+          }, 
+          {
+            "name": "Mary Stewart"
+          }, 
+          {
+            "name": "Robin Wilkerson"
+          }, 
+          {
+            "name": "Tammy Dempsey"
+          }
+        ]
+      }, 
+      {
+        "name": "Surgery", 
+        "children": [
+          {
+            "name": "Christopher Anderson"
+          }, 
+          {
+            "name": "Drew Hildebrandt"
+          }, 
+          {
+            "name": "Fred Rushton"
+          }, 
+          {
+            "name": "Larry Martin"
+          }, 
+          {
+            "name": "Marc Mitchell"
+          }, 
+          {
+            "name": "Thomas Helling"
+          }, 
+          {
+            "name": "Zachary Baldwin"
+          }
+        ]
+      }, 
+      {
+        "name": "Telemedicine", 
+        "children": [
+          {
+            "name": "Kristi Henderson"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Population Studies", 
+    "children": [
+      {
+        "name": "Center of Biostatistics and Bioinformatics", 
+        "children": [
+          {
+            "name": "Michael Griswold"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Adolfo Correa"
+          }, 
+          {
+            "name": "Beverly Windham"
+          }, 
+          {
+            "name": "Deborah Minor"
+          }, 
+          {
+            "name": "Herman Taylor"
+          }, 
+          {
+            "name": "Mario Sims"
+          }, 
+          {
+            "name": "Solomon Musani"
+          }, 
+          {
+            "name": "Tandaw Samdarshi"
+          }, 
+          {
+            "name": "Thomas Mosley"
+          }, 
+          {
+            "name": "Tibor Fulop"
+          }
+        ]
+      }, 
+      {
+        "name": "Microbiology", 
+        "children": [
+          {
+            "name": "David Robinson"
+          }, 
+          {
+            "name": "John Meade"
+          }
+        ]
+      }, 
+      {
+        "name": "Otolaryngology and Communicative Sciences", 
+        "children": [
+          {
+            "name": "Thomas Payne"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Omar Abdulrahman"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "JAMES WILSON"
+          }
+        ]
+      }, 
+      {
+        "name": "Radiology", 
+        "children": [
+          {
+            "name": "Michael Doherty"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Health Related Professions", 
+        "children": [
+          {
+            "name": "Juanyce Taylor"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Public Health", 
+    "children": [
+      {
+        "name": "Emergency Medicine", 
+        "children": [
+          {
+            "name": "Robert Cox"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Demarc Hickson"
+          }
+        ]
+      }, 
+      {
+        "name": "Multi-Cultural Affairs", 
+        "children": [
+          {
+            "name": "Chad Feldman"
+          }
+        ]
+      }, 
+      {
+        "name": "Office of Research", 
+        "children": [
+          {
+            "name": "Fazlay Faruque"
+          }
+        ]
+      }, 
+      {
+        "name": "Office of Vice Chancellor", 
+        "children": [
+          {
+            "name": "Bettina Beech"
+          }
+        ]
+      }, 
+      {
+        "name": "Otolaryngology and Communicative Sciences", 
+        "children": [
+          {
+            "name": "Thomas Payne"
+          }
+        ]
+      }, 
+      {
+        "name": "Poison Control", 
+        "children": [
+          {
+            "name": "Robert Cox"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Health Related Professions", 
+        "children": [
+          {
+            "name": "Juanyce Taylor"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Nursing", 
+        "children": [
+          {
+            "name": "Fazlay Faruque"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Regenerative Medicine & Wound Healing", 
+    "children": [
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Merry Lindsey"
+          }, 
+          {
+            "name": "Padmanabhan Iyer"
+          }
+        ]
+      }, 
+      {
+        "name": "School of Dentistry", 
+        "children": [
+          {
+            "name": "Amol Janorkar"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Reproductive", 
+    "children": [
+      {
+        "name": "Neurobiology & Anatomical Sciences", 
+        "children": [
+          {
+            "name": "Michael Lehman"
+          }
+        ]
+      }, 
+      {
+        "name": "Obstetrics and Gynecology", 
+        "children": [
+          {
+            "name": "Kedra Wallace"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "GLEN GRAVES"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Respiratory", 
+    "children": [
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Gailen Marshall"
+          }, 
+          {
+            "name": "John Spurzem"
+          }, 
+          {
+            "name": "Tandaw Samdarshi"
+          }
+        ]
+      }, 
+      {
+        "name": "Otolaryngology and Communicative Sciences", 
+        "children": [
+          {
+            "name": "Thomas Payne"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Anne Yates"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "JAMES WILSON"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Rheumatology/Immunology", 
+    "children": [
+      {
+        "name": "Biochemistry", 
+        "children": [
+          {
+            "name": "John Correia"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Dannette Johnson"
+          }, 
+          {
+            "name": "Deborah Konkle-Parker"
+          }, 
+          {
+            "name": "Tandaw Samdarshi"
+          }, 
+          {
+            "name": "Vikas Majithia"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Keisa Mathis"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Scholarships/Traineeships", 
+    "children": [
+      {
+        "name": "Office of Research", 
+        "children": [
+          {
+            "name": "Fazlay Faruque"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Kristine Deleon Pennell"
+          }, 
+          {
+            "name": "Michael Ryan"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Substance Abuse", 
+    "children": [
+      {
+        "name": "Center of Biostatistics and Bioinformatics", 
+        "children": [
+          {
+            "name": "Michael Griswold"
+          }
+        ]
+      }, 
+      {
+        "name": "Emergency Medicine", 
+        "children": [
+          {
+            "name": "Robert Cox"
+          }
+        ]
+      }, 
+      {
+        "name": "Otolaryngology and Communicative Sciences", 
+        "children": [
+          {
+            "name": "Thomas Payne"
+          }
+        ]
+      }, 
+      {
+        "name": "Poison Control", 
+        "children": [
+          {
+            "name": "Robert Cox"
+          }
+        ]
+      }, 
+      {
+        "name": "Psychiatry and Human Behavior", 
+        "children": [
+          {
+            "name": "Craig Stockmeier"
+          }, 
+          {
+            "name": "Donna Rowlett"
+          }, 
+          {
+            "name": "James Rowlett"
+          }, 
+          {
+            "name": "Julie Schumacher-Coffey"
+          }, 
+          {
+            "name": "Sally Huskinson"
+          }, 
+          {
+            "name": "Scott Coffey"
+          }, 
+          {
+            "name": "William Woolverton"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Toxicology", 
+    "children": [
+      {
+        "name": "Emergency Medicine", 
+        "children": [
+          {
+            "name": "Robert Cox"
+          }
+        ]
+      }, 
+      {
+        "name": "Poison Control", 
+        "children": [
+          {
+            "name": "Robert Cox"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Translational Medicine", 
+    "children": [
+      {
+        "name": "Academic Affairs", 
+        "children": [
+          {
+            "name": "Robin Rockhold"
+          }
+        ]
+      }, 
+      {
+        "name": "Emergency Medicine", 
+        "children": [
+          {
+            "name": "Michael Puskarich"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Angela Subauste"
+          }, 
+          {
+            "name": "Mario Sims"
+          }
+        ]
+      }, 
+      {
+        "name": "Orthopedic Surgery", 
+        "children": [
+          {
+            "name": "Matthew Graves"
+          }
+        ]
+      }, 
+      {
+        "name": "Otolaryngology and Communicative Sciences", 
+        "children": [
+          {
+            "name": "Hong Zhu"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Norma Ojeda"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Alejandro Chade"
+          }, 
+          {
+            "name": "Merry Lindsey"
+          }, 
+          {
+            "name": "Padmanabhan Iyer"
+          }
+        ]
+      }
+    ]
+  }, 
+  {
+    "name": "Women's Health", 
+    "children": [
+      {
+        "name": "Library", 
+        "children": [
+          {
+            "name": "Chameka Robinson"
+          }
+        ]
+      }, 
+      {
+        "name": "Medicine", 
+        "children": [
+          {
+            "name": "Angela Subauste"
+          }, 
+          {
+            "name": "Deborah Konkle-Parker"
+          }, 
+          {
+            "name": "Tandaw Samdarshi"
+          }
+        ]
+      }, 
+      {
+        "name": "Microbiology", 
+        "children": [
+          {
+            "name": "John Meade"
+          }
+        ]
+      }, 
+      {
+        "name": "Obstetrics and Gynecology", 
+        "children": [
+          {
+            "name": "Birdie Lamarca"
+          }
+        ]
+      }, 
+      {
+        "name": "Office of Vice Chancellor", 
+        "children": [
+          {
+            "name": "David Putt"
+          }
+        ]
+      }, 
+      {
+        "name": "Pediatrics", 
+        "children": [
+          {
+            "name": "Binford Nash"
+          }, 
+          {
+            "name": "GLEN GRAVES"
+          }, 
+          {
+            "name": "Hannah Gay"
+          }
+        ]
+      }, 
+      {
+        "name": "Pharmacology and Toxicology", 
+        "children": [
+          {
+            "name": "Sydney Murphy"
+          }
+        ]
+      }, 
+      {
+        "name": "Physiology and Biophysics", 
+        "children": [
+          {
+            "name": "Barbara Alexander"
+          }, 
+          {
+            "name": "Birdie Lamarca"
+          }, 
+          {
+            "name": "Christine Maric-Bilkan"
+          }, 
+          {
+            "name": "Eric George"
+          }, 
+          {
+            "name": "JAMES WILSON"
+          }, 
+          {
+            "name": "Jane Reckelhoff"
+          }, 
+          {
+            "name": "Joey Granger"
+          }, 
+          {
+            "name": "Keisa Mathis"
+          }, 
+          {
+            "name": "Mohaddetheh Moulana"
+          }, 
+          {
+            "name": "Sydney Murphy"
+          }
+        ]
+      }
+    ]
+  }
+ ]
+}
