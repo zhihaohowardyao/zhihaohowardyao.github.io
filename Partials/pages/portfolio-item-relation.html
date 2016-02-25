@@ -40,11 +40,21 @@
     <!-- SCRIPTS -->
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
     <script src="/js/jquery-1.8.3.min.js"></script>
+    
     <script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
     <script src="js/jquery.fitvids.js"></script>
     <script>
     	$(function() { $(".portfolio-single").fitVids(); })
     </script>
+     <script type="text/javascript" src="https://public.tableausoftware.com/javascripts/api/tableau_v8.js"></script>
+        <script>
+            function initializeViz() {
+                var placeholderDiv = document.getElementById("tableauViz");
+                var url = "http://public.tableau.com/views/JHSRelationshipExploration_Fullversion_0/Dashboard?:embed=y&:display_count=yes&:showTabs=y";
+                viz = new tableauSoftware.Viz(placeholderDiv, url);
+            }
+            initializeViz() ;
+        </script>
     
 </head>
 
@@ -81,7 +91,7 @@
 <!--                    <img src="images/portfolio/single/single-01.jpg" alt="project">-->
 <!--                    <iframe src="https://public.tableau.com/views/JHSRelationshipExploration_Fullversion_0/Dashboard" width="100%" height="800" scrolling="no"></iframe>-->
                     
-<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 100%; height: 669px;'><noscript><a href='#'><img alt='Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;JH&#47;JHSRelationshipExploration_Fullversion_0&#47;Dashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='100%' height='669' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='JHSRelationshipExploration_Fullversion_0&#47;Dashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;JH&#47;JHSRelationshipExploration_Fullversion_0&#47;Dashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+                        <div id ="tableauViz"></div>
 
  
                 </div>
