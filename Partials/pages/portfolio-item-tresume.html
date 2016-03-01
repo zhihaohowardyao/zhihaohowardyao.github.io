@@ -22,7 +22,7 @@
     <![endif]-->    
     
      <!-- FONTS -->
-        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Alfa+Slab+One|Nixie+One|Raleway:200,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Tulpen+One|Sacramento' rel='stylesheet' type='text/css'>
         
@@ -39,11 +39,14 @@
     <!-- SCRIPTS -->
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
     <script src="/js/jquery-1.8.3.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
-    <script src="js/jquery.fitvids.js"></script>
+    
+<!--
+    <script>window.jQuery || document.write('<script src="/js/jquery-1.8.3.min.js"><\/script>')</script>
+     <script src="js/jquery.fitvids.js"></script>
     <script>
     	$(function() { $(".portfolio-single").fitVids(); })
     </script>
+-->
     
 </head>
 
@@ -61,15 +64,15 @@
             
             	<!-- TITLE - column 8/12 -->
                 <div class="span8 portfolio-field portfolio-title">
-                	<h2>Case Study</h2> 
+                	<h2>Tableau Resume</h2> 
                 </div>
                 <!-- TITLE - column 8/12 -->
                 
                 <!-- PORTFOLIO-NAV - column 4/12 -->
                 <div class="span4 portfolio-field portfolio-nav">
-                    <a class="icon button prev ajax" href="../Partials/pages/portfolio-item-tresume.html"></a>
+                    <a class="icon button prev ajax" href="../Partials/pages/portfolio-item-meta.html"></a>
                     <a class="icon button back" href="#/portfolio">close</a>
-                    <a class="icon button next ajax" href></a>
+                    <a class="icon button next ajax" href="../Partials/pages/portfolio-item-casestudy.html"></a>
                 </div>
                 <!-- PORTFOLIO-NAV - column 4/12 -->
                 
@@ -78,8 +81,9 @@
                 <div class="span12 portfolio-field">
                     
 <!--                    <img src="images/portfolio/single/single-01.jpg" alt="project">-->
-                    <iframe src="Partials/pages/iframe/project-casestudy.html" width="100%" height="800" scrolling="no"></iframe>
-                    
+                    <iframe src="https://public.tableau.com/shared/86M399HKX?:embed=y&:display_count=yes&:showTabs=n&:showVizHome=no" width="80%" height="700" scrolling="yes"></iframe>
+                  
+
                 </div>
                 <!-- PORTFOLIO-IMAGES - column 12/12 -->
                 
@@ -88,11 +92,12 @@
                 <div class="span5 portfolio-field">
                 
                     <h3>Description</h3>
-                    <p>Online data query and reformatting by using python (also include SAS code to reformat raw data). Calculated variables are generated in Tableau to create the sankey plot. The presentation is created by <a href="http://lab.hakim.se/reveal-js/#/" target="_blank">reveal.js</a></p>
+                    <p>Interactive Resume in Tableau, including experience, skills and projetcs.</p>
+                    
                    
                 
                     <div class="launch">
-                        <a href="http://bl.ocks.org/zhihaoyao/raw/2fad560cb848e69638fe/#/" class="btn" target="_blank">VIEW FULL SCREEN</a>
+                        <a href="https://public.tableau.com/shared/86M399HKX?" class="btn" target="_blank">VIEW FULL SCREEN</a>
                     </div>
                     
                 </div>
@@ -104,9 +109,6 @@
                 	
                     <h3>Technology</h3>
                     <ul class="tags">
-                        <li><a>HTML 5</a></li>
-                        <li><a>Python</a></li>
-                        <li><a>Reveal.js</a></li>
                         <li><a>Tableau</a></li>
                     </ul>
                     
@@ -128,9 +130,9 @@
                 
                 <!-- PORTFOLIO-NAV BOTTOM - column 12/12 -->
                 <div class="span12 portfolio-field portfolio-nav bottom">
-                    <a class="icon button prev ajax" href="../Partials/pages/portfolio-item-tresume.html"></a>
+                    <a class="icon button prev ajax" href="../Partials/pages/portfolio-item-meta.html"></a>
                     <a class="icon button back" href="#/portfolio">close</a>
-                    <a class="icon button next ajax" href></a>
+                    <a class="icon button next ajax" href="../Partials/pages/portfolio-item-casestudy.html"></a>
                 </div>
                 <!-- PORTFOLIO-NAV BOTTOM - column 12/12 -->
                 
@@ -141,8 +143,6 @@
         </div>
         
     </div>
-    
-    
-    
+
 </body>
 <!-- InstanceEnd --></html>
