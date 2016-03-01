@@ -14,19 +14,20 @@
 				
 				$.post($(this).attr('action'), formValues, function(data)
 				{
-					if ( data == 'success' )
-					{
-						contactForm.clearForm();
-					}
-					else
-					{
-						$('.alert').addClass('error');
-					}
-					loader.hide();
-					$('.alert').fadeIn().delay(2000).fadeOut();
+//					if ( data == 'success' )
+//					{
+//						contactForm.clearForm();
+//					}
+//					else
+//					{
+//						$('.alert').addClass('error');
+//					}
+//					loader.hide();
+//					$('.alert').fadeIn().delay(2000).fadeOut();
 				});
 			}
-			
+			$('.alert').addClass('error');
+            loader.fadeIn().delay(2000).fadeOut();
 			return false
 		});
 	
