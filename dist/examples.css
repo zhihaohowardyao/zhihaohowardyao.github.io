@@ -800,7 +800,8 @@ select:focus {
  /* ----------------------- */
 
  .card-wrapper {
-  margin-bottom: 30px;
+/*   margin-bottom: 30px; */
+  margin-bottom: 1%;
 }
 .card-image .card .card-img-wrapper {
   height: 100%;
