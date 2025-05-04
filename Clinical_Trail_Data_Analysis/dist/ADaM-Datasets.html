@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.11.0">
+<title>ADaM Dataset | Clinical Trial Data Analysis</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air.9914ee1a.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="preload" as="style" href="./_npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air.9914ee1a.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="stylesheet" type="text/css" href="./_npm/katex@0.16.11/dist/katex.min.css">
+<link rel="modulepreload" href="./_observablehq/client.7e44a896.js">
+<link rel="modulepreload" href="./_observablehq/runtime.c916ad99.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.3783f355.js">
+<link rel="modulepreload" href="./_import/components/summaryTable.bd8e7950.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
+<link rel="modulepreload" href="./_npm/lodash@4.17.21/cbfa4f05.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/e828d8c8.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
+<link rel="modulepreload" href="./_npm/arquero@6.0.1/307e9056.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.e3f2dfe6.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/tex.c8bffae1.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
+<link rel="modulepreload" href="./_npm/katex@0.16.11/c006fecc.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e95f898e.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/d44feff9.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/5830b12a.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/84d7b8e9.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/2c0cdfa2.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/626bedc4.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/00c41b5d.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/b5f7cdc6.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/b22c5864.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/6f15f633.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/ef1ec490.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e1ff060.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/5851d7ef.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/dcd02767.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/f1db2593.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/034b7bcb.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/4bb53638.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/bbafde58.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/aa5b35a8.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/32c7fec2.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/567840a0.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/cf9b720b.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/5dcd62f4.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/f8e03c56.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/5bc129e1.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/19c92b44.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/8debb4ba.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/4b0cc581.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="./_npm/acorn@8.12.1/9e2c2538.js">
+<link rel="modulepreload" href="./_npm/apache-arrow@17.0.0/169cdc0a.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
+<link rel="modulepreload" href="./_npm/tslib@2.7.0/f0f7d58c.js">
+<link rel="modulepreload" href="./_npm/flatbuffers@24.3.25/fd24637b.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.7e44a896.js";
+
+define({id: "f7ba7a53", outputs: ["SJS"], body: () => {
+// JavaScript for sampling from a handful of discrete probability distributions
+// From: https://github.com/jacobmenick/sampling
+
+const SJS = (function(){
+
+    // Utility functions
+    function _sum(a, b) {
+	return a + b;
+    };
+    function _fillArrayWithNumber(size, num) {
+	// thanks be to stackOverflow... this is a beautiful one-liner
+	return Array.apply(null, Array(size)).map(Number.prototype.valueOf, num);
+    };
+    function _rangeFunc(upper) {
+	var i = 0, out = [];
+	while (i < upper) out.push(i++);
+	return out;
+    };
+    // Prototype function
+    function _samplerFunction(size) {
+	if (!Number.isInteger(size) || size < 0) {
+	  throw new Error ("Number of samples must be a non-negative integer.");
+	}
+	if (!this.draw) {
+	    throw new Error ("Distribution must specify a draw function.");
+	}
+	var result = [];
+	while (size--) {
+	    result.push(this.draw());
+	}
+	return result;
+    };
+    // Prototype for discrete distributions
+    var _samplerPrototype = {
+	sample: _samplerFunction
+    };
+
+    function Bernoulli(p) {
+
+	var result = Object.create(_samplerPrototype);
+
+	result.draw = function() {
+	    return (Math.random() < p) ? 1 : 0;
+	};
+
+	result.toString = function() {
+	    return "Bernoulli( " + p + " )";
+	};
+
+	return result;
+    }
+
+    function Binomial(n, p) {
+
+	var result = Object.create(_samplerPrototype),
+	bern = this.Bernoulli(p);
+    
+	result.draw = function() {
+	    return bern.sample(n).reduce(_sum, 0); // less space efficient than adding a bunch of draws, but cleaner :)
+	}
+
+	result.toString = function() { 
+	    return "Binom( " + 
+		[n, p].join(", ") + 
+		" )"; 
+	}
+
+	return result;
+    }
+
+    function Discrete(probs) { // probs should be an array of probabilities. (they get normalized automagically) //
+	
+	var result = Object.create(_samplerPrototype),
+	k = probs.length;
+
+	result.draw = function() {
+	    var i, p;
+	    for (i = 0; i < k; i++) {
+		p = probs[i] / probs.slice(i).reduce(_sum, 0); // this is the (normalized) head of a slice of probs
+		if (Bernoulli(p).draw()) return i;             // using the truthiness of a Bernoulli draw
+	    }
+	    return k - 1;
+	};
+
+	result.sampleNoReplace = function(size) {
+	    if (size>probs.length) {
+		throw new Error("Sampling without replacement, and the sample size exceeds vector size.")
+	    }
+	    var disc, index, sum, samp = [];
+	    var currentProbs = probs;
+	    var live = _rangeFunc(probs.length);
+	    while (size--) {
+		sum = currentProbs.reduce(_sum, 0);
+		currentProbs = currentProbs.map(function(x) {return x/sum; });
+		disc = this.Discrete(currentProbs);
+		index = disc.draw();
+		samp.push(live[index]);
+		live.splice(index, 1);
+		currentProbs.splice(index, 1);
+		sum = currentProbs.reduce(_sum, 0);
+		currentProbs = currentProbs.map(function(x) {return x/sum; });
+	    }
+	    currentProbs = probs;
+	    live = _rangeFunc(probs.length);
+	    return samp;
+	}
+
+	result.toString = function() {
+	    return "Dicrete( [" + 
+		probs.join(", ") + 
+		"] )";
+	};
+
+	return result;
+    }
+
+    function Multinomial(n, probs) {
+
+	var result = Object.create(_samplerPrototype),
+	k = probs.length,
+	disc = Discrete(probs);
+
+	result.draw = function() {
+	    var draw_result = _fillArrayWithNumber(k, 0),
+	    i = n;
+	    while (i--) {
+		draw_result[disc.draw()] += 1;
+	    }
+	    return draw_result;
+	};
+
+	result.toString = function() {
+	    return "Multinom( " + 
+		n + 
+		", [" + probs.join(", ") + 
+		"] )";
+	};
+
+	return result;
+    }
+
+    function NegBinomial(r, p) {
+	var result = Object.create(_samplerPrototype);
+
+	result.draw = function() {
+	    var draw_result = 0, failures = r;
+	    while (failures) {
+		Bernoulli(p).draw() ? draw_result++ : failures--;
+	    }
+	    return draw_result;
+	};
+
+	result.toString = function() {
+	    return "NegBinomial( " +  r +
+		", " + p + " )";
+	};
+
+	return result;
+    }
+
+    function Poisson(lambda) {
+	var result = Object.create(_samplerPrototype);
+
+	result.draw = function() {
+	    var draw_result, L = Math.exp(- lambda), k = 0, p = 1;
+
+	    do {
+		k++;
+		p = p * Math.random()
+	    } while (p > L);
+	    return k-1;
+	}
+
+	result.toString = function() {
+	    return "Poisson( " + lambda + " )";
+	}
+
+	return result;
+    }
+
+    return {
+	_fillArrayWithNumber: _fillArrayWithNumber, // REMOVE EVENTUALLY - this is just so the Array.prototype mod can work
+	_rangeFunc: _rangeFunc,
+	'Bernoulli': Bernoulli,
+	Binomial: Binomial,
+	Discrete: Discrete,
+	Multinomial: Multinomial,
+	NegBinomial: NegBinomial,
+	Poisson: Poisson
+    };
+})();
+return {SJS};
+}});
+
+define({id: "dd07b1ce", outputs: ["SummaryTable"], body: async () => {
+const {SummaryTable} = await import("./_import/components/summaryTable.bd8e7950.js");
+// import {formWithSubmit, guard} from './components/formSubmit.js';
+return {SummaryTable};
+}});
+
+define({id: "6d819c25", inputs: ["SJS","adslInputs","_","aq","d3"], outputs: ["probs","mult","group","groups","groupsArray","probsRace","multRace","groupRace","groupsRace","groupsRaceArray","ADSL"], body: (SJS,adslInputs,_,aq,d3) => {
+// Sites
+const probs = [0.2, 0.2, 0.3, 0.3]
+const mult = SJS.Multinomial(adslInputs.enrollment, probs).draw()
+const group = ['Site_1', 'Site_2', 'Site_3', 'Site_4']
+let groups = []
+
+mult.map((d,i) => {
+  groups.push(...new Array(d).fill(group[i]))
+});
+
+const groupsArray = _.shuffle(groups);
+
+// Race
+const probsRace = [0.7, 0.2, 0.1]
+const multRace = SJS.Multinomial(adslInputs.enrollment, probsRace).draw()
+const groupRace = ['WHITE', 'AFRICAN AMERICAN', 'AMERICAN INDIAN']
+let groupsRace = []
+
+multRace.map((d,i) => {
+  groupsRace.push(...new Array(d).fill(groupRace[i]))
+});
+
+const groupsRaceArray = _.shuffle(groupsRace);
+
+
+// ADSL Dataset
+
+const ADSL = aq.table({
+    USUBJID: d3.range(1,adslInputs.enrollment+1).map(d => `Subject_${d.toString().padStart(3, '0')}`),
+    SITE: groupsArray,
+	SEX: Array.from({length: adslInputs.enrollment}, d3.randomBinomial(1, adslInputs.sex)).map(d => d === 1 ? 'Male' : 'Female'),
+    AGE: Array.from({length: adslInputs.enrollment}, d3.randomInt(adslInputs.age1, adslInputs.age2)),
+	RACE: groupsRaceArray,
+	HEIGHT: Array.from({length: adslInputs.enrollment}, d3.randomInt(adslInputs.height1, adslInputs.height2)),
+	WEIGHT: Array.from({length: adslInputs.enrollment}, d3.randomInt(adslInputs.weight1, adslInputs.weight2)),
+	// BMI: Array.from({length: adslInputs.enrollment}, d3.randomInt(adslInputs.bmi1, adslInputs.bmi2)),
+    FLG1: Array.from({length: adslInputs.enrollment}, d3.randomBinomial(1, adslInputs.flg1)).map(d => d === 1 ? 'Yes' : 'No'), 
+	TRTEMFL: Array.from({length: adslInputs.enrollment}, d3.randomBinomial(1, adslInputs.trt)).map(d => d === 1 ? 'A' : 'B'), 
+  }).objects()
+      .map(d => ({
+      ...d,
+      BMI: d.WEIGHT / (d.HEIGHT / 100)**2
+    }));
+return {probs,mult,group,groups,groupsArray,probsRace,multRace,groupRace,groupsRace,groupsRaceArray,ADSL};
+}});
+
+define({id: "164b9880", inputs: ["localStorage"], outputs: ["checkLocalStorage"], body: (localStorage) => {
+// check the Inputs values in localStorage first
+// to prevent all numbers are reset after a page refresh
+function checkLocalStorage(keyName, parName, parValue){
+	const savedLocalStorage = {}
+	let res
+	if (localStorage.getItem(keyName) !== null) {
+  		savedLocalStorage[`saved_${keyName}`] = JSON.parse(localStorage.getItem(keyName));
+		res = savedLocalStorage[`saved_${keyName}`][parName]
+	} else {
+		res = parValue
+	}
+
+	return res
+}
+return {checkLocalStorage};
+}});
+
+define({id: "f8da7204", inputs: ["view","Inputs","checkLocalStorage","htl"], outputs: ["adslInputs"], body: (view,Inputs,checkLocalStorage,htl) => {
+// ADSL Inputs with Submit
+
+const adslInputs = view(
+	Inputs.form(
+			{
+				enrollment: Inputs.range([60, 200], {label: "Sample size (ITT)", step: 10, value: checkLocalStorage('adslInputs', 'enrollment', 100)}),
+				sex: Inputs.range([0, 1], {label: "Male vs. Female", step: 0.05, value: checkLocalStorage('adslInputs', 'sex', 0.55)}),
+				age1: Inputs.range([30, 50], {label: "Age Min", step: 1, value: checkLocalStorage('adslInputs', 'age1', 40)}),
+				age2: Inputs.range([60, 90], {label: "Age Max", step: 1, value: checkLocalStorage('adslInputs', 'age2', 80)}),
+				height1: Inputs.range([130, 150], {label: "Height Min", step: 1, value: checkLocalStorage('adslInputs', 'height1', 140)}),
+				height2: Inputs.range([180, 200], {label: "Height Max", step: 1, value: checkLocalStorage('adslInputs', 'height2', 190)}),
+				weight1: Inputs.range([30, 50], {label: "Weight Min", step: 5, value: checkLocalStorage('adslInputs', 'weight1', 35)}),
+				weight2: Inputs.range([100, 120], {label: "Weight Max", step: 5, value: checkLocalStorage('adslInputs', 'weight2', 105)}),
+				// bmi1: Inputs.range([13, 20], {label: "BMI Min", step: 1, value: checkLocalStorage('adslInputs', 'bmi1', 15)}),
+				// bmi2: Inputs.range([35, 40], {label: "BMI Max", step: 1, value: checkLocalStorage('adslInputs', 'bmi2', 38)}),
+				flg1: Inputs.range([0, 1], {label: "Flag1 Ratio", step: 0.1, value: checkLocalStorage('adslInputs', 'flg1', 0.2)}),
+				trt: Inputs.range([0, 1], {label: "Treatment vs. Control", step: 0.1, value: checkLocalStorage('adslInputs', 'trt', 0.5)}),
+			},
+			{
+				template: (formParts) => {
+					const left = Object.values(formParts).filter((d,i) => i % 2 === 0)
+					const right = Object.values(formParts).filter((d,i) => i % 2 !== 0)
+					return htl.html`<div style="display:flex; gap: 20px; justify-content: space-between; width: 750px">
+							<div>${left}</div>
+							<div>${right}</div>
+							</div>`
+				}
+			}
+		)
+	)
+
+
+// const adslInputs = view(
+// 	guard(
+// 		({ template }) => Inputs.form(
+// 			{
+// 				enrollment: Inputs.range([60, 200], {label: "Sample size (ITT) to be simulated", step: 10, value: checkLocalStorage('adslInputs', 'enrollment', 100)}),
+// 				sex: Inputs.range([0, 1], {label: "Male vs. Female", step: 0.05, value: checkLocalStorage('adslInputs', 'sex', 0.55)}),
+// 				age1: Inputs.range([30, 50], {label: "Age Min", step: 1, value: checkLocalStorage('adslInputs', 'age1', 40)}),
+// 				age2: Inputs.range([60, 90], {label: "Age Max", step: 1, value: checkLocalStorage('adslInputs', 'age2', 80)}),
+// 				height1: Inputs.range([130, 150], {label: "Height Min", step: 1, value: checkLocalStorage('adslInputs', 'height1', 140)}),
+// 				height2: Inputs.range([180, 200], {label: "Height Max", step: 1, value: checkLocalStorage('adslInputs', 'height2', 190)}),
+// 				weight1: Inputs.range([30, 50], {label: "Weight Min", step: 5, value: checkLocalStorage('adslInputs', 'weight1', 35)}),
+// 				weight2: Inputs.range([100, 120], {label: "Weight Max", step: 5, value: checkLocalStorage('adslInputs', 'weight2', 105)}),
+// 				bmi1: Inputs.range([13, 20], {label: "BMI Min", step: 1, value: checkLocalStorage('adslInputs', 'bmi1', 15)}),
+// 				bmi2: Inputs.range([35, 40], {label: "BMI Max", step: 1, value: checkLocalStorage('adslInputs', 'bmi2', 38)}),
+// 				flg1: Inputs.range([0, 1], {label: "Flag1 Ratio", step: 0.1, value: checkLocalStorage('adslInputs', 'flg1', 0.2)}),
+// 				trt: Inputs.range([0, 1], {label: "Treatment vs. Control", step: 0.1, value: checkLocalStorage('adslInputs', 'trt', 0.5)}),
+// 			},
+// 			{ template }
+// 		),
+// 		// { resetLabel: "Revert" }
+// 	)
+// )
+
+// const adslInputs = view(
+// 	guard(
+// 		({ template }) => Inputs.form(
+// 			{
+// 				enrollment: Inputs.range([60, 200], {label: "Sample size (ITT) to be simulated", step: 10, value: 100}),
+// 				sex: Inputs.range([0, 1], {label: "Male vs. Female", step: 0.05, value: 0.55}),
+// 				age1: Inputs.range([30, 50], {label: "Age Min", step: 1, value: 40}),
+// 				age2: Inputs.range([60, 90], {label: "Age Max", step: 1, value: 80}),
+// 				height1: Inputs.range([130, 150], {label: "Height Min", step: 1, value: 140}),
+// 				height2: Inputs.range([180, 200], {label: "Height Max", step: 1, value: 190}),
+// 				weight1: Inputs.range([30, 50], {label: "Weight Min", step: 5, value: 35}),
+// 				weight2: Inputs.range([100, 120], {label: "Weight Max", step: 5, value: 105}),
+// 				bmi1: Inputs.range([13, 20], {label: "BMI Min", step: 1, value: 15}),
+// 				bmi2: Inputs.range([35, 40], {label: "BMI Max", step: 1, value: 38}),
+// 				flg1: Inputs.range([0, 1], {label: "Flag1 Ratio", step: 0.1, value: 0.2}),
+// 				trt: Inputs.range([0, 1], {label: "Treatment vs. Control", step: 0.1, value: 0.5}),
+// 			},
+// 			{ template }
+// 		),
+// 	)
+// )
+
+
+return {adslInputs};
+}});
+
+define({id: "baf447f1", mode: "inline", inputs: ["adslInputs","display"], body: async (adslInputs,display) => {
+display(await(
+adslInputs.enrollment
+))
+}});
+
+define({id: "137236e7", mode: "inline", inputs: ["adslInputs","display"], body: async (adslInputs,display) => {
+display(await(
+adslInputs.sex
+))
+}});
+
+define({id: "520f2b1a", mode: "inline", inputs: ["tex","adslInputs","display"], body: async (tex,adslInputs,display) => {
+display(await(
+tex`\small${adslInputs.age1} \le x \le ${adslInputs.age2}`
+))
+}});
+
+define({id: "05d4d60f", mode: "inline", inputs: ["tex","adslInputs","display"], body: async (tex,adslInputs,display) => {
+display(await(
+tex`\small${adslInputs.height1} \le x \le ${adslInputs.height2}`
+))
+}});
+
+define({id: "087ad8eb", mode: "inline", inputs: ["tex","adslInputs","display"], body: async (tex,adslInputs,display) => {
+display(await(
+tex`\small${adslInputs.weight1} \le x \le ${adslInputs.weight2}`
+))
+}});
+
+define({id: "9849460b", mode: "inline", inputs: ["tex","display"], body: async (tex,display) => {
+display(await(
+tex`\small {\text{Weight (kg)}} / {\text{Height}^2 (m^2)}`
+))
+}});
+
+define({id: "b3b164b3", mode: "inline", inputs: ["d3","ADSL","display"], body: async (d3,ADSL,display) => {
+display(await(
+Math.floor(d3.min(ADSL.map(d=>d.BMI)))
+))
+}});
+
+define({id: "eaa38302", mode: "inline", inputs: ["d3","ADSL","display"], body: async (d3,ADSL,display) => {
+display(await(
+Math.ceil(d3.max(ADSL.map(d=>d.BMI)))
+))
+}});
+
+define({id: "5f75e016", mode: "inline", inputs: ["adslInputs","display"], body: async (adslInputs,display) => {
+display(await(
+adslInputs.flg1
+))
+}});
+
+define({id: "803e4cc2", mode: "inline", inputs: ["adslInputs","display"], body: async (adslInputs,display) => {
+display(await(
+adslInputs.trt
+))
+}});
+
+define({id: "004d5e81", inputs: ["Inputs","ADSL","display"], body: async (Inputs,ADSL,display) => {
+display(await(
+Inputs.table(ADSL)
+))
+}});
+
+define({id: "793426cb", inputs: ["SummaryTable","ADSL","display"], body: async (SummaryTable,ADSL,display) => {
+display(await(
+SummaryTable(ADSL, {label: "ADSL"})
+))
+}});
+
+define({id: "fd3bff36", mode: "inline", inputs: ["adlbInputs","display"], body: async (adlbInputs,display) => {
+display(await(
+adlbInputs.endpoints
+))
+}});
+
+define({id: "d488433b", mode: "inline", inputs: ["display","endpoints"], body: (display,endpoints) => {
+display(endpoints.join(' | '))
+}});
+
+define({id: "51e0956b", mode: "inline", inputs: ["adlbInputs","display"], body: async (adlbInputs,display) => {
+display(await(
+adlbInputs.visits
+))
+}});
+
+define({id: "51751e26", mode: "inline", inputs: ["display","visits"], body: (display,visits) => {
+display(visits.join(' | '))
+}});
+
+define({id: "5f786de1", mode: "inline", inputs: ["display","retention"], body: (display,retention) => {
+display(retention.join(' | '))
+}});
+
+define({id: "d7d76119", inputs: ["view","Inputs","checkLocalStorage"], outputs: ["adlbInputs"], body: (view,Inputs,checkLocalStorage) => {
+// ADSL Inputs with Submit
+const adlbInputs = view(
+	Inputs.form(
+			{
+				endpoints: Inputs.range([1, 4], {label: "Number of Endpoint", step: 1, value: checkLocalStorage('adlbInputs', 'endpoints', 2)}),
+				visits: Inputs.range([2, 5], {label: "Number of Visit", step: 1, value: checkLocalStorage('adlbInputs', 'visits', 4)}),
+				retention: Inputs.range([0.6, 1], {label: "Follow Up Retention Rate", step: 0.1, value: checkLocalStorage('adlbInputs', 'retention', 0.9)}),
+			},
+		)
+)
+
+
+// const adlbInputs = view(
+// 	guard(
+// 		({ template }) => Inputs.form(
+// 			{
+// 				endpoints: Inputs.range([1, 4], {label: "Number of Endpoint", step: 1, value: checkLocalStorage('adlbInputs', 'endpoints', 2)}),
+// 				visits: Inputs.range([2, 5], {label: "Number of Visit", step: 1, value: checkLocalStorage('adlbInputs', 'visits', 3)}),
+// 				retention: Inputs.range([0.6, 1], {label: "Follow Up Retention Rate", step: 0.1, value: checkLocalStorage('adlbInputs', 'retention', 0.9)}),
+// 			},
+// 			{ template }
+// 		),
+// 	)
+// )
+
+// const adlbInputs = view(
+// 	guard(
+// 		({ template }) => Inputs.form(
+// 			{
+// 				endpoints: Inputs.range([1, 4], {label: "Number of Endpoint", step: 1, value: 2}),
+// 				visits: Inputs.range([2, 5], {label: "Number of Visit", step: 1, value: 3}),
+// 				retention: Inputs.range([0.6, 1], {label: "Follow Up Retention Rate", step: 0.1, value: 0.9}),
+// 			},
+// 			{ template }
+// 		),
+// 		{ resetLabel: "Revert" }
+// 	)
+// )
+
+return {adlbInputs};
+}});
+
+define({id: "a3486214", inputs: ["d3","adlbInputs","ADSL","aq"], outputs: ["visits","endpoints","ADLB","tmpArray","retention"], body: (d3,adlbInputs,ADSL,aq) => {
+  const visits = d3.range(adlbInputs.visits).map(d => `Visit${d}`)
+  const endpoints = d3.range(1, adlbInputs.endpoints+1).map(d => `Endpoint${d}`)
+
+  let ADLB = []
+  let tmpArray = ADSL.map(d => d.USUBJID)
+  const retention = [1,].concat(Array(visits.length-1).fill(adlbInputs.retention)) 
+
+  visits.forEach((v,i) => {
+	tmpArray = d3.shuffle(tmpArray).slice(0, Math.floor(tmpArray.length * retention[i])).sort() 
+	// display(tmpArray)
+    endpoints.forEach((e,j) => {
+        const tmp = aq.table({
+          USUBJID: tmpArray.map(d => `${d.toString().padStart(3, '0')}`),
+          VISIT: new Array(tmpArray.length).fill(v),
+          PARAMCD: new Array(tmpArray.length).fill(e),
+        //   AVAL: Array.from({length: tmpArray.length}, e === 'Endpoint1' ? d3.randomNormal(4*i,8) : d3.randomNormal(-4*i,8)),
+		  AVAL: Array.from({length: tmpArray.length}, j%2 === 0 ? d3.randomNormal(4*i,8) : d3.randomNormal(-4*i,8)),
+      }).objects()
+      ADLB.push(...tmp)
+    })
+  })
+
+return {visits,endpoints,ADLB,tmpArray,retention};
+}});
+
+define({id: "f7e4ecf9", inputs: ["Inputs","ADLB","display"], body: async (Inputs,ADLB,display) => {
+display(await(
+Inputs.table(ADLB)
+))
+}});
+
+define({id: "d5133a5f", inputs: ["SummaryTable","ADLB","display"], body: async (SummaryTable,ADLB,display) => {
+display(await(
+SummaryTable(ADLB, {label: "ADLB"})
+))
+}});
+
+define({id: "11f15d57", inputs: ["d3","ADLB"], outputs: ["groups","ADLB_Long","varList","epList","vstList"], body: (d3,ADLB) => {
+  const groups = Array.from(d3.groups(ADLB, d => d.USUBJID, d => `${d.PARAMCD}_${d.VISIT}`))
+  let ADLB_Long = []
+  groups.forEach((d,i) => {
+    let tmp = {}
+    tmp['USUBJID'] = d[0]
+    d[1].forEach((d1) => {
+      tmp[d1[0]] = d1[1][0].AVAL
+    })
+    ADLB_Long.push(tmp)
+  })
+
+  const varList = Object.keys(ADLB_Long[0]).filter(d => !d.includes('USUBJID'))
+  const epList = [...new Set(varList.map(d => d.split('_')[0]))]
+  const vstList = [...new Set(varList.map(d => d.split('_')[1]))]
+  
+  ADLB_Long.forEach(e => {
+    epList.forEach(ep => {
+      vstList.slice(1).forEach(vst => {
+        e[`${ep}_${vst}_CHG`] = e[`${ep}_${vst}`] - e[`${ep}_${vstList[0]}`] 
+      })
+    })
+  })
+
+return {groups,ADLB_Long,varList,epList,vstList};
+}});
+
+define({id: "524a9940", inputs: ["aq","ADSL","ADLB_Long"], outputs: ["masterData"], body: (aq,ADSL,ADLB_Long) => {
+const masterData = aq.from(ADSL).join(aq.from(ADLB_Long), 'USUBJID').objects()
+return {masterData};
+}});
+
+define({id: "172673d4", inputs: ["html","localStorage","ADSL","ADLB","adslInputs","adlbInputs","ADLB_Long","masterData","alert","display"], outputs: ["tipOpacity","form"], body: (html,localStorage,ADSL,ADLB,adslInputs,adlbInputs,ADLB_Long,masterData,alert,display) => {
+let tipOpacity = 0
+
+const form = html`<form onsubmit="return false;">
+				<button class="button" name="saveBtn" style='margin-left:35px;'>
+					Once all parameters are set, click to store datasets
+					<div class="button__horizontal"></div>
+					<div class="button__vertical"></div>
+				</button>
+				</form>`;
+
+form.saveBtn.onclick = () => {
+	localStorage.setItem("ADSL", JSON.stringify(ADSL));
+	localStorage.setItem("ADLB", JSON.stringify(ADLB));
+	localStorage.setItem("adslInputs", JSON.stringify(adslInputs));
+	localStorage.setItem("adlbInputs", JSON.stringify(adlbInputs));
+	localStorage.setItem("ADLB_Long", JSON.stringify(ADLB_Long));
+	localStorage.setItem("masterData", JSON.stringify(masterData));
+
+	setTimeout(function(){
+		alert('Simulated Datasets are Successfully Saved')
+	}, 500);
+};
+
+display(form)
+
+
+
+return {tipOpacity,form};
+}});
+
+define({id: "d8b25c88", inputs: ["ADSL","ADLB","adslInputs","adlbInputs","ADLB_Long","masterData","localStorage"], outputs: ["savedSimulatedData"], body: (ADSL,ADLB,adslInputs,adlbInputs,ADLB_Long,masterData,localStorage) => {
+function savedSimulatedData(){
+	const saveList = [
+					{"ADSL": ADSL}, 
+					{"ADLB": ADLB}, 
+					{"adslInputs": adslInputs}, 
+					{"adlbInputs": adlbInputs}, 
+					{"ADLB_Long": ADLB_Long}, 
+					{"masterData": masterData},
+					]
+
+	saveList.forEach(item => {
+		for (let keyName in item) {
+			if (localStorage.getItem(keyName) === null) {
+				localStorage.setItem(keyName, JSON.stringify(item[keyName]));
+			}
+		}
+	})
+}
+
+savedSimulatedData()
+return {savedSimulatedData};
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Clinical Trial Data Analysis</a></li>
+  </ol>
+  <section>
+    <summary class="observablehq-link"><a href="./Enrollment-Monitoring">Enrollment Monitoring</a></summary>
+    <ol>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>Analytical Data Simulation</summary>
+    <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./ADaM-Datasets">ADaM Datasets</a></li>
+    <li class="observablehq-link"><a href="./Master-Dataset">Master Dataset</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Dynamic Analysis</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./Descriptive-Statistics">Descriptive Statistics</a></li>
+    <li class="observablehq-link"><a href="./Summerized-Information">Summarized Information</a></li>
+    <li class="observablehq-link"><a href="./Efficacy-Analyses">Efficacy Analyses</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Output Tables</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./Demographic-Table">Demographic Table</a></li>
+    <li class="observablehq-link"><a href="./Primary-Table">Primary Table</a></li>
+    <li class="observablehq-link"><a href="./Followup-Table">Visit Completion Table</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary class="observablehq-link"><a href="./About-Author">About the Author</a></summary>
+    <ol>
+    </ol>
+  </section>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#adsl">ADSL</a></li>
+<li class="observablehq-secondary-link"><a href="#adlb">ADLB</a></li>
+</ol>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:f7ba7a53:--></div>
+<div class="observablehq observablehq--block"><!--:dd07b1ce:--></div>
+<div class="observablehq observablehq--block"><!--:6d819c25:--></div>
+<h1 id="a-set-of-a-da-m-datasets-are-simulated-to-create-a-virtual-clinical-trial-enviroment" tabindex="-1"><a class="observablehq-header-anchor" href="#a-set-of-a-da-m-datasets-are-simulated-to-create-a-virtual-clinical-trial-enviroment">A set of ADaM datasets are simulated to create a virtual clinical trial enviroment</a></h1>
+<blockquote>
+<p>CDISC standards are required for regulatory submissions to the FDA (CDER &amp; CBER) for drugs and biologics. While CDRH does not mandate the use of CDISC standards, it strongly encourages manufacturers to adopt data and terminology standards in pre-clinical and post-market submissions to enhance consistency and improve data quality.</p>
+</blockquote>
+<blockquote>
+<p>The Data Simulation section enables the generation of multiple simulated datasets based on CDISC standards. These datasets are invaluable for early-phase exploratory analyses, model testing, and power calculations. Whether you are exploring patient subgroups, treatment efficacy, or biomarker correlations, simulated data provides the flexibility to investigate various scenarios without relying on real-world trial data, which may be limited or unavailable in early research phases.</p>
+</blockquote>
+<hr>
+<h1 id="adsl" tabindex="-1"><a class="observablehq-header-anchor" href="#adsl">ADSL</a></h1>
+<!-- ```js
+// ADSL Inputs
+const adslInputs = view(
+     Inputs.form({
+        enrollment: Inputs.range([60, 200], {label: "Sample size (ITT) to be simulated", step: 10, value: 100}),
+		sex: Inputs.range([0, 1], {label: "Male vs. Female", step: 0.05, value: 0.55}),
+        age1: Inputs.range([30, 50], {label: "Age Min", step: 1, value: 40}),
+        age2: Inputs.range([60, 90], {label: "Age Max", step: 1, value: 80}),
+		height1: Inputs.range([130, 150], {label: "Height Min", step: 1, value: 140}),
+        height2: Inputs.range([180, 200], {label: "Height Max", step: 1, value: 190}),
+		weight1: Inputs.range([30, 50], {label: "Weight Min", step: 5, value: 35}),
+        weight2: Inputs.range([100, 120], {label: "Weight Max", step: 5, value: 105}),
+		bmi1: Inputs.range([13, 20], {label: "BMI Min", step: 1, value: 15}),
+        bmi2: Inputs.range([35, 40], {label: "BMI Max", step: 1, value: 38}),
+        flg1: Inputs.range([0, 1], {label: "Flag1 Ratio", step: 0.1, value: 0.2}),
+		trt: Inputs.range([0, 1], {label: "Treatment vs. Control", step: 0.1, value: 0.5}),
+    })
+)
+``` -->
+<div class="observablehq observablehq--block"><!--:164b9880:--></div>
+<div class="observablehq observablehq--block"><!--:f8da7204:--></div>
+<ul>
+  <li><b>USUBJID</b>: dynamic ITT with sample size = <observablehq-loading></observablehq-loading><!--:baf447f1:--></li>
+  <li><b>SITE</b>: 4 sites from multinomial distribution with prob = [0.2, 0.2, 0.3, 0.3]</li>
+  <li><b>SEX</b>: gender samples from a binomial distribution (p = <observablehq-loading></observablehq-loading><!--:137236e7:-->)</li>
+  <li><b>AGE</b>: integer samples from a uniform distribution <observablehq-loading></observablehq-loading><!--:520f2b1a:--> </li>
+  <li><b>HEIGHT [CM]</b>: integer samples from a uniform distribution <observablehq-loading></observablehq-loading><!--:05d4d60f:--> </li>
+  <li><b>WEIGHT [KG]</b>: integer samples from a uniform distribution <observablehq-loading></observablehq-loading><!--:087ad8eb:--> </li>
+  <li><b>BMI [<observablehq-loading></observablehq-loading><!--:9849460b:-->]</b>: Range from <observablehq-loading></observablehq-loading><!--:b3b164b3:--> to <observablehq-loading></observablehq-loading><!--:eaa38302:--> </li>
+  <li><b>FLG1</b>: 2 groups from a binomial distribution (p = <observablehq-loading></observablehq-loading><!--:5f75e016:-->)</li>
+  <li><b>TRTEMFL</b>: Treatment vs Control from a binomial distribution (p = <observablehq-loading></observablehq-loading><!--:803e4cc2:-->)</li>
+</ul>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:004d5e81:--></div>
+<br>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:793426cb:--></div>
+<hr>
+<h1 id="adlb" tabindex="-1"><a class="observablehq-header-anchor" href="#adlb">ADLB</a></h1>
+<blockquote>
+<p>ADLB contains the information of</p>
+<ul>
+<li><strong><observablehq-loading></observablehq-loading><!--:fd3bff36:--> endpoints</strong>: <observablehq-loading></observablehq-loading><!--:d488433b:--></li>
+<li>by <strong><observablehq-loading></observablehq-loading><!--:51e0956b:--> vistis</strong>: <observablehq-loading></observablehq-loading><!--:51751e26:--></li>
+<li>with <strong>retention rates</strong>: <observablehq-loading></observablehq-loading><!--:5f786de1:--></li>
+</ul>
+</blockquote>
+<!-- ```js
+// ADSL Inputs
+const adlbInputs = view(
+     Inputs.form({
+		endpoints: Inputs.range([1, 4], {label: "Number of Endpoint", step: 1, value: 2}),
+		visits: Inputs.range([2, 5], {label: "Number of Visit", step: 1, value: 3}),
+        retention: Inputs.range([0.6, 1], {label: "Follow Up Retention Rate", step: 0.1, value: 0.9}),
+    })
+)
+``` -->
+<div class="observablehq observablehq--block"><!--:d7d76119:--></div>
+<div class="observablehq observablehq--block"><!--:a3486214:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:f7e4ecf9:--></div>
+<br>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:d5133a5f:--></div>
+<hr>
+<div class="observablehq observablehq--block"><!--:11f15d57:--></div>
+<div class="observablehq observablehq--block"><!--:524a9940:--></div>
+<br>
+<div class="observablehq observablehq--block"><!--:172673d4:--></div>
+<div class="observablehq observablehq--block"><!--:d8b25c88:--></div>
+<br>
+<hr>
+<style>
+
+.summaryTable td:first-child {
+	text-align:left;
+}
+
+th, tr, td {
+   text-align: center; 
+}
+
+
+.hl blockquote {
+	padding: 1em;
+	border-left: 5px solid #1E4865;
+}
+
+li {
+  margin: 6px 0;
+}
+
+span[style*="rotate(90deg)"] {
+	display: none !important;
+}
+
+.button {
+	 --offset: 10px;
+	 --border-size: 2px;
+	 display: block;
+	 position: relative;
+	 padding: 1.5em 3em;
+	 appearance: none;
+	 border: 0;
+	 background: transparent;
+	 color: #1E4865;
+	 text-transform: uppercase;
+	 letter-spacing: 0.25em;
+	 outline: none;
+	 cursor: pointer;
+	 font-weight: bold;
+	 border-radius: 0;
+	 box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+	 transition: background 0.8s ease;
+}
+ .button:hover {
+	 background: rgba(100, 0, 0, .03);
+}
+ .button__horizontal, .button__vertical {
+	 position: absolute;
+	 top: var(--horizontal-offset, 0);
+	 right: var(--vertical-offset, 0);
+	 bottom: var(--horizontal-offset, 0);
+	 left: var(--vertical-offset, 0);
+	 transition: transform 0.8s ease;
+	 will-change: transform;
+}
+ .button__horizontal::before, .button__vertical::before {
+	 content: '';
+	 position: absolute;
+	 border: inherit;
+}
+ .button__horizontal {
+	 --vertical-offset: calc(var(--offset) * -1);
+	 border-top: var(--border-size) solid currentcolor;
+	 border-bottom: var(--border-size) solid currentcolor;
+}
+ .button__horizontal::before {
+	 top: calc(var(--vertical-offset) - var(--border-size));
+	 bottom: calc(var(--vertical-offset) - var(--border-size));
+	 left: calc(var(--vertical-offset) * -1);
+	 right: calc(var(--vertical-offset) * -1);
+}
+ .button:hover .button__horizontal {
+	 transform: scaleX(0);
+}
+ .button__vertical {
+	 --horizontal-offset: calc(var(--offset) * -1);
+	 border-left: var(--border-size) solid currentcolor;
+	 border-right: var(--border-size) solid currentcolor;
+}
+ .button__vertical::before {
+	 top: calc(var(--horizontal-offset) * -1);
+	 bottom: calc(var(--horizontal-offset) * -1);
+	 left: calc(var(--horizontal-offset) - var(--border-size));
+	 right: calc(var(--horizontal-offset) - var(--border-size));
+}
+ .button:hover .button__vertical {
+	 transform: scaleY(0);
+}
+
+</style>    </main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./Enrollment-Monitoring"><span>Enrollment Monitoring</span></a><a rel="next" href="./Master-Dataset"><span>Master Dataset</span></a></nav>
+</footer>
+</div>

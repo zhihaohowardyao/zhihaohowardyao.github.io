@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.11.0">
+<title>Summarized Information | Clinical Trial Data Analysis</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air.9914ee1a.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air.9914ee1a.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="modulepreload" href="./_observablehq/client.7e44a896.js">
+<link rel="modulepreload" href="./_observablehq/runtime.c916ad99.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.3783f355.js">
+<link rel="modulepreload" href="./_npm/d3-require@1.3.0/7ba36aef.js">
+<link rel="modulepreload" href="./_import/components/mctad.f3072535.js">
+<link rel="modulepreload" href="./_npm/lodash@4.17.21/cbfa4f05.js">
+<link rel="modulepreload" href="./_npm/arquero@6.0.1/307e9056.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.e3f2dfe6.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
+<link rel="modulepreload" href="./_npm/acorn@8.12.1/9e2c2538.js">
+<link rel="modulepreload" href="./_npm/apache-arrow@17.0.0/169cdc0a.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e95f898e.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/d44feff9.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/5830b12a.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/84d7b8e9.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/2c0cdfa2.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/626bedc4.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/00c41b5d.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/b5f7cdc6.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/b22c5864.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/6f15f633.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/ef1ec490.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e1ff060.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/5851d7ef.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/dcd02767.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/f1db2593.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/034b7bcb.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/4bb53638.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/bbafde58.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/aa5b35a8.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/32c7fec2.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/567840a0.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/cf9b720b.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/5dcd62f4.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/f8e03c56.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/5bc129e1.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/19c92b44.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/8debb4ba.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/4b0cc581.js">
+<link rel="modulepreload" href="./_npm/tslib@2.7.0/f0f7d58c.js">
+<link rel="modulepreload" href="./_npm/flatbuffers@24.3.25/fd24637b.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.7e44a896.js";
+
+define({id: "93b77afd", inputs: ["localStorage"], outputs: ["storedMasterData"], body: (localStorage) => {
+const storedMasterData = JSON.parse(localStorage.getItem("masterData"));
+return {storedMasterData};
+}});
+
+define({id: "5cafa3ae", outputs: ["require","mctad"], body: async () => {
+const [{require}, {mctad}] = await Promise.all([import("./_npm/d3-require@1.3.0/7ba36aef.js"), import("./_import/components/mctad.f3072535.js")]);
+
+return {require,mctad};
+}});
+
+define({id: "d25e18c4", inputs: ["storedMasterData","d3","mctad","aq","display","Inputs"], outputs: ["commonVars","chgVars","allVars","eps","vsts","subgroups","forestData","forestData_show"], body: (storedMasterData,d3,mctad,aq,display,Inputs) => {
+const commonVars = Object.keys(storedMasterData[0]).filter(d => !d.toUpperCase().includes('VISIT'))
+const chgVars = Object.keys(storedMasterData[0]).filter(d => d.toUpperCase().includes('CHG'))
+const allVars = [...commonVars, ...chgVars]
+
+const eps = [...new Set(chgVars.map(d => d.split('_')[0]))]
+const vsts = [...new Set(chgVars.map(d => d.split('_')[1]))]
+const subgroups = ['All', 'SITE', 'SEX', 'FLG1', 'TRTEMFL']
+
+let forestData = []
+
+eps.forEach(ep => {
+    vsts.forEach(v => {
+        subgroups.forEach((subgroup, i) => {
+            const subgroupCats = subgroup === 'All' ? [subgroup] : [...new Set(storedMasterData.map(d=>d[subgroup]))].sort()
+            const maxInGroup = subgroupCats.length
+            subgroupCats.forEach((subgrpCat, j) => {
+                const curData = storedMasterData
+                                .filter(d => subgrpCat === 'All' ? d : d[subgroup] === subgrpCat)
+                                .filter(d => d[`${ep}_${v}_CHG`])
+                const curArr = curData.map(d => d[`${ep}_${v}_CHG`])
+                
+                forestData.push({
+                    endpoint: ep,
+                    visit: v,
+                    subgroup: subgroup,
+                    category: subgrpCat,
+                    label: subgroup === 'All' ? subgroup : `${subgroup}=${subgrpCat}`,
+                    n: curArr.length,
+                    mean: Math.round(d3.mean(curArr)*10)/10,
+                    upper_CI: Math.round(mctad.confidenceIntervalOnTheMean(
+                                d3.mean(curArr), 
+                                d3.deviation(curArr), 
+                                curArr.length, 
+                                0.025, 
+                                'u'
+                            )*10)/10,
+                    lower_CI: Math.round(mctad.confidenceIntervalOnTheMean(
+                                d3.mean(curArr), 
+                                d3.deviation(curArr), 
+                                curArr.length, 
+                                0.025, 
+                                'l'
+                            )*10)/10,
+                    numInGroup: j+1,
+                    maxInGroup: maxInGroup,
+                })
+            
+            })
+        })
+    })
+})
+
+const forestData_show = aq.from(forestData).select(aq.not(['numInGroup', 'maxInGroup'])).objects()
+display(Inputs.table(forestData_show))
+return {commonVars,chgVars,allVars,eps,vsts,subgroups,forestData,forestData_show};
+}});
+
+define({id: "2ccd0aa2", outputs: ["removeLastNColumns"], body: () => {
+function removeLastNColumns(jsonArray, n) {
+  return jsonArray.map(obj => {
+    const keys = Object.keys(obj);
+    for (let i = 0; i < n; i++) {
+      delete obj[keys[keys.length - 1 - i]];
+    }
+    return obj;
+  });
+}
+return {removeLastNColumns};
+}});
+
+define({id: "b791269f", inputs: ["view","Inputs","forestData"], outputs: ["endpointSelected"], body: (view,Inputs,forestData) => {
+const endpointSelected = view(Inputs.select([... new Set(forestData.map(d=>d.endpoint))], {value: "Endpoint1", label: "Select Endpoint"}));
+return {endpointSelected};
+}});
+
+define({id: "7912e8a1", inputs: ["removeAllChildNodes","forestData","endpointSelected"], outputs: ["dataFiltered","visitList","data1","data2","dp1","dp2"], body: (removeAllChildNodes,forestData,endpointSelected) => {
+removeAllChildNodes(document.querySelector('#forest_wrapper'))
+const dataFiltered = forestData
+                        .filter(d => d.endpoint == endpointSelected)
+                        .map(d => ({
+                            ...d,
+                            result: `${d.mean.toFixed(1)} [${d.lower_CI.toFixed(1)}, ${d.upper_CI.toFixed(1)}]`,
+                        }))
+
+const visitList = [... new Set(dataFiltered.map(d=>d.visit))],
+    data1 = dataFiltered.concat().filter(d => d.visit == visitList[0]),
+    data2 = dataFiltered.concat().filter(d => d.visit == visitList[1])
+
+let dp1 = [], dp2 = []
+data1.concat().map((d,i) =>(
+      d.numInGroup === d.maxInGroup ? dp1.push(
+          {...d}, 
+          {
+              label: d.label + ' placeholder',
+              lower_CI: undefined,
+              upper_CI: undefined,
+              mean: undefined,
+              n: undefined,
+          }
+          ) : dp1.push({...d})
+      ))
+data2.concat().map((d,i) =>(
+      d.numInGroup === d.maxInGroup ? dp2.push(
+          {...d}, 
+          {
+              label: d.label + ' placeholder',
+              lower_CI: undefined,
+              upper_CI: undefined,
+              mean: undefined,
+              n: undefined,
+          }
+          ) : dp2.push({...d})
+      ))
+
+return {dataFiltered,visitList,data1,data2,dp1,dp2};
+}});
+
+define({id: "c64332fb", inputs: ["dp1","dp2","d3","visitList"], outputs: ["width","numTextColumns","rowHeight","subgroupList","viewbox","height","margin","y","regY","colorScale","plotFields","svg"], body: (dp1,dp2,d3,visitList) => {
+const
+    width = 1080,
+    numTextColumns = 5,
+    rowHeight = 32,
+    // subgroupList = [...new Set(dataFiltered.map(d => d.label))],
+    subgroupList = [...new Set(dp1.map(d=>d.label).concat(dp2.map(d=>d.label)))],
+    viewbox = [0, 0, width, (subgroupList.length-1) * rowHeight],
+    height = (subgroupList.length-1) * rowHeight,
+    margin = { top: 45, bottom: 45 }
+
+// display(subgroupList)
+
+const 
+        y = d3.scaleLinear()
+                .domain([-1, (subgroupList.length)])
+                .range([margin.top, height - margin.bottom]),
+
+        regY = d3
+                .scaleLinear()
+                .domain([-1, (subgroupList.length-1) + 2])
+                .range([margin.top, height - margin.bottom]),
+
+        colorScale = d3
+                .scaleOrdinal()
+                .domain(visitList)
+                .range(['#2274a5', '#1b4965']) 
+
+const plotFields = {
+        estimateField: "mean",
+        lowerCiField: "lower_CI",
+        upperCiField: "upper_CI",
+        radiusScaledTo: "n"
+        }
+
+
+const svg = d3.select('#forest_wrapper').append('svg')
+            .attr("viewBox", viewbox)
+            .style("font", "13px sans-serif"); 
+
+
+return {width,numTextColumns,rowHeight,subgroupList,viewbox,height,margin,y,regY,colorScale,plotFields,svg};
+}});
+
+define({id: "2e98a569", outputs: ["removeAllChildNodes"], body: () => {
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
+return {removeAllChildNodes};
+}});
+
+define({id: "cb16c43d", inputs: ["d3","height","margin","y","plotFields","_","width","rowHeight","colorScale"], outputs: ["addPlotStyling","addDataPoints","addTextColumn"], body: (d3,height,margin,y,plotFields,_,width,rowHeight,colorScale) => {
+const addPlotStyling = (svg, data, options) => {
+                // const yscale = options.regression ? regY : y;
+
+        const plotSettings = {
+            title: options.title,
+            plotWidth: 200,
+            xrange: [d3.min([0, d3.min(data, d=>d.lower_CI)]), d3.max([0, d3.max(data, d=>d.upper_CI)])],
+            numTicks: 5,
+            radiusScale: [3, 7],
+            referenceLines: ["zero", "mean"],
+            plotXstart: options.left,
+            }
+
+        const rectX = data.filter(d=>d.label == 'All')[0].lower_CI
+    
+        const x =  d3.scaleLinear() 
+
+                    x.domain(plotSettings.xrange)
+                    .range([options.left, options.left + plotSettings.plotWidth])
+                    .clamp(true)
+
+        const xAxis = (g) =>
+                    g.attr("transform", `translate(0,${height - margin.bottom})`)
+                    .call(d3.axisBottom(x).ticks(plotSettings.numTicks))
+
+        const yAxis = (g) =>
+                    g.attr("transform", `translate(${options.left},0)`).call(d3.axisLeft(y))
+
+        const radiusScale = d3
+                    .scaleLinear()
+                    .domain([0, d3.max(data, (d) => d[plotFields.radiusScaledTo])])
+                    .range(plotSettings.radiusScale)
+
+        const yscale =  y 
+        svg.append("g").call(xAxis);
+
+        const styles = svg
+            .append("g")
+            .attr("text-anchor", "middle")
+            .attr("class", "labels");
+
+        // title
+        styles
+            .append("text")
+            .attr("font-weight", "bold")
+            .attr("x", d3.mean(x.range()))
+            .attr("y", yscale(-1) - 8)
+            .text(plotSettings.title);
+
+        // x-label
+        styles
+            .append("text")
+            .attr("x", x(0 + 15))
+            .attr("y", yscale.range()[1] + 35)
+            .text(plotSettings.xlabel)
+            .attr("font-weight", "bold")
+            .attr("font-size", "16px")
+            .attr('text-anchor', 'start')
+            .attr('fill', '#C00000');
+
+        // zero reference line
+        if (_.includes(plotSettings.referenceLines, "zero")) {
+            styles
+            .append("line")
+            .attr("stroke", "#A1A1A1")
+            .attr("stroke-width", 2)
+            .attr("stroke-dasharray", "4 4")
+            .attr("x1", (d) => x(0))
+            .attr("x2", (d) => x(0))
+            .attr("y1", yscale.range()[0])
+            .attr("y2", yscale.range()[1]);
+        }
+
+        // mean reference line
+        if (_.includes(plotSettings.referenceLines, "mean")) {
+            styles
+            .append("line")
+            .attr("stroke", "#627952")
+            .attr("stroke-width", 2)
+            .attr("stroke-dasharray", "4 4")
+            .attr("x1", (d) => x(data.filter(d=>d.label == 'All')[0].mean))
+            .attr("x2", (d) => x(data.filter(d=>d.label == 'All')[0].mean))
+            .attr("y1", yscale.range()[0])
+            .attr("y2", yscale.range()[1]);
+        }
+
+        // rect band
+        styles
+            .append('rect')
+            .attr("x", x(rectX))
+            .attr("y", yscale.range()[0])
+            .attr("width", Math.abs(x(data.filter(d=>d.label == 'All')[0].upper_CI) - x(data.filter(d=>d.label == 'All')[0].lower_CI) ))
+            .attr("height", yscale.range()[1] - margin.bottom)
+            .attr('fill', '#f4f1de')
+            .style('opacity', 0.5)
+
+        // top lines
+        styles
+            .append("line")
+            .attr("stroke", "black")
+            .attr("stroke-width", 2)
+            .attr("x1", 0)
+            .attr("x2", width)
+            .attr("y1", yscale.range()[0])
+            .attr("y2", yscale.range()[0]);
+
+        // bottom lines
+        styles
+            .append("line")
+            .attr("stroke", "black")
+            .attr("stroke-width", 2)
+            .attr("x1", 0)
+            .attr("x2", width)
+            .attr("y1", yscale.range()[1])
+            .attr("y2", yscale.range()[1]);
+    }
+
+    const addDataPoints = (svg, data, options) => {
+
+        const points = svg.append("g"),
+            rh = rowHeight,
+            lower = plotFields.lowerCiField,
+            upper = plotFields.upperCiField,
+            estimate = plotFields.estimateField;
+
+        const plotSettings = {
+            title: options.title,
+            plotWidth: 200,
+            xrange: [d3.min([0, d3.min(data, d=>d.lower_CI)]), d3.max([0, d3.max(data, d=>d.upper_CI)])],
+            numTicks: 3,
+            radiusScale: [3, 7],
+            referenceLines: ["zero", "mean"],
+            plotXstart: options.left,
+            }
+
+        const x =  d3.scaleLinear()
+                
+                x.domain(plotSettings.xrange)
+                    .range([options.left, options.left + plotSettings.plotWidth])
+                    .clamp(true)
+
+          const  xAxis = (g) =>
+                    g.attr("transform", `translate(0,${height - margin.bottom})`)
+                    .call(d3.axisBottom(x).ticks(plotSettings.numTicks))
+                    .style("font", "13px sans-serif")
+
+          const  yAxis = (g) =>
+                    g.attr("transform", `translate(${options.left},0)`).call(d3.axisLeft(y))
+
+          const  radiusScale = d3
+                    .scaleLinear()
+                    .domain([0, d3.max(data, (d) => d[plotFields.radiusScaledTo])])
+                    .range(plotSettings.radiusScale)
+
+        const yscale =  y 
+
+        points
+            .selectAll("line")
+            .data(data)
+            .join("line")
+            .attr('class', d => d.subgroup)
+            .attr("stroke", d => colorScale(d.visit)) 
+            .attr("stroke-width", 2)
+            .attr("x1", (d) => x(d[lower]))
+            .attr("x2", (d) =>  x(d[upper]))
+            .attr("y1", (d, i) => yscale(i))
+            .attr("y2", (d, i) => yscale(i))
+            .on('mouseover', function(event, d) {
+                    const curSubgrp = d.subgroup
+                    d3.selectAll(`text.${curSubgrp}`).attr('fill', '#d95d39')  
+                    d3.selectAll(`line.${curSubgrp}, path.${curSubgrp}`).attr('stroke', '#d95d39')
+                    d3.selectAll(`circle.${curSubgrp}`).style('fill', '#d95d39')  
+                })
+            .on('mouseout', function(event, d) {
+                    const curSubgrp = d.subgroup
+                    d3.selectAll(`text.${curSubgrp}`).attr('fill', 'black')
+                    d3.selectAll(`line.${curSubgrp}, path.${curSubgrp}`).each(function (d,i){d3.select(this).attr('stroke', colorScale(d.visit)) }) 
+                    d3.selectAll(`circle.${curSubgrp}`).each(function (d,i){d3.select(this).style('fill', colorScale(d.visit)) })    
+                });
+
+        points
+            .selectAll("path.lower")
+            .data(data)
+            .join("path")
+            .attr('class', d => d.subgroup)
+            // .attr("stroke", "#4472c4")
+            .attr("stroke", d => colorScale(d.visit)) 
+            .attr("stroke-width", 2)
+            .attr("d", (d, i) => {
+                return d[lower] == undefined ? null :
+                d3.line()([
+                        [x(d[lower]) , yscale(i) - rh * 0.2],
+                        [x(d[lower]), yscale(i)],
+                        [x(d[lower]) , yscale(i) + rh * 0.2]
+                    ]);
+            })
+            .on('mouseover', function(event, d) {
+                    const curSubgrp = d.subgroup
+                    d3.selectAll(`text.${curSubgrp}`).attr('fill', '#d95d39')  
+                    d3.selectAll(`line.${curSubgrp}, path.${curSubgrp}`).attr('stroke', '#d95d39')
+                    d3.selectAll(`circle.${curSubgrp}`).style('fill', '#d95d39')  
+                })
+            .on('mouseout', function(event, d) {
+                    const curSubgrp = d.subgroup
+                    d3.selectAll(`text.${curSubgrp}`).attr('fill', 'black')
+                    d3.selectAll(`line.${curSubgrp}, path.${curSubgrp}`).each(function (d,i){d3.select(this).attr('stroke', colorScale(d.visit)) }) 
+                    d3.selectAll(`circle.${curSubgrp}`).each(function (d,i){d3.select(this).style('fill', colorScale(d.visit)) })     
+                });
+
+        points
+            .selectAll("path.upper")
+            .data(data)
+            .join("path")
+            .attr('class', d => d.subgroup)
+            // .attr("stroke", "#4472c4")
+            .attr("stroke", d => colorScale(d.visit)) 
+            .attr("stroke-width", 2)
+            .attr("d", (d, i) => {
+                return d[lower] == undefined ? null :
+                    d3.line()([
+                        [x(d[upper]) , yscale(i) - rh * 0.2],
+                        [x(d[upper]), yscale(i)],
+                        [x(d[upper]) , yscale(i) + rh * 0.2]
+                    ]);
+            })
+            .on('mouseover', function(event, d) {
+                    const curSubgrp = d.subgroup
+                    d3.selectAll(`text.${curSubgrp}`).attr('fill', '#d95d39')  
+                    d3.selectAll(`line.${curSubgrp}, path.${curSubgrp}`).attr('stroke', '#d95d39')
+                    d3.selectAll(`circle.${curSubgrp}`).style('fill', '#d95d39')  
+                })
+            .on('mouseout', function(event, d) {
+                    const curSubgrp = d.subgroup
+                    d3.selectAll(`text.${curSubgrp}`).attr('fill', 'black')
+                    d3.selectAll(`line.${curSubgrp}, path.${curSubgrp}`).each(function (d,i){d3.select(this).attr('stroke', colorScale(d.visit)) }) 
+                    d3.selectAll(`circle.${curSubgrp}`).each(function (d,i){d3.select(this).style('fill', colorScale(d.visit)) })      
+                });
+
+        points
+            .selectAll("circle")
+            .data(data)
+            .join("circle")
+            .attr('class', d => d.subgroup)
+            .attr("cx", (d) => x(d[estimate]))
+            .attr("cy", (d, i) => yscale(i))
+            .attr("r", (d) => radiusScale(d[plotFields.radiusScaledTo]))
+            // .style('fill', '#4472c4')
+            .attr("fill", d => colorScale(d.visit)) 
+            .on('mouseover', function(event, d) {
+                    const curSubgrp = d.subgroup
+                    d3.selectAll(`text.${curSubgrp}`).attr('fill', '#d95d39')  
+                    d3.selectAll(`line.${curSubgrp}, path.${curSubgrp}`).attr('stroke', '#d95d39')
+                    d3.selectAll(`circle.${curSubgrp}`).style('fill', '#d95d39')  
+                })
+            .on('mouseout', function(event, d) {
+                    const curSubgrp = d.subgroup
+                    d3.selectAll(`text.${curSubgrp}`).attr('fill', 'black')
+                    d3.selectAll(`line.${curSubgrp}, path.${curSubgrp}`).each(function (d,i){d3.select(this).attr('stroke', colorScale(d.visit)) }) 
+                    d3.selectAll(`circle.${curSubgrp}`).each(function (d,i){d3.select(this).style('fill', colorScale(d.visit)) })    
+                });
+
+    }
+
+    const addTextColumn = (
+        svg,
+        data,
+        colName,
+        headerName1,
+        headerName2,
+        xPosition,
+        textAnchor,
+        options
+        ) => {
+        // const yscale = options.regression ? regY : y,
+        const yscale =  y
+        const g = svg.append("g").attr('class', 'tblColumn');
+
+        g.selectAll("text")
+            .data(data)
+            .join("text")
+            .attr('class', d => d.subgroup)
+            .attr("x", xPosition)
+            .attr("y", (d, i) => yscale(i))
+            .attr("text-anchor", textAnchor)
+            .attr("alignment-baseline", "central")
+            .attr("font-weight", options.fontWeight)
+            .text((d) =>  d[colName])
+            .style('opacity', d => d.label.includes('placeholder') ? 0 : 1)
+            .on('mouseover', function(event, d) {
+                    const curSubgrp = d.subgroup
+                    d3.selectAll(`text.${curSubgrp}`).attr('fill', '#d95d39')  
+                    d3.selectAll(`line.${curSubgrp}, path.${curSubgrp}`).attr('stroke', '#d95d39')
+                    d3.selectAll(`circle.${curSubgrp}`).style('fill', '#d95d39')  
+                })
+            .on('mouseout', function(event, d) {
+                    const curSubgrp = d.subgroup
+                    d3.selectAll(`text.${curSubgrp}`).attr('fill', 'black')
+                    d3.selectAll(`line.${curSubgrp}, path.${curSubgrp}`).each(function (d,i){d3.select(this).attr('stroke', colorScale(d.visit)) }) 
+                    d3.selectAll(`circle.${curSubgrp}`).each(function (d,i){d3.select(this).style('fill', colorScale(d.visit)) })     
+                });
+
+        g.append("text")
+            .attr("x", xPosition)
+            .attr("y", yscale(-1) - 25)
+            .attr("text-anchor", textAnchor)
+            .attr("font-weight", "bold")
+            .attr('class', 'tblTitle')
+            .text((d) => headerName1);
+
+        g.append("text")
+            .attr("x", xPosition)
+            .attr("y", yscale(-1) - 8)
+            .attr("text-anchor", textAnchor)
+            .attr("font-weight", "bold")
+            .attr('class', 'tblTitle')
+            .text((d) => headerName2);
+        }
+return {addPlotStyling,addDataPoints,addTextColumn};
+}});
+
+define({id: "41f449fd", inputs: ["addPlotStyling","svg","dp1","visitList","dp2","addDataPoints","addTextColumn"], outputs: ["p1Left","p2Left"], body: (addPlotStyling,svg,dp1,visitList,dp2,addDataPoints,addTextColumn) => {
+const p1Left = 180, p2Left = 640
+addPlotStyling(svg, dp1, {title: visitList[0], left: p1Left})
+addPlotStyling(svg, dp2, {title: visitList[1], left: p2Left})
+
+addDataPoints(svg, dp1, {title: visitList[0], left: p1Left})
+addDataPoints(svg, dp2, {title: visitList[1], left: p2Left})
+
+addTextColumn(svg, dp1, 'result', '', 'Mean [95% CI]', 70, 'middle', {fontWeight:''})    
+addTextColumn(svg, dp1, 'n', '', 'N', 155, 'middle', {fontWeight:''})    
+addTextColumn(svg, dp1, 'label', 'Subgroups by', 'Baseline Characteristics', 510, 'middle', {fontWeight:'bold'})
+addTextColumn(svg, dp2, 'n', '', 'N', 870, 'middle', {fontWeight:''})
+addTextColumn(svg, dp2, 'result', '', 'Mean [95% CI]', 960, 'middle', {fontWeight:''}) 
+
+return {p1Left,p2Left};
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Clinical Trial Data Analysis</a></li>
+  </ol>
+  <section>
+    <summary class="observablehq-link"><a href="./Enrollment-Monitoring">Enrollment Monitoring</a></summary>
+    <ol>
+    </ol>
+  </section>
+  <section>
+    <summary>Analytical Data Simulation</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./ADaM-Datasets">ADaM Datasets</a></li>
+    <li class="observablehq-link"><a href="./Master-Dataset">Master Dataset</a></li>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>Dynamic Analysis</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./Descriptive-Statistics">Descriptive Statistics</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./Summerized-Information">Summarized Information</a></li>
+    <li class="observablehq-link"><a href="./Efficacy-Analyses">Efficacy Analyses</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Output Tables</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./Demographic-Table">Demographic Table</a></li>
+    <li class="observablehq-link"><a href="./Primary-Table">Primary Table</a></li>
+    <li class="observablehq-link"><a href="./Followup-Table">Visit Completion Table</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary class="observablehq-link"><a href="./About-Author">About the Author</a></summary>
+    <ol>
+    </ol>
+  </section>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#aggregation">Aggregation</a></li>
+<li class="observablehq-secondary-link"><a href="#forest-plot">Forest plot</a></li>
+</ol>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:93b77afd:--></div>
+<div class="observablehq observablehq--block"><!--:5cafa3ae:--></div>
+<h1 id="summarized-information-forest-plot" tabindex="-1"><a class="observablehq-header-anchor" href="#summarized-information-forest-plot">Summarized Information <br> (Forest Plot)</a></h1>
+<blockquote>
+<p><strong>Forest plot</strong> is essential for meta-analyses, enabling the display of estimated treatment effects across different studies or subgroups. It clearly shows the variability of treatment effects, confidence intervals, and overall impact, allowing you to assess consistency across trials and interpret results from a broader body of evidence.</p>
+</blockquote>
+<hr>
+<h1 id="aggregation" tabindex="-1"><a class="observablehq-header-anchor" href="#aggregation">Aggregation</a></h1>
+<blockquote>
+<p>The data is summerized by:</p>
+<ul>
+<li>Endpoint</li>
+<li>Visit</li>
+<li>Subgroup</li>
+</ul>
+</blockquote>
+<div class="observablehq observablehq--block"><!--:d25e18c4:--></div>
+<div class="observablehq observablehq--block"><!--:2ccd0aa2:--></div>
+<hr>
+<h1 id="forest-plot" tabindex="-1"><a class="observablehq-header-anchor" href="#forest-plot">Forest plot</a></h1>
+<div class="observablehq observablehq--block"><!--:b791269f:--></div>
+<div style="margin-left:50%">
+      <svg height="40" width="800">
+          <circle cx="50" cy="25" r="4" stroke="#2c7bb7" stroke-width="1" fill="#2c7bb7"></circle>
+          <line x1="35" y1="25" x2="65" y2="25" style="stroke:rgb(87,129,202);stroke-width:2"></line>
+          <line x1="35" y1="30" x2="35" y2="20" style="stroke:rgb(87,129,202);stroke-width:2"></line>
+          <line x1="65" y1="30" x2="65" y2="20" style="stroke:rgb(87,129,202);stroke-width:2"></line>
+          <text x="70" y="30" fill="#777" style="font-size:12px;">Mean Δ + 95% CI </text>
+          <rect x="200" y="18" width="40" height="16" style="fill:rgb(244, 241, 222);stroke-width:3;stroke:rgb(244, 241, 222)"></rect>
+          <line x1="220" y1="18" x2="220" y2="34" stroke-dasharray="4 2" style="stroke:rgb(98, 121, 82);stroke-width:2"></line>
+          <text x="250" y="30" fill="#777" style="font-size:12px;">Mean Δ + 95% CI for All Subjects</text>
+        </svg>
+</div>
+<div id="forest_wrapper"></div>
+<div class="observablehq observablehq--block"><!--:7912e8a1:--></div>
+<div class="observablehq observablehq--block"><!--:c64332fb:--></div>
+<div class="observablehq observablehq--block"><!--:2e98a569:--></div>
+<div class="observablehq observablehq--block"><!--:cb16c43d:--></div>
+<div class="observablehq observablehq--block"><!--:41f449fd:--></div>
+<style>
+th, tr, td {
+   text-align: center; 
+}
+
+.hl blockquote {
+padding: 1em;
+border-left: 5px solid #1E4865;
+}
+
+</style>   
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./Descriptive-Statistics"><span>Descriptive Statistics</span></a><a rel="next" href="./Efficacy-Analyses"><span>Efficacy Analyses</span></a></nav>
+</footer>
+</div>
