@@ -100,16 +100,18 @@
       this.style.transform='translateY(-1px)';
       this.style.letterSpacing='0.012em';
       this.style.textShadow='0 0 0.01px rgba(0,0,0,0.25)';
-      this.querySelector('.exploreHint').style.opacity='1';
-      this.querySelector('.exploreHint').style.transform='translateX(0px)';
+      this.querySelector('.exploreText').style.opacity='1';
+      this.querySelector('.exploreText').style.maxWidth='72px';
+      this.querySelector('.exploreText').style.marginLeft='6px';
     "
     onmouseout="
       this.style.color='#555';
       this.style.transform='translateY(0px)';
       this.style.letterSpacing='0.01em';
       this.style.textShadow='none';
-      this.querySelector('.exploreHint').style.opacity='0';
-      this.querySelector('.exploreHint').style.transform='translateX(-4px)';
+      this.querySelector('.exploreText').style.opacity='0';
+      this.querySelector('.exploreText').style.maxWidth='0';
+      this.querySelector('.exploreText').style.marginLeft='0';
     "
   >
 
@@ -121,27 +123,30 @@
       and enterprise data platforms
     </span>
 
-    <span style="
-      display:block;
-      position:relative;
-    ">
+    <span style="display:block;">
       across pharma, med-tech, and regulatory science
-
-      <span class="exploreHint" style="
+      <span style="
         display:inline-block;
-        opacity:0;
-        transform:translateX(-4px);
-        transition:all 0.28s ease;
-        margin-left:6px;
-        font-size:0.72em;
+        margin-left:5px;
         color:#c96a33;
+        opacity:0.32;
+        font-size:0.86em;
+        vertical-align:middle;
+      ">↗</span>
+      <span class="exploreText" style="
+        display:inline-block;
+        overflow:hidden;
+        max-width:0;
+        opacity:0;
+        margin-left:0;
+        color:#c96a33;
+        font-size:0.68em;
         letter-spacing:0.08em;
         text-transform:uppercase;
         white-space:nowrap;
         vertical-align:middle;
-      ">
-        ↗ Explore
-      </span>
+        transition:all 0.28s ease;
+      ">Explore</span>
     </span>
 
   </a>
