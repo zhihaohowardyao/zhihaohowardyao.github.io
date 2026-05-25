@@ -69,7 +69,7 @@
 					<br>
 					<h3 style="
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.75;
   text-align: center;
   letter-spacing: 0.01em;
 ">
@@ -88,47 +88,64 @@
     target="_blank"
     rel="noopener noreferrer"
     style="
+      position: relative;
       display: inline-block;
+      text-align: center;
       text-decoration: none;
-      color: #5a5a5a;
+      color: #4f4f4f;
+      padding: 14px 28px 16px;
+      border: 1px solid rgba(0,0,0,0.055);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.28);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.025);
       transition: all 0.28s ease;
       cursor: pointer;
     "
     onmouseover="
       this.style.color='#2f2f2f';
+      this.style.background='rgba(255,255,255,0.58)';
+      this.style.borderColor='rgba(210,110,55,0.24)';
+      this.style.boxShadow='0 14px 34px rgba(0,0,0,0.055)';
       this.style.transform='translateY(-1px)';
-      this.style.letterSpacing='0.012em';
       this.querySelector('.exploreHint').style.opacity='1';
-      this.querySelector('.exploreHint').style.transform='translateY(0px)';
+      this.querySelector('.exploreHint').style.transform='translateX(0px)';
     "
     onmouseout="
-      this.style.color='#5a5a5a';
+      this.style.color='#4f4f4f';
+      this.style.background='rgba(255,255,255,0.28)';
+      this.style.borderColor='rgba(0,0,0,0.055)';
+      this.style.boxShadow='0 10px 30px rgba(0,0,0,0.025)';
       this.style.transform='translateY(0px)';
-      this.style.letterSpacing='0.01em';
       this.querySelector('.exploreHint').style.opacity='0';
-      this.querySelector('.exploreHint').style.transform='translateY(3px)';
+      this.querySelector('.exploreHint').style.transform='translateX(-4px)';
     "
   >
 
-    building scalable clinical analytics, AI/GenAI systems,
-    <br>
+    <span style="display:block;">
+      building scalable clinical analytics, AI/GenAI systems,
+    </span>
 
-    and enterprise data platforms
-    <br>
+    <span style="display:block;">
+      and enterprise data platforms
+    </span>
 
-    across pharma, med-tech, and regulatory science
+    <span style="display:block;">
+      across pharma, med-tech, and regulatory science
+    </span>
 
     <span class="exploreHint" style="
-      display:inline-block;
+      position:absolute;
+      right:-92px;
+      bottom:18px;
       opacity:0;
-      transform:translateY(3px);
+      transform:translateX(-4px);
       transition:all 0.28s ease;
-      margin-left:8px;
-      font-size:0.78em;
+      font-size:0.68em;
       color:#c96a33;
       letter-spacing:0.08em;
       text-transform:uppercase;
       white-space:nowrap;
+      pointer-events:none;
     ">
       ↗ Explore
     </span>
