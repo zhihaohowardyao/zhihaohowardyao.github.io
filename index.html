@@ -69,15 +69,15 @@
 					<br>
 					<h3 style="
   font-weight: 400;
-  line-height: 1.75;
+  line-height: 1.8;
   text-align: center;
-  color: #2b2b2b;
   letter-spacing: 0.01em;
 ">
 
   <span style="
     display:block;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
+    color:#2b2b2b;
   ">
     Associate Director, 
     <b>Data Science &amp; AI Analytics</b>
@@ -90,18 +90,23 @@
     style="
       display: inline-block;
       text-decoration: none;
-      color: #4a4a4a;
-      transition: all 0.25s ease;
+      color: #5a5a5a;
+      transition: all 0.28s ease;
+      cursor: pointer;
     "
     onmouseover="
-      this.style.opacity='0.72';
-      this.querySelector('.arrow').style.opacity='1';
-      this.querySelector('.arrow').style.transform='translateX(2px)';
+      this.style.color='#2f2f2f';
+      this.style.transform='translateY(-1px)';
+      this.style.letterSpacing='0.012em';
+      this.querySelector('.exploreHint').style.opacity='1';
+      this.querySelector('.exploreHint').style.transform='translateY(0px)';
     "
     onmouseout="
-      this.style.opacity='1';
-      this.querySelector('.arrow').style.opacity='0';
-      this.querySelector('.arrow').style.transform='translateX(0px)';
+      this.style.color='#5a5a5a';
+      this.style.transform='translateY(0px)';
+      this.style.letterSpacing='0.01em';
+      this.querySelector('.exploreHint').style.opacity='0';
+      this.querySelector('.exploreHint').style.transform='translateY(3px)';
     "
   >
 
@@ -109,20 +114,24 @@
     <br>
 
     and enterprise data platforms
-
-    <span class='arrow' style="
-      display:inline-block;
-      opacity:0;
-      transition:all 0.25s ease;
-      margin-left:4px;
-      font-size:0.9em;
-    ">
-      ↗
-    </span>
-
     <br>
 
     across pharma, med-tech, and regulatory science
+
+    <span class="exploreHint" style="
+      display:inline-block;
+      opacity:0;
+      transform:translateY(3px);
+      transition:all 0.28s ease;
+      margin-left:8px;
+      font-size:0.78em;
+      color:#c96a33;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      white-space:nowrap;
+    ">
+      ↗ Explore
+    </span>
 
   </a>
 
