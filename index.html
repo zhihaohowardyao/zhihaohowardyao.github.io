@@ -69,89 +69,128 @@
 					<br>
 					<h3 style="
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.75;
   text-align: center;
   letter-spacing: 0.01em;
+  margin-bottom: 18px;
 ">
-
   <span style="
     display:block;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     color:#2b2b2b;
   ">
     Associate Director, 
     <b>Data Science &amp; AI Analytics</b>
   </span>
 
-  <a 
-    href="https://clinical-ai-demo-vercel.vercel.app/"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="
-      display: inline-block;
-      text-decoration: none;
-      color: #555;
-      transition: all 0.28s ease;
-      cursor: pointer;
-      text-align:center;
-    "
-    onmouseover="
-      this.style.color='#1f1f1f';
-      this.style.transform='translateY(-1px)';
-      this.style.letterSpacing='0.012em';
-      this.style.textShadow='0 0 0.01px rgba(0,0,0,0.25)';
-      this.querySelector('.exploreText').style.opacity='1';
-      this.querySelector('.exploreText').style.maxWidth='72px';
-      this.querySelector('.exploreText').style.marginLeft='6px';
-    "
-    onmouseout="
-      this.style.color='#555';
-      this.style.transform='translateY(0px)';
-      this.style.letterSpacing='0.01em';
-      this.style.textShadow='none';
-      this.querySelector('.exploreText').style.opacity='0';
-      this.querySelector('.exploreText').style.maxWidth='0';
-      this.querySelector('.exploreText').style.marginLeft='0';
-    "
-  >
-
-    <span style="display:block;">
-      building scalable clinical analytics, AI/GenAI systems,
-    </span>
-
-    <span style="display:block;">
-      and enterprise data platforms
-    </span>
-
-    <span style="display:block;">
-      across pharma, med-tech, and regulatory science
-      <span style="
-        display:inline-block;
-        margin-left:5px;
-        color:#c96a33;
-        opacity:0.32;
-        font-size:0.86em;
-        vertical-align:middle;
-      ">↗</span>
-      <span class="exploreText" style="
-        display:inline-block;
-        overflow:hidden;
-        max-width:0;
-        opacity:0;
-        margin-left:0;
-        color:#c96a33;
-        font-size:0.68em;
-        letter-spacing:0.08em;
-        text-transform:uppercase;
-        white-space:nowrap;
-        vertical-align:middle;
-        transition:all 0.28s ease;
-      ">Explore</span>
-    </span>
-
-  </a>
-
+  <span style="display:block; color:#444;">
+    building scalable clinical analytics, AI/GenAI systems,
+  </span>
+  <span style="display:block; color:#444;">
+    and enterprise data platforms
+  </span>
+  <span style="display:block; color:#444;">
+    across pharma, med-tech, and regulatory science
+  </span>
 </h3>
+
+<a 
+  href="https://clinical-ai-demo-vercel.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Explore Clinical AI Intelligence Platform"
+  style="
+    width: min(760px, 86vw);
+    margin: 18px auto 0;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    text-decoration: none;
+    color: #2d2d2d;
+    border: 1px solid rgba(201,106,51,0.18);
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.76), rgba(255,248,244,0.48));
+    box-shadow: 0 14px 38px rgba(0,0,0,0.045);
+    backdrop-filter: blur(4px);
+    transition: all 0.28s ease;
+  "
+  onmouseover="
+    this.style.transform='translateY(-2px)';
+    this.style.borderColor='rgba(201,106,51,0.38)';
+    this.style.boxShadow='0 18px 44px rgba(0,0,0,0.075)';
+    this.querySelector('.platformExplore').style.color='#c96a33';
+    this.querySelector('.platformArrow').style.transform='translateX(3px)';
+  "
+  onmouseout="
+    this.style.transform='translateY(0px)';
+    this.style.borderColor='rgba(201,106,51,0.18)';
+    this.style.boxShadow='0 14px 38px rgba(0,0,0,0.045)';
+    this.querySelector('.platformExplore').style.color='#9a9a9a';
+    this.querySelector('.platformArrow').style.transform='translateX(0px)';
+  "
+>
+  <div style="
+    display:flex;
+    align-items:center;
+    gap:16px;
+    text-align:left;
+  ">
+    <div style="
+      width:46px;
+      height:46px;
+      min-width:46px;
+      border-radius:50%;
+      border:1px solid rgba(201,106,51,0.24);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#c96a33;
+      font-size:20px;
+      background:rgba(255,255,255,0.62);
+    ">
+      ◉
+    </div>
+
+    <div>
+      <div style="
+        font-size:18px;
+        font-weight:600;
+        letter-spacing:0.01em;
+        margin-bottom:5px;
+      ">
+        AI-native Clinical Intelligence Platform
+      </div>
+
+      <div style="
+        font-size:13px;
+        color:#686868;
+        line-height:1.55;
+      ">
+        Simulation&nbsp;&nbsp;•&nbsp;&nbsp;Enrollment Intelligence&nbsp;&nbsp;•&nbsp;&nbsp;Efficacy Analytics&nbsp;&nbsp;•&nbsp;&nbsp;AI Assistant
+      </div>
+    </div>
+  </div>
+
+  <div class="platformExplore" style="
+    color:#9a9a9a;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:0.04em;
+    white-space:nowrap;
+    transition:all 0.28s ease;
+  ">
+    Explore Platform
+    <span class="platformArrow" style="
+      display:inline-block;
+      margin-left:5px;
+      color:#c96a33;
+      transition:all 0.28s ease;
+    ">↗</span>
+  </div>
+</a>
+
 <!-- 						in Healthcare -->
 				</div>
 
