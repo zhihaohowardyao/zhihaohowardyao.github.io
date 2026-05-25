@@ -90,22 +90,24 @@
     style="
       display: inline-block;
       text-decoration: none;
-      color: #5a5a5a;
+      color: #555;
       transition: all 0.28s ease;
       cursor: pointer;
       text-align:center;
     "
     onmouseover="
-      this.style.color='#2f2f2f';
+      this.style.color='#1f1f1f';
       this.style.transform='translateY(-1px)';
       this.style.letterSpacing='0.012em';
+      this.style.textShadow='0 0 0.01px rgba(0,0,0,0.25)';
       this.querySelector('.exploreHint').style.opacity='1';
       this.querySelector('.exploreHint').style.transform='translateX(0px)';
     "
     onmouseout="
-      this.style.color='#5a5a5a';
+      this.style.color='#555';
       this.style.transform='translateY(0px)';
       this.style.letterSpacing='0.01em';
+      this.style.textShadow='none';
       this.querySelector('.exploreHint').style.opacity='0';
       this.querySelector('.exploreHint').style.transform='translateX(-4px)';
     "
