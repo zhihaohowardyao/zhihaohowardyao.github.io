@@ -186,9 +186,10 @@
 
 <div style="
   width: 72%;
+  max-width: 780px;
   margin: 0 auto;
-  margin-top: 18px;
-  padding: 18px 26px;
+  margin-top: 16px;
+  padding: 14px 24px;
   border-radius: 18px;
   background: rgba(255,255,255,0.55);
   border: 1px solid rgba(0,0,0,0.06);
@@ -197,76 +198,75 @@
   box-shadow: 0 8px 30px rgba(0,0,0,0.03);
 ">
 
-  <div style="
-    text-align:left;
-  ">
-
-    <div style="
-      font-size: 1.02rem;
-      font-weight: 600;
-      color:#222;
-      margin-bottom: 6px;
-      letter-spacing:0.01em;
-    ">
-      AI Clinical Intelligence Platform
-    </div>
-
-    <div style="
-      color:#666;
-      font-size:0.92rem;
-      line-height:1.65;
-      margin-bottom:10px;
-    ">
-      Simulation • Enrollment Intelligence • Efficacy Analytics • AI Assistant
-    </div>
-
-    <div style="
+  <a 
+    href="https://clinical-ai-demo-vercel.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="
       display:flex;
       justify-content:space-between;
       align-items:center;
-      gap:18px;
-      flex-wrap:wrap;
-    ">
+      gap:22px;
+      width:100%;
+      text-decoration:none;
+      color:inherit;
+      transition:all 0.25s ease;
+    "
+    onmouseover="
+      this.style.transform='translateY(-1px)';
+      this.querySelector('.platformLink').style.opacity='0.72';
+      this.querySelector('.platformLink').style.transform='translateX(2px)';
+    "
+    onmouseout="
+      this.style.transform='translateY(0px)';
+      this.querySelector('.platformLink').style.opacity='1';
+      this.querySelector('.platformLink').style.transform='translateX(0px)';
+    "
+  >
 
+    <div style="
+      text-align:left;
+      flex:1;
+      min-width:0;
+    ">
       <div style="
-        color:#555;
-        font-size:0.92rem;
-        line-height:1.65;
-        flex:1;
-        min-width:260px;
+        font-size: 1.02rem;
+        font-weight: 600;
+        color:#222;
+        margin-bottom: 3px;
+        letter-spacing:0.01em;
       ">
+        AI Clinical Intelligence Platform
       </div>
 
-      <a 
-        href="https://clinical-ai-demo-vercel.vercel.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style="
-          color:#c96a33;
-          text-decoration:none;
-          font-size:0.82rem;
-          letter-spacing:0.08em;
-          text-transform:uppercase;
-          white-space:nowrap;
-          transition:all 0.25s ease;
-        "
-        onmouseover="
-          this.style.opacity='0.72';
-          this.style.transform='translateX(2px)';
-        "
-        onmouseout="
-          this.style.opacity='1';
-          this.style.transform='translateX(0px)';
-        "
-      >
-        Explore Platform ↗
-      </a>
-
+      <div style="
+        color:#666;
+        font-size:0.9rem;
+        line-height:1.45;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+      ">
+        Simulation • Enrollment Intelligence • Efficacy Analytics • AI Assistant
+      </div>
     </div>
 
-  </div>
+    <span class="platformLink" style="
+      color:#c96a33;
+      text-decoration:none;
+      font-size:0.78rem;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      white-space:nowrap;
+      transition:all 0.25s ease;
+    ">
+      Explore Platform ↗
+    </span>
+
+  </a>
 
 </div>
+
 <!-- 						in Healthcare -->
 				</div>
 
