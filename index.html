@@ -152,13 +152,18 @@
 </h3>
 
 <div style="
-  width: 86%;
-  max-width: 1180px;
-  margin: 0 auto;
+  width: min(1080px, 88vw);
   margin-top: 18px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 18px 34px;
   border-radius: 22px;
-  background: linear-gradient(135deg, rgba(255,255,255,0.78), rgba(255,248,242,0.58));
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.78),
+    rgba(255,248,242,0.58)
+  );
   border: 1px solid rgba(201,106,51,0.18);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -170,11 +175,10 @@
     target="_blank"
     rel="noopener noreferrer"
     style="
-      display:grid;
-      grid-template-columns:minmax(0, 1fr) auto;
-      column-gap:44px;
-      row-gap:8px;
+      display:flex;
+      justify-content:space-between;
       align-items:center;
+      gap:40px;
       width:100%;
       text-decoration:none;
       color:inherit;
@@ -194,10 +198,12 @@
 
     <div style="
       text-align:left;
-      min-width:0;
+      min-width:620px;
+      flex:1;
     ">
+
       <div style="
-        font-size: 1.02rem;
+        font-size: 1.04rem;
         font-weight: 600;
         color:#222;
         margin-bottom: 6px;
@@ -209,12 +215,13 @@
 
       <div style="
         color:#666;
-        font-size:0.9rem;
+        font-size:0.92rem;
         line-height:1.45;
         white-space:nowrap;
       ">
         Simulation · Enrollment Intelligence · Efficacy Analytics · AI Assistant
       </div>
+
     </div>
 
     <span class="platformLink" style="
@@ -225,9 +232,7 @@
       text-transform:uppercase;
       white-space:nowrap;
       transition:all 0.25s ease;
-      align-self:center;
-      justify-self:end;
-      padding-left:22px;
+      flex-shrink:0;
     ">
       Explore Platform ↗
     </span>
