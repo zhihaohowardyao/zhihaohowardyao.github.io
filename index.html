@@ -119,27 +119,19 @@
       display: inline-block;
       text-decoration: none;
       color: #555;
-      transition: all 0.28s ease;
+      transition: all 0.25s ease;
       cursor: pointer;
       text-align:center;
     "
     onmouseover="
       this.style.color='#1f1f1f';
       this.style.transform='translateY(-1px)';
-      this.style.letterSpacing='0.012em';
       this.style.textShadow='0 0 0.01px rgba(0,0,0,0.25)';
-      this.querySelector('.exploreText').style.opacity='1';
-      this.querySelector('.exploreText').style.maxWidth='72px';
-      this.querySelector('.exploreText').style.marginLeft='6px';
     "
     onmouseout="
       this.style.color='#555';
       this.style.transform='translateY(0px)';
-      this.style.letterSpacing='0.01em';
       this.style.textShadow='none';
-      this.querySelector('.exploreText').style.opacity='0';
-      this.querySelector('.exploreText').style.maxWidth='0';
-      this.querySelector('.exploreText').style.marginLeft='0';
     "
   >
 
@@ -153,31 +145,6 @@
 
     <span style="display:block;">
       across pharma, med-tech, and regulatory science
-      <span style="
-        display:inline-block;
-        margin-left:5px;
-        color:#c96a33;
-        opacity:0.32;
-        font-size:0.86em;
-        vertical-align:middle;
-      ">↗</span>
-
-      <span class="exploreText" style="
-        display:inline-block;
-        overflow:hidden;
-        max-width:0;
-        opacity:0;
-        margin-left:0;
-        color:#c96a33;
-        font-size:0.68em;
-        letter-spacing:0.08em;
-        text-transform:uppercase;
-        white-space:nowrap;
-        vertical-align:middle;
-        transition:all 0.28s ease;
-      ">
-        Explore
-      </span>
     </span>
 
   </a>
@@ -185,13 +152,13 @@
 </h3>
 
 <div style="
-  width: 82%;
-  max-width: 1040px;
+  width: 86%;
+  max-width: 1180px;
   margin: 0 auto;
   margin-top: 18px;
-  padding: 18px 28px;
-  border-radius: 18px;
-  background: linear-gradient(135deg, rgba(255,255,255,0.72), rgba(255,248,242,0.54));
+  padding: 18px 34px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.78), rgba(255,248,242,0.58));
   border: 1px solid rgba(201,106,51,0.18);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -203,10 +170,11 @@
     target="_blank"
     rel="noopener noreferrer"
     style="
-      display:flex;
-      justify-content:space-between;
+      display:grid;
+      grid-template-columns:minmax(0, 1fr) auto;
+      column-gap:44px;
+      row-gap:8px;
       align-items:center;
-      gap:28px;
       width:100%;
       text-decoration:none;
       color:inherit;
@@ -226,7 +194,6 @@
 
     <div style="
       text-align:left;
-      flex:1;
       min-width:0;
     ">
       <div style="
@@ -258,7 +225,9 @@
       text-transform:uppercase;
       white-space:nowrap;
       transition:all 0.25s ease;
-      flex-shrink:0;
+      align-self:center;
+      justify-self:end;
+      padding-left:22px;
     ">
       Explore Platform ↗
     </span>
